@@ -1,29 +1,33 @@
 # Laboratoires — cahiers de TP
 
-Les fiches L00 à L19 définissent objectifs, mesures et questions, mais ne sont
-pas toutes des procédures autonomes. Une reproduction exacte exige un dépôt
-compagnon qui fige topologie, versions, commandes, configurations, sorties
-attendues, tolérances et remise à zéro.
+Commencez par les quatre expériences guidées ci-dessous : elles demandent
+seulement une feuille ou Python 3.10, sans équipement ni bibliothèque externe.
+Le [guide autonome](premiers_pas_reseaux_fr.md) les rassemble aussi dans le
+dépôt compagnon.
 
-Trois parcours disposent désormais d'un compagnon exécutable et déterministe :
-[latence et QoS](core_network_labs/notebooks/tp_latence_qos.ipynb),
-[convergence et boucle transitoire](core_network_labs/notebooks/tp_convergence.ipynb)
-et [BGP : validation d'origine et politique](core_network_labs/notebooks/tp_bgp_rov.ipynb).
-Le [guide du compagnon cœur réseau](core_network_labs/README.md) donne les
-entrées figées, commandes, sorties, tolérances, limites et remise à zéro.
-Ces trois modèles ne configurent aucun équipement et n'exécutent pas une pile
-TCP, OSPF ou BGP réelle. Ils constituent des contre-épreuves causales bornées ;
-les essais de pile et de terrain demandent un environnement distinct.
+<a id="premiers-tp-guides"></a>
 
-Depuis le dossier du livre, `python3 -m core_network_labs.run_labs --check`
-recalcule les sorties et vérifie leurs empreintes. La commande
-`uv run --project machine_learning_labs --locked python core_network_labs/verify_notebooks.py --execute`
-rejoue les trois notebooks sans les réécrire. Les autres fiches restent des
-cahiers d'expérimentation à instancier avant de revendiquer une reproduction.
+## Choisir ses premiers TP
+
+| Question | Fiche | Support |
+|---|---|---|
+| Le plus grand débit gagne-t-il toujours ? | L02 / G01 | calcul et script |
+| Que coûte une file plus grande ? | L03 / G02 | chronologie et script |
+| Quand une adresse connue devient-elle fausse ? | L04 / G03 | cache simulé |
+| Faut-il minimiser les relais ou le coût ? | L05 / G04 | graphe et script |
+
+Les autres fiches L01 à L19 sont des **projets à construire** selon leurs
+outils et prérequis. Les trois notebooks cœur réseau sur latence/QoS,
+convergence et BGP apportent des modèles complémentaires ; ils n’exécutent
+pas de pile TCP, OSPF ou BGP réelle. Les fiches avancées indiquent leur
+support disponible et ce qui reste à réaliser. Le nombre de fiches ne
+désigne donc pas un nombre identique de procédures autonomes.
 
 ## L00 — Construire le banc
 
-Outils recommandés :
+Pour les quatre premiers TP : une feuille ou Python 3.10 ou plus.
+
+Pour les projets avancés, choisir les outils demandés par le montage :
 
 - Linux ;
 - Wireshark ;
@@ -48,6 +52,8 @@ Règles :
 
 ## L01 — Du signal au débit utile
 
+**Projet à construire.** Choisir un banc et documenter ses versions, commandes et résultats.
+
 Mesurer :
 
 - débit nominal ;
@@ -64,58 +70,113 @@ préambules et en-têtes, les accusés, la contention, les retransmissions, les
 en-têtes de liaison/réseau/transport et les temps où le support ne transporte
 pas la charge utile mesurée.
 
+<a id="laboratoire-decouverte-latence"></a>
+
 ## L02 — Budget de latence
 
-Mesurer :
+**TP guidé G01.** **Durée :** 20 minutes. **Prérequis :** multiplication et division ; Python 3.10 ou plus pour exécuter. Une feuille suffit pour chercher.
 
-- propagation approximative ;
-- sérialisation ;
-- RTT ;
-- latence sous charge ;
-- p50/p95/p99 ;
-- gigue.
+Dessinez deux liaisons : A à 1 Mbit/s et 2 ms de propagation ; B à 100 Mbit/s et 250 ms. Aucune file ni aucun en-tête n’est modélisé.
 
-Construire un budget pour voix, vidéo et fichier.
+1. Prédisez la liaison la plus rapide pour 100 octets, puis pour 1 Mo décimal.
+2. Calculez la durée nécessaire pour émettre les bits : taille en octets × 8 / débit en bits/s.
+3. Ajoutez la propagation, dans la même unité.
+4. Exécutez la commande et comparez vos valeurs.
+5. Modifiez une taille dans une copie du script et cherchez le changement de classement.
+
+**Pour interpréter après la recherche :** le petit message prend 2,8 ms sur A et 250,008 ms sur B ; le fichier prend 8 002 ms sur A et 330 ms sur B. Le plus grand débit ne gagne donc pas pour toutes les tailles.
+
+**À conserver :** prédiction, deux calculs avec unités et une phrase expliquant le changement. **Limite :** une conversation comporte aussi des réponses, des traitements et des attentes. Ce calcul ne mesure pas une liaison réelle.
+
+Depuis la racine du dépôt compagnon :
+
+~~~bash
+python3 -m core_network_labs.premiers_pas_reseaux_fr latence
+~~~
+
+Le script ne modifie aucun fichier ; relancez-le pour recommencer.
+
+<a id="laboratoire-decouverte-files"></a>
 
 ## L03 — Files et QoS
 
-Créer deux flux :
+**TP guidé G02.** **Durée :** 25 minutes. **Prérequis :** addition ; G01 conseillé.
 
-- voix simulée faible débit ;
-- transfert saturant.
+Quatre paquets de 100 octets arrivent ensemble sur un lien à 8 000 bit/s. Trois paquets de fichier passent avant un paquet voix. Chaque transmission dure 100 ms. Une place en cours de service n’est pas comptée dans les places d’attente.
 
-Comparer :
+1. Dessinez les départs avec une seule place d’attente. Notez les paquets refusés.
+2. Recommencez avec trois places. Le paquet voix arrive-t-il avant une échéance fictive de 250 ms ?
+3. Prédisez l’effet d’une priorité donnée à la voix parmi les paquets en attente ; le paquet déjà en transmission continue.
+4. Exécutez la commande. Expliquez chaque différence.
+5. Imaginez des arrivées voix permanentes : quel autre risque faudrait-il tester ?
 
-- FIFO ;
-- file équitable ;
-- classe prioritaire bornée.
+**Pour interpréter après la recherche :** la petite file perd deux paquets, dont la voix. La grande file livre les quatre, mais la voix termine à 400 ms. Avec priorité, elle termine à 200 ms. Une meilleure livraison ne garantit pas le respect de l’échéance.
 
-Vérifier que la priorité ne devient pas une famine.
+**À conserver :** trois chronologies, pertes et délai de la voix. **Limite :** le petit lot fini ne démontre ni stabilité sous charge durable ni absence de famine. Le script réemploie le modèle de file du compagnon.
+
+Depuis la racine du dépôt compagnon :
+
+~~~bash
+python3 -m core_network_labs.premiers_pas_reseaux_fr files
+~~~
+
+Le script ne modifie aucun fichier ; relancez-le pour recommencer.
+
+<a id="laboratoire-decouverte-cache"></a>
 
 ## L04 — Découverte
 
-Capturer :
+**TP guidé G03.** **Durée :** 20 minutes. **Prérequis :** savoir lire une chronologie.
 
-- ARP ;
-- Neighbor Discovery ;
-- DHCP ;
-- DNS.
+Un annuaire donne l’adresse 203.0.113.10 à t = 0 s. À t = 10 s, son adresse de référence devient 203.0.113.20. Un client conserve chaque réponse pendant 30 secondes, durée appelée TTL. L’expérience ne contacte aucun serveur.
 
-Identifier les caches, expirations et autorités.
+1. Avant d’exécuter, écrivez la réponse attendue aux instants 0, 20 et 31 secondes.
+2. Distinguez l’adresse de référence et celle que le cache rend au client.
+3. Exécutez la commande, puis repérez les consultations de l’annuaire.
+4. Dans une copie du script, remplacez la durée par 5 secondes. Que deviennent fraîcheur et nombre de consultations ?
+5. Cherchez le résultat exactement à l’instant d’expiration.
+
+**Pour interpréter après la recherche :** avec un TTL de 30 secondes, le client garde l’ancienne adresse à t = 20 s et obtient la nouvelle à t = 31 s. Le cache expire dès que sa limite est atteinte.
+
+**À conserver :** une chronologie et une explication du compromis entre fraîcheur et consultations. **Limite :** ce modèle d’annuaire illustre un cache ; il n’exécute pas DNS, DHCP ou ARP. La capture de ces protocoles est un prolongement distinct.
+
+Depuis la racine du dépôt compagnon :
+
+~~~bash
+python3 -m core_network_labs.premiers_pas_reseaux_fr decouverte
+~~~
+
+Le script ne modifie aucun fichier ; relancez-le pour recommencer.
+
+<a id="laboratoire-decouverte-chemins"></a>
 
 ## L05 — Dijkstra
 
-Coder l’algorithme, modifier un coût, puis comparer au résultat OSPF.
+**TP guidé G04.** **Durée :** 25 minutes. **Prérequis :** addition ; lecture de Python facultative.
 
-Question : quelle partie du protocole n’apparaît pas dans l’algorithme ?
+Dessinez quatre sommets A, B, C et D. Le lien direct A–D coûte 15 ; A–B, B–C et C–D coûtent chacun 2. Les liens fonctionnent dans les deux sens et les coûts s’additionnent.
 
-**Réponse attendue.** Dijkstra ne décrit ni la découverte des voisins, ni la
-diffusion et l’âge des annonces, ni leur authentification, ni la détection des
-pannes, ni les temporisateurs, ni la résolution des incohérences, ni
-l’installation effective des routes. Il calcule seulement un arbre à partir
-d’un graphe déjà disponible et cohérent.
+1. Choisissez un chemin en minimisant le nombre de liens.
+2. Choisissez-en un en minimisant le coût total.
+3. Prédisez le résultat après suppression du lien B–C.
+4. Exécutez la commande et comparez.
+5. Si vous lisez Python, suivez la liste des candidats dans la fonction de Dijkstra. Sinon, énumérez les chemins sur papier.
+
+**Pour interpréter après la recherche :** A–B–C–D coûte 6, contre 15 pour A–D. Après la coupure de B–C, le lien direct reste disponible.
+
+**À conserver :** carte, deux critères et résultats avant/après coupure. **Limite :** Dijkstra suppose ici une carte disponible, cohérente et des coûts positifs. Il ne décrit ni l’échange des annonces ni leur vieillissement. La convergence OSPF appartient au second niveau.
+
+Depuis la racine du dépôt compagnon :
+
+~~~bash
+python3 -m core_network_labs.premiers_pas_reseaux_fr chemins
+~~~
+
+Le script ne modifie aucun fichier ; relancez-le pour recommencer.
 
 ## L06 — Convergence
+
+**Projet à construire.** Choisir un banc et documenter ses versions, commandes et résultats.
 
 Couper un lien OSPF/IS-IS et mesurer :
 
@@ -127,6 +188,8 @@ Couper un lien OSPF/IS-IS et mesurer :
 Ajouter un flux audio pour observer la différence entre convergence réseau et service perçu.
 
 ## L07 — TCP et bufferbloat
+
+**Projet à construire.** Choisir un banc et documenter ses versions, commandes et résultats.
 
 Comparer :
 
@@ -140,6 +203,8 @@ Ne conclure à la supériorité d’un mécanisme qu’après plusieurs profils.
 
 ## L08 — Média temps réel
 
+**Projet à construire.** Choisir un banc et documenter ses versions, commandes et résultats.
+
 Générer un flux RTP ou utiliser une application de laboratoire. Ajouter :
 
 - délai ;
@@ -151,6 +216,8 @@ Observer le tampon, les paquets tardifs et l’adaptation.
 
 ## L09 — Mini-Internet BGP
 
+**Projet à construire.** Choisir un banc et documenter ses versions, commandes et résultats.
+
 Créer plusieurs AS, politiques, peering et transit. Simuler dans le laboratoire :
 
 - panne ;
@@ -160,11 +227,15 @@ Créer plusieurs AS, politiques, peering et transit. Simuler dans le laboratoire
 
 ## L10 — TLS et identité
 
+**Projet à construire.** Choisir un banc et documenter ses versions, commandes et résultats.
+
 Lire une chaîne de certificats, tester un nom incorrect et une horloge fausse dans une VM.
 
 Distinguer identité du serveur et autorisation applicative.
 
 ## L11 — Équilibrage et retries
+
+**Projet à construire.** Choisir un banc et documenter ses versions, commandes et résultats.
 
 Créer une dépendance lente. Faire varier :
 
@@ -177,6 +248,8 @@ Créer une dépendance lente. Faire varier :
 Mesurer le travail utile.
 
 ## L12 — Mise à l’échelle automatique simulée
+
+**Projet à construire.** Choisir un banc et documenter ses versions, commandes et résultats.
 
 Écrire une boucle simple :
 
@@ -195,6 +268,8 @@ Tracer la charge, la capacité et la queue. Observer les oscillations.
 
 ## L13 — Multicast
 
+**Projet à construire.** Choisir un banc et documenter ses versions, commandes et résultats.
+
 Exécuter l’émetteur et plusieurs récepteurs locaux. Perdre des paquets. Concevoir :
 
 - numéro de séquence ;
@@ -205,6 +280,8 @@ Exécuter l’émetteur et plusieurs récepteurs locaux. Perdre des paquets. Con
 
 ## L14 — Anycast de laboratoire
 
+**Projet à construire.** Choisir un banc et documenter ses versions, commandes et résultats.
+
 Faire annoncer la même adresse par deux nœuds BGP. Retirer l’un et mesurer :
 
 - convergence ;
@@ -213,6 +290,8 @@ Faire annoncer la même adresse par deux nœuds BGP. Retirer l’un et mesurer :
 - trou applicatif.
 
 ## L15 — DDIL
+
+**Projet à construire.** Choisir un banc et documenter ses versions, commandes et résultats.
 
 Créer une partition de vingt minutes :
 
@@ -225,13 +304,47 @@ Documenter les conflits.
 
 ## L16 — PACE applicatif
 
+**Projet à construire.** Choisir un banc et documenter ses versions, commandes et résultats.
+
 Définir quatre profils de liaison et la fonction conservée à chaque niveau. Automatiser une bascule simulée et vérifier l’information utilisateur.
+
+<a id="laboratoire-chaine-reseau"></a>
 
 ## L17 — Chaîne réseau
 
-Modéliser, générer, valider, déployer progressivement, tester et annuler un changement FRRouting.
+**Projet à construire — deux séances de 90 minutes au minimum.**
+Prérequis : L05, L06 et administration d’un banc Linux isolé. Le dépôt ne
+fournit pas ici de configuration FRRouting prête à déployer.
+
+**Question :** comment vérifier puis annuler un changement de route ?
+Commencez sur papier avec A–B–D comme chemin primaire et A–C–D comme secours.
+Une modification augmente le coût de B–D. Définissez le chemin attendu
+avant de choisir les commandes.
+
+1. Figer la topologie, les adresses privées, les versions de FRRouting et les
+   configurations initiales dans un dossier de travail.
+2. Vérifier la connectivité initiale et conserver table de routage, captures
+   utiles et mesure applicative de référence.
+3. Préparer la configuration modifiée et sa configuration de retour.
+4. Contrôler sa syntaxe avec la procédure de la version retenue, puis
+   comparer le changement ligne par ligne.
+5. Appliquer d’abord le changement à un seul équipement du banc.
+6. Observer chemin, pertes et délai ; décider à l’avance du seuil d’arrêt.
+7. Déclencher le retour arrière, puis vérifier le rétablissement du service,
+   même si la commande d’annulation a réussi.
+8. Recommencer en introduisant une erreur volontaire dans une copie de la
+   configuration et expliquer où elle aurait dû être détectée.
+
+**Livrables :** dessin annoté, versions, configurations avant/après,
+chronologie, mesures et décision de poursuite ou d’arrêt.
+**Réussite :** un autre lecteur peut distinguer intention, configuration
+acceptée et effet observé. **Limite :** ce projet demande l’instanciation
+du banc et des commandes adaptées à sa version ; le dessin seul ne valide
+pas un déploiement.
 
 ## L18 — Projet IA/réseau
+
+**Projet à construire.** Choisir un banc et documenter ses versions, commandes et résultats.
 
 Simuler des workers synchrones. Ajouter un retardataire et un incast. Tester :
 
@@ -242,6 +355,8 @@ Simuler des workers synchrones. Ajouter un retardataire et un incast. Tester :
 - reprise.
 
 ## L19 — SWaP-C, mini-drones et relais mobile
+
+**Projet à construire.** Choisir un banc et documenter ses versions, commandes et résultats.
 
 Construire un simulateur abstrait de cinq nœuds, sans émission radio réelle.
 
@@ -281,24 +396,24 @@ Mesurer l’effet utile, l’énergie par type de trafic, la gigue, les échéan
 Ce TP rend calculables les notions du chapitre avant d'introduire un réseau de
 neurones. Deux relais produisent les récompenses suivantes :
 
-- A : ((1; 0{,}5; -4)), gain immédiat puis débordement ;
-- B : ((0{,}2; 0{,}8; 1)), gain initial modeste puis service stable.
+- A : (1 ; 0,5 ; −4), gain immédiat puis débordement ;
+- B : (0,2 ; 0,8 ; 1), gain initial modeste puis service stable.
 
 Le notebook exécutable se trouve dans
 `machine_learning_labs/notebooks/tp_rl_retour_q_td.ipynb`.
 
 ### Déroulé
 
-1. calculer les deux retours pour (gamma=0{,}9) ;
-2. les interpréter comme (Q(s,A)) et (Q(s,B)) ;
-3. calculer (V(s)) pour une politique équiprobable, puis les avantages ;
-4. faire varier (gamma) et repérer le changement de classement ;
+1. calculer les deux retours pour γ = 0,9 ;
+2. les interpréter comme Q(s, A) et Q(s, B) ;
+3. calculer V(s) pour une politique équiprobable, puis les avantages ;
+4. faire varier γ et repérer le changement de classement ;
 5. comparer l'erreur TD d'une transition en cours à celle d'une vraie
    terminaison ;
 6. expliquer pourquoi une troncature temporelle conserve le bootstrap.
 
-**Résultat attendu.** (Q(s,A)=-1{,}79), (Q(s,B)=1{,}73),
-(V(s)=-0{,}03), avec des avantages de (-1{,}76) et (+1{,}76).
+**Résultat attendu.** Q(s, A) = −1,79, Q(s, B) = 1,73,
+V(s) = −0,03, avec des avantages de −1,76 et +1,76.
 Le lecteur doit surtout expliquer pourquoi la récompense immédiate classe mal
 les actions.
 
@@ -319,7 +434,7 @@ les actions.
 Le notebook `machine_learning_labs/notebooks/tp_rl_dqn_relais.ipynb` utilise un
 environnement Gymnasium synthétique : deux files, deux relais, une capacité
 variable et une limite externe de durée des épisodes. Il met volontairement le mécanisme à nu : réseau
-Q, rejeu d'expérience, réseau cible, exploration (epsilon)-greedy et arrêt du
+Q, rejeu d'expérience, réseau cible, exploration ε-greedy et arrêt du
 bootstrap lors d'une vraie terminaison seulement.
 
 Le problème reste partiellement observable : le vecteur ne contient pas le

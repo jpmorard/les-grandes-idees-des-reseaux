@@ -117,6 +117,7 @@ def source_paths() -> list[Path]:
     paths = [
         ROOT / "__init__.py",
         ROOT / "models.py",
+        ROOT / "premiers_pas_reseaux_fr.py",
         ROOT / "run_labs.py",
         ROOT / "verify_notebooks.py",
         ROOT / "README.md",

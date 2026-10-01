@@ -1,5 +1,18 @@
 # Trois TP reproductibles de cœur réseau
 
+Pour commencer sans équipement, consulter les
+[quatre premiers TP guidés](../premiers_pas_reseaux_fr.md) : latence, files,
+cache de découverte et choix d’un chemin. Ils fonctionnent sur papier ou
+avec Python 3.10 ou plus, en bibliothèque standard :
+
+~~~bash
+python3 -m core_network_labs.premiers_pas_reseaux_fr
+~~~
+
+Les expériences ci-dessous prolongent ce premier parcours.
+
+
+
 Ce compagnon ferme trois parcours précis : latence/QoS, convergence distribuée,
 et BGP/validation d'origine. Il fournit des **modèles synthétiques exécutables**,
 pas un démon OSPF/BGP, une mesure TCP, une pile radio ni une configuration de

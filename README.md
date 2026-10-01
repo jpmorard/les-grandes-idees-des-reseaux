@@ -26,22 +26,36 @@ cahier demandent des logiciels ou des équipements indiqués dans leur énoncé.
 
 ## Premier TP, sans dépendance
 
-Avec Python 3.10 ou plus, depuis la racine du dépôt :
+Commencer par le [guide des quatre premiers TP](premiers_pas_reseaux_fr.md).
+Il associe prédictions, dessins, scripts et interprétation. Python 3.10 ou plus
+suffit, sans téléchargement de bibliothèque :
 
-```bash
+~~~bash
 git clone https://github.com/jpmorard/les-grandes-idees-des-reseaux.git
 cd les-grandes-idees-des-reseaux
+python3 -m core_network_labs.premiers_pas_reseaux_fr latence
+python3 -m core_network_labs.premiers_pas_reseaux_fr files
+python3 -m core_network_labs.premiers_pas_reseaux_fr decouverte
+python3 -m core_network_labs.premiers_pas_reseaux_fr chemins
+~~~
+
+Ces modèles n'accèdent à aucun réseau et ne modifient aucun fichier.
+Les autres fiches L01 à L19 sont des projets à instancier ; le cahier indique
+leur statut. Les notebooks apportent des expériences complémentaires.
+
+## Prolonger avec le chiffrement homomorphe
+
+Après les premiers TP, le [guide Paillier](chiffrement_homomorphe_labs/README.md)
+permet d'explorer le calcul sur des compteurs chiffrés :
+
+~~~bash
 python3 -m chiffrement_homomorphe_labs.tp_paillier_agregation_fr
 python3 -m chiffrement_homomorphe_labs.tp_paillier_agregation_fr --check
-python3 -m unittest chiffrement_homomorphe_labs.test_paillier_agregation
-python3 -m core_network_labs.run_labs --check
-python3 -m network_simulation_labs.verify
-```
+~~~
 
-Le TP Paillier retrouve une somme de **60** et une moyenne de **20** sans
-donner la clé privée à la fonction d'agrégation. Ses minuscules paramètres
-publics sont volontairement non sûrs : ce code enseigne l'arithmétique et ne
-doit protéger aucune donnée. Il est partiellement homomorphe, pas FHE.
+Les minuscules paramètres publics sont volontairement non sûrs : ce code
+enseigne l'arithmétique et ne protège aucune donnée. Il est partiellement
+homomorphe, pas FHE.
 
 ## Ouvrir les notebooks
 

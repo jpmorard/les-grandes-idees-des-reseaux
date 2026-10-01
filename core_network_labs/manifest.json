@@ -12,9 +12,14 @@
       "size_bytes": 9283
     },
     {
+      "path": "premiers_pas_reseaux_fr.py",
+      "sha256": "cd3a34a9e70d3e3d5ea2ec541ce015ccf34bf0de1d59f491d6e18b5a3045a961",
+      "size_bytes": 4179
+    },
+    {
       "path": "run_labs.py",
-      "sha256": "d2cccb86bb0a401a607288a5f3e833d18dd63547e01d73e2573d374c98e0287f",
-      "size_bytes": 7263
+      "sha256": "bfccc984f02b73a3877950f48b50805205c51be810dc5a82e54a688fa6332686",
+      "size_bytes": 7308
     },
     {
       "path": "verify_notebooks.py",
@@ -23,8 +28,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "1aa363326825760c87affce3b3702d1047b9bc83369252e3bfc0435135c0dc10",
-      "size_bytes": 5946
+      "sha256": "bfbebb56b2ae00eac75f3961abd6ccdf59580c3698cdf29eaf6e4e6f0bfcdda2",
+      "size_bytes": 6331
     },
     {
       "path": "inputs/scenarios.json",
@@ -50,6 +55,11 @@
       "path": "tests/test_core_labs.py",
       "sha256": "f490f40bc573d745eab03e97bc0770547275eb183a97be56f7a6ad02b195720b",
       "size_bytes": 6293
+    },
+    {
+      "path": "tests/test_premiers_pas_reseaux_fr.py",
+      "sha256": "cf25b0bc57fbc4db590364ec577c9626008a64c2ba3a4fa1b0c327d3d1e03801",
+      "size_bytes": 2169
     },
     {
       "path": "results/bgp_rov.json",

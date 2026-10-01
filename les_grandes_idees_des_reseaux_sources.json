@@ -1,7 +1,7 @@
 {
   "schema": "reseaux.compagnon-public.v1",
   "book": "Les Grandes Idées des Réseaux — Édition 1.0, révision 1",
-  "canonical_manuscript_sha256": "1e76d0cdf5526021c0c412b9c94abac6611d1b34ff0cd7a2e725a1449f59b9ed",
+  "canonical_manuscript_sha256": "8c51c7059d5537988adc7c4ee5a26fdbbe1d076133b235694d0f2641d07326f0",
   "scope": "Supports pédagogiques sélectionnés ; inventaire hors ce manifeste et hors métadonnées Git.",
   "files": [
     {
@@ -11,8 +11,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4568,
-      "sha256": "197b90cb423aa4cad0247d67dd3701887e43502080af4d8fb5e5037a3d3dbba4"
+      "bytes": 5097,
+      "sha256": "7602da2cb77f2439aa34429442bfea1a7427fd2f7b97eccab89e1e5372d4fca6"
     },
     {
       "path": "assets/ml_svd_rpca_mimo_map.svg",
@@ -51,8 +51,8 @@
     },
     {
       "path": "core_network_labs/README.md",
-      "bytes": 5946,
-      "sha256": "1aa363326825760c87affce3b3702d1047b9bc83369252e3bfc0435135c0dc10"
+      "bytes": 6331,
+      "sha256": "bfbebb56b2ae00eac75f3961abd6ccdf59580c3698cdf29eaf6e4e6f0bfcdda2"
     },
     {
       "path": "core_network_labs/__init__.py",
@@ -66,8 +66,8 @@
     },
     {
       "path": "core_network_labs/manifest.json",
-      "bytes": 2720,
-      "sha256": "11de0bc48e28a216f405e2b3f8872f0fe3fe55823b7df0f30c29f3c3a9717ed0"
+      "bytes": 3063,
+      "sha256": "199eac7f8d9f9d7615d9a07a3699566432eee30fa1cd0d58a9c50ffc41d3e809"
     },
     {
       "path": "core_network_labs/models.py",
@@ -90,6 +90,11 @@
       "sha256": "61ab06ceb9d70892bb0adc11f68cae04d84ae63e1484c03d89f08dbe5d328a31"
     },
     {
+      "path": "core_network_labs/premiers_pas_reseaux_fr.py",
+      "bytes": 4179,
+      "sha256": "cd3a34a9e70d3e3d5ea2ec541ce015ccf34bf0de1d59f491d6e18b5a3045a961"
+    },
+    {
       "path": "core_network_labs/results/bgp_rov.json",
       "bytes": 1429,
       "sha256": "8c50d7a88b19211efccd9e02d2ba20a4d1db389a3b0cd9be81180fd8c431e096"
@@ -106,13 +111,18 @@
     },
     {
       "path": "core_network_labs/run_labs.py",
-      "bytes": 7263,
-      "sha256": "d2cccb86bb0a401a607288a5f3e833d18dd63547e01d73e2573d374c98e0287f"
+      "bytes": 7308,
+      "sha256": "bfccc984f02b73a3877950f48b50805205c51be810dc5a82e54a688fa6332686"
     },
     {
       "path": "core_network_labs/tests/test_core_labs.py",
       "bytes": 6293,
       "sha256": "f490f40bc573d745eab03e97bc0770547275eb183a97be56f7a6ad02b195720b"
+    },
+    {
+      "path": "core_network_labs/tests/test_premiers_pas_reseaux_fr.py",
+      "bytes": 2169,
+      "sha256": "cf25b0bc57fbc4db590364ec577c9626008a64c2ba3a4fa1b0c327d3d1e03801"
     },
     {
       "path": "core_network_labs/verify_notebooks.py",
@@ -470,9 +480,14 @@
       "sha256": "f3cd66b2543ba5c2dba8805b8c5d60d3dc5cfc2882ca85e0e0efcafdfc0f3fb4"
     },
     {
+      "path": "premiers_pas_reseaux_fr.md",
+      "bytes": 5831,
+      "sha256": "c15e9d66ffa587b3f34da1502f315f9ace4f68fe22391edbd3e62ddd0d24d4a0"
+    },
+    {
       "path": "travaux_pratiques_reseaux_fr.md",
-      "bytes": 46012,
-      "sha256": "5c1bbecc66735120b0f59ccb21d69f56badbca57a247f43f506f850422220a22"
+      "bytes": 53436,
+      "sha256": "58ab9ca17279cbb65a54c292ef8d9c263238977a67965b443ae3e5a48678ae25"
     }
   ]
 }
