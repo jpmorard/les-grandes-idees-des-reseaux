@@ -1,3 +1,5 @@
+<a id="progression-curiosite-raisonnement"></a>
+
 ## Pour une progression complète : cultiver la curiosité et apprendre à chercher
 
 On peut entrer dans les réseaux par une question très simple : comment une
@@ -14,6 +16,8 @@ délais, chemins, ressources partagées et décisions prises avec une informatio
 incomplète. Chacun peut commencer à son niveau, puis approfondir ce qui éveille
 sa curiosité.
 
+<a id="une-méthode-qui-accompagne-tout-le-chemin"></a>
+
 ### Une méthode qui accompagne tout le chemin
 
 Dans *Comment poser et résoudre un problème*, George Pólya propose de
@@ -29,6 +33,8 @@ conclusion sous des hypothèses explicites ; une expérience met un modèle à
 l'épreuve dans certaines conditions. Apprendre à passer de l'une à l'autre,
 en disant ce qui reste incertain, développe le jugement.
 
+<a id="quatre-étapes-à-parcourir-à-son-rythme"></a>
+
 ### Quatre étapes à parcourir à son rythme
 
 | Étape | Question qui stimule | Activité accessible |
@@ -43,9 +49,11 @@ Les TP permettent de revenir sur une intuition avec des observations. Un
 lecteur déjà expérimenté peut commencer directement par une question qui le
 surprend et revenir aux fondements lorsqu'elle le demande.
 
+<a id="quelques-compagnons-de-lecture"></a>
+
 ### Quelques compagnons de lecture
 
-- **Pour entretenir le plaisir de chercher :** Jean-Pierre Boudine,
+- **Pour entretenir le plaisir de chercher :** Jean-Pierre Boudine,
   *L'Appel des maths — Nombres*, propose des problèmes de niveaux variés,
   souvent accessibles dès le collège. On peut en choisir un, chercher à
   plusieurs, puis comparer les démarches.
@@ -77,7 +85,9 @@ changer d'explication et au plaisir de transmettre une idée devenue claire.
 Ce mouvement rejoint l'innovation dans le parcours de l'auteur :
 imaginer, éprouver, comprendre, puis ouvrir une nouvelle possibilité.
 
-## L’école à l’ère de l’IA : apprendre à raisonner ensemble {#ecole-ia-raisonner-ensemble}
+<a id="ecole-ia-raisonner-ensemble"></a>
+
+## L’école à l’ère de l’IA : apprendre à raisonner ensemble
 
 Une classe est un lieu où l’on apprend à raisonner ensemble. On y partage
 des expériences, on construit des relations, on négocie des contraintes
@@ -110,6 +120,8 @@ porte aussi sur la capacité à reconnaître ce que l’on ne sait pas encore.
 manière de vérifier la réussite. Après l’exécution, on examine le résultat
 et l’on assume la décision de l’utiliser. Un texte convaincant ou un
 programme qui s’exécute ne suffit pas à montrer que le problème est résolu.
+
+<a id="une-séance-pour-rendre-le-raisonnement-visible"></a>
 
 ### Une séance pour rendre le raisonnement visible
 

@@ -1,7 +1,9 @@
 {
   "schema": "reseaux.compagnon-public.v1",
-  "book": "Les Grandes Idées des Réseaux — Édition 1.0, révision 1",
-  "canonical_manuscript_sha256": "a6e66f371dfeb9d06cb82b21d27f939378a1626baf7be7d3cadea86838a07216",
+  "book": "Les Grandes Idées des Réseaux — Édition 1.0, révision 2",
+  "edition": "1.0",
+  "edition_revision": 2,
+  "canonical_manuscript_sha256": "6048f66fc7b9bbfbf4991f912c41304e0933dde7bd3a2b4d6059c9c13a536db3",
   "scope": "Supports pédagogiques sélectionnés ; inventaire hors ce manifeste et hors métadonnées Git.",
   "files": [
     {
@@ -11,8 +13,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5537,
-      "sha256": "7e1e415562b19179e11f94e7de5a2b5070ee33baa0fd8957a9ef57d58fc4ad26"
+      "bytes": 5823,
+      "sha256": "e0bd00abc6b003213ddae2d2d46d971be8458949df5c55200a309683ddb59d5b"
     },
     {
       "path": "assets/innovation_portefeuille_dix_pistes_renouvellement_fr.svg",
@@ -486,8 +488,8 @@
     },
     {
       "path": "parcours_curiosite_raisonnement_reseaux_fr.md",
-      "bytes": 8668,
-      "sha256": "f5c6a39e396e7ac798d3172a1bf18ef7d5aaa0f704e1159d9359e4af74f5880a"
+      "bytes": 8949,
+      "sha256": "3c55cce246b1bb32f3552dfbeb8a973ca4ef11b770de960050dae056ccb1c63b"
     },
     {
       "path": "premiers_pas_reseaux_fr.md",
@@ -495,9 +497,14 @@
       "sha256": "c15e9d66ffa587b3f34da1502f315f9ace4f68fe22391edbd3e62ddd0d24d4a0"
     },
     {
+      "path": "representations_acp_svd_reseaux_fr.md",
+      "bytes": 12920,
+      "sha256": "eac75cd0e894317ff598dbde73554f44e976e392c9021e2629e949732fe0e742"
+    },
+    {
       "path": "travaux_pratiques_reseaux_fr.md",
-      "bytes": 53436,
-      "sha256": "58ab9ca17279cbb65a54c292ef8d9c263238977a67965b443ae3e5a48678ae25"
+      "bytes": 42687,
+      "sha256": "886e881d5dff3e101f3ce81576abaec7cd81c796ab539f307e144176c134a562"
     }
   ]
 }

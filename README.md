@@ -30,6 +30,11 @@ cahier demandent des logiciels ou des équipements indiqués dans leur énoncé.
 | [Apprentissage automatique](machine_learning_labs/README.md) | classification rare, retour/TD, DQN et relais, SVD/ACP/RPCA/MIMO ; 4 notebooks | [Retour et TD](machine_learning_labs/notebooks/tp_rl_retour_q_td.ipynb) |
 | [Chiffrement homomorphe](chiffrement_homomorphe_labs/README.md) | L28 : agrégation avec Paillier, arithmétique et limites | [Script Paillier](chiffrement_homomorphe_labs/tp_paillier_agregation_fr.py) |
 
+Le [dossier ACP, SVD et représentations réseau](representations_acp_svd_reseaux_fr.md)
+explique le choix des variantes et leurs limites. Le
+[notebook SVD radio](machine_learning_labs/notebooks/svd_radio.ipynb)
+met ces représentations à l’épreuve sur des données synthétiques.
+
 ## Premier TP, sans dépendance
 
 Commencer par le [guide des quatre premiers TP](premiers_pas_reseaux_fr.md).
@@ -97,7 +102,7 @@ rester dans un banc autorisé et isolé.
 - [Sources du complément sur le chiffrement homomorphe](chiffrement_homomorphe_reseaux_sources_fr.md).
 - [Inventaire SHA-256 des supports](les_grandes_idees_des_reseaux_sources.json).
 
-Ce dépôt accompagne l'édition 1.0, révision 1, du livre. Les notebooks et
+Ce dépôt accompagne l'édition 1.0, révision 2, du livre. Les notebooks et
 scripts sont autonomes selon leurs prérequis ; le manuscrit complet et ses
 PDF sont distribués séparément. L'évaluation de compréhension reste dans le
 livre ; ce dépôt n'intègre pas le corpus dans AGILAB Learning & Assessment.

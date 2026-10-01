@@ -1,9 +1,11 @@
+<a id="laboratoires-cahiers-de-tp"></a>
+
 # Laboratoires — cahiers de TP
 
-Commencez par les quatre expériences guidées ci-dessous : elles demandent
-seulement une feuille ou Python 3.10, sans équipement ni bibliothèque externe.
-Le [guide autonome](premiers_pas_reseaux_fr.md) les rassemble aussi dans le
-dépôt compagnon.
+Les [quatre TP guidés du parcours de découverte](#premiers-tp-guides)
+précèdent l’épilogue. Les fiches suivantes prolongent leurs questions selon
+les outils et prérequis indiqués. Le [guide autonome](premiers_pas_reseaux_fr.md)
+reste disponible dans le dépôt compagnon.
 
 <a id="premiers-tp-guides"></a>
 
@@ -17,11 +19,15 @@ dépôt compagnon.
 | Faut-il minimiser les relais ou le coût ? | L05 / G04 | graphe et script |
 
 Les autres fiches L01 à L19 sont des **projets à construire** selon leurs
-outils et prérequis. Les trois notebooks cœur réseau sur latence/QoS,
-convergence et BGP apportent des modèles complémentaires ; ils n’exécutent
+outils et prérequis. Un **notebook** est un document exécutable qui réunit
+explications, code et résultats. Les trois notebooks cœur réseau portent sur
+la latence/QoS, la stabilisation des chemins et les annonces échangées entre
+réseaux autonomes (BGP). Ils apportent des modèles complémentaires ; ils n’exécutent
 pas de pile TCP, OSPF ou BGP réelle. Les fiches avancées indiquent leur
 support disponible et ce qui reste à réaliser. Le nombre de fiches ne
 désigne donc pas un nombre identique de procédures autonomes.
+
+<a id="l00-construire-le-banc"></a>
 
 ## L00 — Construire le banc
 
@@ -49,6 +55,8 @@ Règles :
 - obtenir l’autorisation du réseau ;
 - capturer uniquement le trafic du laboratoire ;
 - documenter les hypothèses et limites.
+
+<a id="l01-du-signal-au-débit-utile"></a>
 
 ## L01 — Du signal au débit utile
 
@@ -138,7 +146,7 @@ Un annuaire donne l’adresse 203.0.113.10 à t = 0 s. À t = 10 s, son adresse 
 
 **Pour interpréter après la recherche :** avec un TTL de 30 secondes, le client garde l’ancienne adresse à t = 20 s et obtient la nouvelle à t = 31 s. Le cache expire dès que sa limite est atteinte.
 
-**À conserver :** une chronologie et une explication du compromis entre fraîcheur et consultations. **Limite :** ce modèle d’annuaire illustre un cache ; il n’exécute pas DNS, DHCP ou ARP. La capture de ces protocoles est un prolongement distinct.
+**À conserver :** une chronologie et une explication du compromis entre fraîcheur et consultations. **Limite :** ce modèle d’annuaire illustre un cache ; il n’exécute pas les protocoles réels de découverte et de résolution d’adresses présentés plus loin. Leur capture est un prolongement distinct.
 
 Depuis la racine du dépôt compagnon :
 
@@ -174,6 +182,8 @@ python3 -m core_network_labs.premiers_pas_reseaux_fr chemins
 
 Le script ne modifie aucun fichier ; relancez-le pour recommencer.
 
+<a id="l06-convergence"></a>
+
 ## L06 — Convergence
 
 **Projet à construire.** Choisir un banc et documenter ses versions, commandes et résultats.
@@ -186,6 +196,8 @@ Couper un lien OSPF/IS-IS et mesurer :
 - perte applicative.
 
 Ajouter un flux audio pour observer la différence entre convergence réseau et service perçu.
+
+<a id="l07-tcp-et-bufferbloat"></a>
 
 ## L07 — TCP et bufferbloat
 
@@ -201,6 +213,8 @@ Comparer :
 
 Ne conclure à la supériorité d’un mécanisme qu’après plusieurs profils.
 
+<a id="l08-média-temps-réel"></a>
+
 ## L08 — Média temps réel
 
 **Projet à construire.** Choisir un banc et documenter ses versions, commandes et résultats.
@@ -214,6 +228,8 @@ Générer un flux RTP ou utiliser une application de laboratoire. Ajouter :
 
 Observer le tampon, les paquets tardifs et l’adaptation.
 
+<a id="l09-mini-internet-bgp"></a>
+
 ## L09 — Mini-Internet BGP
 
 **Projet à construire.** Choisir un banc et documenter ses versions, commandes et résultats.
@@ -225,6 +241,8 @@ Créer plusieurs AS, politiques, peering et transit. Simuler dans le laboratoire
 - annonce plus spécifique ;
 - filtrage.
 
+<a id="l10-tls-et-identité"></a>
+
 ## L10 — TLS et identité
 
 **Projet à construire.** Choisir un banc et documenter ses versions, commandes et résultats.
@@ -232,6 +250,8 @@ Créer plusieurs AS, politiques, peering et transit. Simuler dans le laboratoire
 Lire une chaîne de certificats, tester un nom incorrect et une horloge fausse dans une VM.
 
 Distinguer identité du serveur et autorisation applicative.
+
+<a id="l11-équilibrage-et-retries"></a>
 
 ## L11 — Équilibrage et retries
 
@@ -246,6 +266,8 @@ Créer une dépendance lente. Faire varier :
 - circuit breaker.
 
 Mesurer le travail utile.
+
+<a id="l12-mise-à-léchelle-automatique-simulée"></a>
 
 ## L12 — Mise à l’échelle automatique simulée
 
@@ -266,6 +288,8 @@ Ajouter :
 
 Tracer la charge, la capacité et la queue. Observer les oscillations.
 
+<a id="l13-multicast"></a>
+
 ## L13 — Multicast
 
 **Projet à construire.** Choisir un banc et documenter ses versions, commandes et résultats.
@@ -278,6 +302,8 @@ Exécuter l’émetteur et plusieurs récepteurs locaux. Perdre des paquets. Con
 - FEC conceptuelle ;
 - contrôle d’accès.
 
+<a id="l14-anycast-de-laboratoire"></a>
+
 ## L14 — Anycast de laboratoire
 
 **Projet à construire.** Choisir un banc et documenter ses versions, commandes et résultats.
@@ -288,6 +314,8 @@ Faire annoncer la même adresse par deux nœuds BGP. Retirer l’un et mesurer :
 - sessions ;
 - chemin ;
 - trou applicatif.
+
+<a id="l15-ddil"></a>
 
 ## L15 — DDIL
 
@@ -301,6 +329,8 @@ Créer une partition de vingt minutes :
 - réconcilier.
 
 Documenter les conflits.
+
+<a id="l16-pace-applicatif"></a>
 
 ## L16 — PACE applicatif
 
@@ -342,6 +372,8 @@ acceptée et effet observé. **Limite :** ce projet demande l’instanciation
 du banc et des commandes adaptées à sa version ; le dessin seul ne valide
 pas un déploiement.
 
+<a id="l18-projet-iaréseau"></a>
+
 ## L18 — Projet IA/réseau
 
 **Projet à construire.** Choisir un banc et documenter ses versions, commandes et résultats.
@@ -353,6 +385,8 @@ Simuler des workers synchrones. Ajouter un retardataire et un incast. Tester :
 - hiérarchie ;
 - taille de groupe ;
 - reprise.
+
+<a id="l19-swap-c-mini-drones-et-relais-mobile"></a>
 
 ## L19 — SWaP-C, mini-drones et relais mobile
 
@@ -402,6 +436,8 @@ neurones. Deux relais produisent les récompenses suivantes :
 Le notebook exécutable se trouve dans
 `machine_learning_labs/notebooks/tp_rl_retour_q_td.ipynb`.
 
+<a id="déroulé"></a>
+
 ### Déroulé
 
 1. calculer les deux retours pour γ = 0,9 ;
@@ -416,6 +452,8 @@ Le notebook exécutable se trouve dans
 V(s) = −0,03, avec des avantages de −1,76 et +1,76.
 Le lecteur doit surtout expliquer pourquoi la récompense immédiate classe mal
 les actions.
+
+<a id="critères-de-réussite"></a>
 
 ### Critères de réussite
 
@@ -456,6 +494,8 @@ uv sync --python 3.12
 uv run jupyter lab notebooks/
 ```
 
+<a id="déroulé-1"></a>
+
 ### Déroulé
 
 1. inspecter les valeurs renvoyées par `reset` et `step` ;
@@ -465,6 +505,8 @@ uv run jupyter lab notebooks/
 5. comparer retour, paquets livrés et paquets perdus ;
 6. transformer une indisponibilité de relais en masque d'action, et non en
    simple pénalité.
+
+<a id="critères-de-réussite-1"></a>
 
 ### Critères de réussite
 
@@ -498,6 +540,8 @@ OLSRv2-like est une référence protocolaire. Ils ne partagent pas les mêmes
 hypothèses ; la comparaison n'a de sens que sur un contrat d'entrée et de
 preuve explicite.
 
+<a id="geler-le-contrat-avant-le-calcul"></a>
+
 ### 1. Geler le contrat avant le calcul
 
 Consigner dans le compte rendu :
@@ -510,6 +554,8 @@ Consigner dans le compte rendu :
 
 Une comparaison est invalide si un contrôleur voit une topologie, une demande
 ou un budget différent.
+
+<a id="construire-le-plan-guidé"></a>
 
 ### 2. Construire le plan guidé
 
@@ -530,6 +576,8 @@ l'étape PPO-GNN. Quand ce modèle n'est pas disponible, travailler sur une pair
 d’instantanés déjà produite et déclarer cette limite ; ne jamais substituer un
 modèle factice à une preuve d'inférence.
 
+<a id="vérifier-les-artefacts"></a>
+
 ### 3. Vérifier les artefacts
 
 L'allocation ILP canonique est attendue sous :
@@ -547,12 +595,16 @@ Conserver aussi les allocations candidate/référence, les résumés de routage,
 les manifests de modèle et les preuves du scénario. Une sortie sans provenance
 de topologie ou sans correspondance décision-réalisation ne vaut pas résultat.
 
+<a id="interpréter-sans-faux-classement-universel"></a>
+
 ### 4. Interpréter sans faux classement universel
 
 Présenter un tableau par scénario et un agrégat sur l'ensemble tenu à l'écart.
 Le minimum est : taux de livraison, latence, pertes, violations de contraintes
 et temps de décision. Toute amélioration doit être rapportée à sa référence et
 à son hypothèse d'information.
+
+<a id="critères-de-réussite-2"></a>
 
 ### Critères de réussite
 
@@ -562,6 +614,8 @@ et temps de décision. Toute amélioration doit être rapportée à sa référen
 - au moins un scénario tenu à l'écart ;
 - conclusion séparant performance, faisabilité et coût de calcul ;
 - aucune phrase « PPO bat l'ILP » fondée sur un scénario unique.
+
+<a id="sources-pédagogiques-et-reproductibilité"></a>
 
 ### Sources pédagogiques et reproductibilité
 
@@ -796,257 +850,6 @@ différences appariées, la règle de sélection et le défi final. Le CSV fourn
 les lignes par graine ; le schéma et `manifest.json` lient les artefacts au code
 qui les a produits.
 
-<a id="choisir-variante-acp-reseaux"></a>
-
-## Choisir une variante de l’ACP pour les réseaux
-
-L’analyse en composantes principales (ACP, ou *principal component analysis*,
-PCA) ne désigne pas une recette unique. La variante la plus pertinente dépend
-de la structure des données et de l’objectif opérationnel :
-
-| Données ou objectif | Variante d’ACP la plus adaptée |
-|---|---|
-| Détecter des pannes, des interférences ou de la congestion | **ACP robuste (RPCA)** |
-| Analyser des séries temporelles de KPI | **ACP dynamique (DPCA)** |
-| Prendre en compte la topologie des cellules ou des sites | **ACP régularisée par graphe** |
-| Traiter des données site × KPI × temps × fréquence | **ACP tensorielle** |
-| Modéliser des relations non linéaires | **ACP à noyau (*kernel PCA*)** |
-| Obtenir des combinaisons de KPI interprétables | **ACP parcimonieuse (*sparse PCA*)** |
-| Traiter des échantillons I/Q ou un CSI complexe | **ACP complexe / transformée de Karhunen–Loève** |
-
-### Pourquoi l’ACP robuste est particulièrement pertinente
-
-En fonctionnement normal, les KPI d’un réseau radio sont fortement corrélés :
-RSRP, RSRQ et SINR ; débit et utilisation des PRB ; BLER et retransmissions ;
-latence et pertes de paquets ; échecs de transfert de connexion et appels interrompus. Le
-comportement nominal est donc approximativement de faible rang, tandis que les
-défauts sont souvent rares et localisés. On peut l’écrire :
-
-> **Modèle faible rang + anomalies parcimonieuses :** $X = L + S + E$.
-
-où $L$ représente le comportement réseau normal et corrélé, $S$ les anomalies
-parcimonieuses — cellule en panne, interférence ou congestion soudaine — et $E$
-le bruit de mesure. La RPCA vise à limiter la déformation du sous-espace nominal
-par des anomalies de grande amplitude. Cette séparation n'est pas garantie par
-la seule rareté des incidents : elle suppose notamment que le faible rang ne
-soit pas lui-même concentré sur quelques coefficients et que les anomalies ne
-se confondent pas avec une composante de faible rang. Un changement de régime
-ou un défaut aligné avec les modes nominaux peut rester ambigu.
-
-### Recommandation pour la supervision au niveau cellule
-
-Une architecture conceptuelle particulièrement adaptée est :
-
-> **Recommandation : ACP robuste, dynamique et régularisée par graphe.**
-
-L’ACP dynamique représente l’évolution temporelle, l’ACP robuste sépare le
-comportement nominal des défauts, et la régularisation par graphe impose une
-cohérence entre cellules voisines ou interférentes. Cette combinaison est une
-orientation de conception, pas un algorithme universel prêt à déployer : ses
-hyperparamètres et ses seuils doivent être validés sur des incidents réellement
-annotés.
-
-Pour le traitement du canal radio ou du CSI, l’ACP complexe appliquée à la
-matrice de covariance du canal est plus naturelle. Ses composantes principales
-correspondent aux modes propres dominants de propagation ou d’espace, ce qui la
-rend utile pour le MIMO, la formation de faisceaux et la compression du canal.
-
-Enfin, il faut standardiser les KPI et, de préférence, ajuster des modèles
-distincts selon les régimes — heure chargée ou nuit, intérieur ou extérieur,
-technologie et bande de fréquences. Sans cette précaution, l’ACP risque surtout
-de redécouvrir le niveau de trafic, plutôt que les véritables défauts.
-
-### SVD : fondement numérique de l’ACP
-
-La décomposition en valeurs singulières (*singular value decomposition*, SVD)
-est particulièrement pertinente en télécommunications radio. Elle constitue
-aussi le fondement numérique naturel de l’ACP. Pour une matrice de KPI centrée
-$X$ contenant $n$ observations :
-
-> **Décomposition SVD :** $X = U\Sigma V^\top$.
-
-Les colonnes de $V$ sont les directions principales, c’est-à-dire les
-combinaisons de KPI définies par l’ACP. La matrice $U\Sigma$ contient les
-observations projetées sur ces directions. La variance expliquée par la
-composante $i$ vaut $\sigma_i^2/(n-1)$ : les valeurs singulières ordonnent donc
-directement les modes dominants.
-
-![Carte de lecture de la SVD : standardisation commune puis branches vers
-l’ACP tronquée, la RPCA et le canal MIMO complexe, avec les normes utilisées
-dans le notebook](assets/ml_svd_rpca_mimo_map.svg){width=98%}
-
-#### Vocabulaire linéaire minimal pour lire le notebook
-
-Soit \(K\in\mathbb{R}^{n\times p}\) la table brute de \(n\) observations et
-\(p\) KPI. Le centrage retranche à chaque colonne sa moyenne. Comme les KPI
-n’ont pas la même unité, le notebook les standardise aussi :
-
-\[
-X_{tj}=\frac{K_{tj}-\bar K_j}{s_j},
-\]
-
-où \(s_j\) est l’écart-type du KPI \(j\). Dans une tâche prédictive, moyenne et
-écart-type doivent être ajustés sur l’entraînement seulement ; ici, le notebook
-réalise une analyse descriptive d’un jeu synthétique unique.
-
-Le **rang** est le nombre de directions linéairement indépendantes portées par
-une matrice. Dans \(X=U\Sigma V^\top\), les colonnes de \(U\) et \(V\) sont
-orthonormales et les valeurs singulières
-\(\sigma_1\geq\sigma_2\geq\cdots\geq0\) occupent la diagonale de \(\Sigma\).
-Garder les \(r\) premières donne la SVD tronquée
-\(X_r=U_r\Sigma_rV_r^\top\), meilleure approximation de rang au plus \(r\)
-pour la norme de Frobenius. Le notebook mesure son erreur relative par
-
-\[
-\frac{\lVert X-X_r\rVert_F}{\lVert X\rVert_F},
-\qquad
-\lVert X\rVert_F=\sqrt{\sum_{t,j}|X_{tj}|^2}.
-\]
-
-La norme spectrale \(\lVert X\rVert_2=\sigma_1\) mesure au contraire la plus
-forte amplification linéaire. Ces deux normes ont donc des rôles distincts
-dans le code : la première contrôle reconstruction et convergence, la seconde
-initialise l’algorithme robuste.
-
-<a id="rpca-code-numerique"></a>
-
-#### Du modèle RPCA au code numérique
-
-La version *Principal Component Pursuit* utilisée dans le notebook part de
-\(X=L+S\) et résout le problème convexe
-
-\[
-\min_{L,S}\;\lVert L\rVert_*+\lambda\lVert S\rVert_1
-\quad\text{sous la contrainte}\quad X=L+S.
-\]
-
-La norme nucléaire \(\lVert L\rVert_*=\sum_i\sigma_i(L)\) encourage un petit
-nombre de modes, donc un faible rang. La norme
-\(\lVert S\rVert_1=\sum_{t,j}|S_{tj}|\) encourage beaucoup de coefficients
-nuls, donc des anomalies parcimonieuses. Le choix usuel repris dans le code est
-\(\lambda=1/\sqrt{\max(n,p)}\). Ici \(E=X-L-S\) est exclusivement le résidu
-numérique de la contrainte d'égalité, pas une estimation du bruit de mesure.
-Le bruit dense injecté dans les KPI doit donc être absorbé par \(L\) ou \(S\).
-Un modèle qui sépare explicitement ce bruit utiliserait, par exemple, une
-contrainte \(\lVert X-L-S\rVert_F\leq\delta\), avec un budget de bruit justifié :
-c'est une formulation de PCP stable distincte de celle exécutée dans ce TP.
-
-Deux opérateurs expliquent les fonctions du notebook. Le seuillage doux agit
-coefficient par coefficient :
-
-\[
-\operatorname{shrink}_\tau(z)=
-\operatorname{sign}(z)\max(|z|-\tau,0).
-\]
-
-Le seuillage des valeurs singulières applique la même contraction au spectre :
-
-\[
-\mathcal D_\tau(M)=U\,\operatorname{diag}
-\bigl(\max(\sigma_i-\tau,0)\bigr)V^\top,
-\quad M=U\Sigma V^\top.
-\]
-
-Avec un multiplicateur \(Y\) et un paramètre de pénalité \(\mu\), l’algorithme
-de Lagrangien augmenté alterne alors :
-
-\[
-L\leftarrow\mathcal D_{1/\mu}(X-S+Y/\mu),
-\qquad
-S\leftarrow\operatorname{shrink}_{\lambda/\mu}(X-L+Y/\mu),
-\]
-
-\[
-E\leftarrow X-L-S,
-\qquad
-Y\leftarrow Y+\mu E.
-\]
-
-Le notebook augmente progressivement \(\mu\) et s’arrête lorsque
-\(\lVert E\rVert_F/\lVert X\rVert_F\) passe sous la tolérance. Il transforme
-ensuite chaque ligne parcimonieuse en score d’anomalie
-\(a_t=\lVert S_{t,:}\rVert_2\). Les étiquettes d’incident servent uniquement à
-calculer le rappel des plus grands scores après l’ajustement ; elles ne sont pas
-utilisées pour construire \(L\) ou \(S\).
-
-Le carnet publie aussi la fraction de coefficients non nuls de \(S\) et le
-taux de fausses alertes de la règle naïve « un coefficient non nul suffit ».
-Sur les données fixées du TP, environ 79 % des coefficients de \(S\) dépassent
-\(10^{-6}\) : son support ne désigne donc pas les seuls incidents. Ce
-contre-exemple rend visible l'absorption du bruit par la composante pénalisée.
-Le rappel est mesuré au rang \(k=24\), nombre d'incidents connu par construction ;
-il décrit un classement, pas un détecteur à seuil calibré. Une évaluation de
-détection demanderait un seuil choisi sur une calibration séparée, puis
-précision, rappel et fausses alertes sur un test indépendant.
-
-#### Canal radio MIMO
-
-Pour un canal MIMO complexe, on applique directement la SVD complexe à la
-matrice de canal $H$ :
-
-> **Décomposition du canal MIMO :** $H = U\Sigma V^{H}$.
-
-Les colonnes de $V$ définissent les directions de précodage à l’émission,
-celles de $U$ les directions de combinaison à la réception, et les valeurs
-diagonales de $\Sigma$ la force de chaque flux spatial. La SVD transforme ainsi
-le canal MIMO, sous les hypothèses du modèle, en sous-canaux spatiaux
-indépendants. Elle est fondamentale pour la formation de faisceaux, le
-multiplexage spatial, l’estimation du rang du canal et le calcul de capacité.
-
-Dans le cas complexe, \(H^H\) est la transposée conjuguée de \(H\). Les matrices
-\(U\) et \(V\) sont unitaires : \(U^HU=I\) et \(V^HV=I\). Le notebook vérifie
-ces deux identités ainsi que la reconstruction
-\(H=(U\Sigma)V^H\) avec une erreur relative de Frobenius proche de zéro.
-
-Pour relier les valeurs singulières à la capacité, il suppose un bruit spatial
-blanc normalisé, une connaissance parfaite du canal, une puissance répartie
-également entre les \(n_t\) antennes d’émission et aucune optimisation par
-*water-filling*. Un rapport signal sur bruit de \(\rho_{dB}\) décibels devient
-\(\rho=10^{\rho_{dB}/10}\). La capacité spectrale synthétique est alors
-
-\[
-C=\sum_i\log_2\!\left(1+\frac{\rho}{n_t}\sigma_i^2\right)
-=\log_2\det\!\left(I_{n_r}+\frac{\rho}{n_t}HH^H\right)
-\quad\text{bit/s/Hz}.
-\]
-
-L’égalité vient de ce que les valeurs propres non nulles de \(HH^H\) sont
-\(\sigma_i^2\). Le calcul `slogdet` du notebook évalue le logarithme du
-déterminant de façon plus stable que `log(det(...))` et vérifie numériquement
-que la somme par modes et la forme matricielle coïncident. Cette formule décrit
-les hypothèses synthétiques du TP ; elle ne constitue pas à elle seule un
-budget de liaison ou une prédiction de capacité terrain.
-
-#### Variantes recommandées
-
-| Données ou objectif | Variante adaptée |
-|---|---|
-| Compresser le CSI et extraire les modes propres MIMO | **SVD complexe tronquée** |
-| Traiter de très grands jeux de données réseau | **SVD aléatoire (*randomized SVD*)** |
-| Mettre à jour un modèle avec une télémétrie continue | **SVD incrémentale** |
-| Détecter des anomalies ou des pannes | **SVD robuste / RPCA** |
-| Traiter des données cellule × KPI × temps × fréquence | **Décomposition tensorielle**, analogue multilinéaire de la SVD |
-
-En pratique, le choix peut se résumer ainsi :
-
-> **MIMO ou CSI : SVD complexe.**
->
-> **KPI réseau : SVD/ACP robuste, ou SVD tronquée incrémentale.**
-
-La troncature doit être dimensionnée sur la variance utile et validée contre
-les événements rares : une compression trop agressive peut justement supprimer
-les signatures faibles que l’on cherche à détecter.
-
-Le [carnet SVD radio reproductible](machine_learning_labs/notebooks/svd_radio.ipynb)
-met ces calculs en pratique avec des KPI synthétiques, une RPCA et un canal MIMO
-complexe. Il adapte le
-[carnet de réduction dimensionnelle original](https://github.com/morard/ML-jpmorard-AE/blob/main/ml1/dim-reduc.ipynb)
-sans présenter les données simulées comme une validation RF.
-
-> **Vocabulaire.** La SVD est une décomposition matricielle ; SVG est un format
-> graphique vectoriel. L’ACP peut servir à aligner ou compresser des formes
-> vectorielles, mais cet usage n’a pas de signification radio particulière.
-
 <a id="laboratoire-rl-garde-support"></a>
 
 ## Laboratoire L27 — Garde de support nominal
@@ -1171,6 +974,8 @@ mesure de performance de la cryptographie actuelle.
 décrire son circuit, ses paramètres, sa précision et le coût complet. Une
 exécution du jouet ne valide pas ce prolongement.
 
+<a id="fiche-de-compte-rendu-commune"></a>
+
 ## Fiche de compte rendu commune
 
 Chaque laboratoire répond aux sept questions :
@@ -1182,5 +987,3 @@ Chaque laboratoire répond aux sept questions :
 5. résultat ;
 6. explication ;
 7. limite et généralisation.
-
----
