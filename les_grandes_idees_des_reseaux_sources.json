@@ -16,13 +16,13 @@
     },
     {
       "path": "assets/innovation_portefeuille_dix_pistes_renouvellement_fr.svg",
-      "bytes": 6432,
-      "sha256": "8ef351d222507cb2242be03b17ecd4a1e7b0a5aa9b101ade5c57cea0130d8806"
+      "bytes": 6428,
+      "sha256": "943980ad67df1e775e3563065220453061d18fff4d5cdc8db59af3a4af92faf4"
     },
     {
       "path": "assets/innovation_risques_marche_produit_technologie_3d_fr.svg",
-      "bytes": 5119,
-      "sha256": "bc5d05de48036776df19895376f615562abb9cc85fbe19270c9391f64e85edff"
+      "bytes": 5099,
+      "sha256": "da38877756c204150b81bc1fdfa247f264dd33e5230be26a85d23e5cc17e5731"
     },
     {
       "path": "assets/ml_svd_rpca_mimo_map.svg",

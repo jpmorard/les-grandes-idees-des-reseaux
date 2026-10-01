@@ -47,7 +47,7 @@
 <text x="573" y="594" font-size="22">Conserver ce qui</text>
 <text x="573" y="625" font-size="22">a été appris</text>
 
-<path d="M680 650 V662 H899 V713 M1080 605 V713 H269 V618" fill="none" stroke="#007d75" stroke-width="4" marker-end="url(#return)"/>
+<path d="M680 650 V662 H1080 M1080 605 V713 H269 V618" fill="none" stroke="#007d75" stroke-width="4" marker-end="url(#return)"/>
 <text x="378" y="692" font-size="22" font-weight="bold" fill="#007d75">Remplacer chaque piste arrêtée ou achevée</text>
 <text x="50" y="762" font-size="22">Croiser les métiers ouvre de nouvelles pistes.</text>
 </g>
