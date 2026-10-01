@@ -1,7 +1,7 @@
 {
   "schema": "reseaux.compagnon-public.v1",
   "book": "Les Grandes Idées des Réseaux — Édition 1.0, révision 1",
-  "canonical_manuscript_sha256": "917c285ffa8eb1edd0c7c4772ebd5c2db50c04fe0664481ef149390cfa9943e9",
+  "canonical_manuscript_sha256": "d3b4ebdc5e8fd1c17169c970a657aa5f1d407405babb2b4c63f0023e8e0f6572",
   "scope": "Supports pédagogiques sélectionnés ; inventaire hors ce manifeste et hors métadonnées Git.",
   "files": [
     {
