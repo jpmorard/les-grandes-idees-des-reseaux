@@ -1,7 +1,7 @@
 {
   "schema": "reseaux.compagnon-public.v1",
   "book": "Les Grandes Idées des Réseaux — Édition 1.0, révision 1",
-  "canonical_manuscript_sha256": "6c70facb4561edacf08270e663b45ef0d9780d4e3f712ca94b8407b4dc30976d",
+  "canonical_manuscript_sha256": "ac9792f01004be703401828617d05bef6e7d93a98565ac99ca82def0e31f5a8e",
   "scope": "Supports pédagogiques sélectionnés ; inventaire hors ce manifeste et hors métadonnées Git.",
   "files": [
     {
@@ -476,8 +476,8 @@
     },
     {
       "path": "parcours_curiosite_raisonnement_reseaux_fr.md",
-      "bytes": 5170,
-      "sha256": "f3cd66b2543ba5c2dba8805b8c5d60d3dc5cfc2882ca85e0e0efcafdfc0f3fb4"
+      "bytes": 8668,
+      "sha256": "f5c6a39e396e7ac798d3172a1bf18ef7d5aaa0f704e1159d9359e4af74f5880a"
     },
     {
       "path": "premiers_pas_reseaux_fr.md",

@@ -76,3 +76,63 @@ La progression se reconnaît à la qualité des questions, à la capacité de
 changer d'explication et au plaisir de transmettre une idée devenue claire.
 Ce mouvement rejoint l'innovation dans le parcours de l'auteur :
 imaginer, éprouver, comprendre, puis ouvrir une nouvelle possibilité.
+
+## L’école à l’ère de l’IA : apprendre à raisonner ensemble {#ecole-ia-raisonner-ensemble}
+
+Une classe est un lieu où l’on apprend à raisonner ensemble. On y partage
+des expériences, on construit des relations, on négocie des contraintes
+et l’on pose des questions qui rendent un problème plus clair. C’est la
+place que je souhaite donner à l’école dans un monde où l’IA devient un
+outil courant.
+
+Le parcours de ce livre propose une séquence simple :
+**expliquer un mécanisme → le modéliser → expérimenter → mesurer →
+décider dans des limites explicites**. À chaque passage, l’élève doit pouvoir
+dire ce qu’il suppose, ce qu’il observe et ce qui justifie sa conclusion.
+
+Trois compétences se travaillent ensemble :
+
+| Compétence | Ce que l’on apprend à faire |
+|:--|:--|
+| **Compétences relationnelles** (*soft skills*) | Expliquer son raisonnement, écouter et discuter une idée sans dévaloriser celui qui la propose |
+| **Pensée systémique** | Relier les mécanismes, les contraintes et les conséquences, y compris pour les autres acteurs |
+| **Résolution de problèmes** | Formuler une question, comparer des possibilités et apprendre d’un résultat inattendu |
+
+L’IA peut aider à retrouver et organiser de l’information, proposer une
+explication ou préparer une expérience. Les connaissances du domaine
+donnent à l’élève les moyens de questionner ces propositions. Comprendre
+un délai, un débit ou une file d’attente permet de repérer une hypothèse
+oubliée et de demander une mesure pertinente. L’effort d’apprentissage
+porte aussi sur la capacité à reconnaître ce que l’on ne sait pas encore.
+
+**Déléguer devient donc un apprentissage.** Avant de confier une tâche
+à une IA, on précise le résultat attendu, les limites à respecter et la
+manière de vérifier la réussite. Après l’exécution, on examine le résultat
+et l’on assume la décision de l’utiliser. Un texte convaincant ou un
+programme qui s’exécute ne suffit pas à montrer que le problème est résolu.
+
+### Une séance pour rendre le raisonnement visible
+
+Prenons une question accessible : faut-il donner la priorité aux messages
+d’alerte sur un réseau partagé ? Par petits groupes, les élèves dessinent
+une file, prédisent les effets d’une priorité, puis comparent deux essais
+avec les mêmes arrivées de messages. Ils mesurent l’attente des alertes
+**et celle des autres messages**. L’IA peut proposer une simulation ;
+le groupe en vérifie les règles avec un exemple calculé à la main.
+
+Un autre groupe relit ensuite le protocole et cherche une situation où
+la conclusion pourrait changer. La discussion porte sur ce que les mesures
+permettent d’affirmer, sur ce qui reste hors de l’expérience et sur le
+prochain essai utile. Un résultat inattendu devient une occasion de
+préciser le modèle.
+
+L’évaluation peut alors considérer la justesse des connaissances mobilisées,
+la qualité de l’expérience, l’explication des limites et la contribution
+au raisonnement collectif. Chacun doit pouvoir défendre une étape de
+la démarche, même lorsque le travail a été partagé avec des camarades
+ou une IA.
+
+J’y vois une base concrète pour former de futurs **architectes et
+orchestrateurs de systèmes d’IA** : des personnes capables de relier
+les besoins, les outils et les preuves. Cette ambition commence par
+la curiosité, l’écoute et le plaisir de comprendre ensemble.
