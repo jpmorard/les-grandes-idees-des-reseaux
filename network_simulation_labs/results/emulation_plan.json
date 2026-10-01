@@ -1,0 +1,57 @@
+{
+  "actions": [
+    {
+      "argv": [
+        "ip",
+        "netns",
+        "add",
+        "simlab-book"
+      ],
+      "id": "namespace"
+    },
+    {
+      "argv": [
+        "ip",
+        "link",
+        "add",
+        "lab0",
+        "type",
+        "veth",
+        "peer",
+        "name",
+        "lab1"
+      ],
+      "id": "veth_pair"
+    },
+    {
+      "argv": [
+        "tc",
+        "qdisc",
+        "replace",
+        "dev",
+        "lab0",
+        "root",
+        "netem",
+        "delay",
+        "25.000ms",
+        "5.000ms",
+        "loss",
+        "1.000%",
+        "duplicate",
+        "0.500%",
+        "reorder",
+        "2.000%",
+        "rate",
+        "10.000mbit"
+      ],
+      "id": "impairment"
+    }
+  ],
+  "execution_allowed": false,
+  "generator_executed_commands": false,
+  "production_ready": false,
+  "requires_separate_authorized_privileged_review": true,
+  "schema_version": "1.0",
+  "synthetic": true,
+  "warning": "Inert teaching plan only; no command was or may be executed by this package."
+}

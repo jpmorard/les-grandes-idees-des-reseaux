@@ -1,0 +1,81 @@
+{
+  "evidence_scope": "synthetic; no interfaces configured; no packets transmitted",
+  "files": [
+    {
+      "path": "__init__.py",
+      "sha256": "15249e84a148abc3f751a34980a3b4ac487d877d4fa06aa78f8a85bc95b0d328",
+      "size_bytes": 166
+    },
+    {
+      "path": "models.py",
+      "sha256": "eec24b1be74eb00a101d2aaa22f4678328eef46618e98015803f3bfde57fdf9f",
+      "size_bytes": 9283
+    },
+    {
+      "path": "run_labs.py",
+      "sha256": "d2cccb86bb0a401a607288a5f3e833d18dd63547e01d73e2573d374c98e0287f",
+      "size_bytes": 7263
+    },
+    {
+      "path": "verify_notebooks.py",
+      "sha256": "1f29a92ee1424b4845f2e171bf4847dc0b73d686e1c7351835ff07900fd2ec6e",
+      "size_bytes": 1689
+    },
+    {
+      "path": "README.md",
+      "sha256": "1aa363326825760c87affce3b3702d1047b9bc83369252e3bfc0435135c0dc10",
+      "size_bytes": 5946
+    },
+    {
+      "path": "inputs/scenarios.json",
+      "sha256": "d87c3aa1375164503e187bfa7f0150eae336f5c8c18db51f460b3e22febbb968",
+      "size_bytes": 988
+    },
+    {
+      "path": "notebooks/tp_bgp_rov.ipynb",
+      "sha256": "362b56d1d711a66a4375b400bd9c827fa5ad0be1854d0f5907c5d6cd12480c97",
+      "size_bytes": 4244
+    },
+    {
+      "path": "notebooks/tp_convergence.ipynb",
+      "sha256": "62f3a5d5f5b1c24898ac9ed1a2dfc8189b1890bfbef691c21a8b7a7a9e5d156a",
+      "size_bytes": 4663
+    },
+    {
+      "path": "notebooks/tp_latence_qos.ipynb",
+      "sha256": "61ab06ceb9d70892bb0adc11f68cae04d84ae63e1484c03d89f08dbe5d328a31",
+      "size_bytes": 5038
+    },
+    {
+      "path": "tests/test_core_labs.py",
+      "sha256": "f490f40bc573d745eab03e97bc0770547275eb183a97be56f7a6ad02b195720b",
+      "size_bytes": 6293
+    },
+    {
+      "path": "results/bgp_rov.json",
+      "sha256": "8c50d7a88b19211efccd9e02d2ba20a4d1db389a3b0cd9be81180fd8c431e096",
+      "size_bytes": 1429
+    },
+    {
+      "path": "results/convergence.json",
+      "sha256": "a85b625a20c670110f36647c7d698ef1ec98723e8ddb252f6cf03a2b9916b5a0",
+      "size_bytes": 3185
+    },
+    {
+      "path": "results/latency_qos.json",
+      "sha256": "84cede3de761f7b19f0449c90c5d190f4abf04e196fc2c2c2715df2c8f5ce89d",
+      "size_bytes": 113342
+    }
+  ],
+  "notebook_environment": {
+    "lock": "machine_learning_labs/uv.lock",
+    "lock_sha256": "148dc382c775542e8d9fe8ac00296b24179703d25c07255a2fdb5033a3f73f63",
+    "project": "machine_learning_labs/pyproject.toml",
+    "project_sha256": "e9ab2392d10dcbde8121011127c57645b584d78b70d65c4830751daee15a5b8b",
+    "root": ".."
+  },
+  "producer": "python3 -m core_network_labs.run_labs",
+  "root": ".",
+  "runtime_contract": "Python >= 3.10; standard library; deterministic integer event times",
+  "schema": "network-book.core-labs.manifest.v1"
+}

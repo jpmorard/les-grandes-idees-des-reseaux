@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:agilab:network-simulation-labs:results:1.0",
+  "title": "Deterministic benchmark result contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "suite",
+    "synthetic",
+    "production_evidence",
+    "seeds",
+    "queue",
+    "packet_impairments",
+    "routing_replay",
+    "calibration",
+    "emulation_plan",
+    "negative_findings"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "suite": {"const": "offline-synthetic-network-simulation"},
+    "synthetic": {"const": true},
+    "production_evidence": {"const": false},
+    "seeds": {"type": "array", "minItems": 3, "items": {"type": "integer", "minimum": 0}},
+    "queue": {"type": "object"},
+    "packet_impairments": {"type": "object"},
+    "routing_replay": {"type": "object"},
+    "calibration": {"type": "object"},
+    "emulation_plan": {"type": "object"},
+    "negative_findings": {"type": "array", "minItems": 1, "items": {"type": "object"}}
+  }
+}

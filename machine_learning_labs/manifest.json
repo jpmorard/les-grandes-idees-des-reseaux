@@ -1,0 +1,249 @@
+{
+  "artifacts": [
+    {
+      "bytes": 7821,
+      "path": "README.md",
+      "role": "documentation",
+      "sha256": "f51c7962ebee1285c448fa0b2382e55c4c89bae29d0f9f706b9b64056f3db78d"
+    },
+    {
+      "bytes": 4300,
+      "path": "SOURCES.md",
+      "role": "documentation",
+      "sha256": "fc4eceffdc3e900831cb12d0bed4760f73ec883f8ccfb3974abedd796343004e"
+    },
+    {
+      "bytes": 80,
+      "path": "__init__.py",
+      "role": "executable_source",
+      "sha256": "853b1a844e64967ba11320e142e1515bc570e78dc6bf1800282e01e8c9fa4a2c"
+    },
+    {
+      "bytes": 1908,
+      "path": "build_environment_lock.py",
+      "role": "environment_lock",
+      "sha256": "3867bee2189e4b6645736a2c7f5055a7121a6e1f95d7b709b42db453d8ff15b3"
+    },
+    {
+      "bytes": 3741,
+      "path": "build_manifest.py",
+      "role": "executable_source",
+      "sha256": "bf333681adebf7a9ad4a486e71948f4bba7e8376485e7dce20221ed0d82d10bd"
+    },
+    {
+      "bytes": 22841,
+      "path": "dqn_relay_lab.py",
+      "role": "executable_source",
+      "sha256": "b9ab5f3b5ec2c730348abb79a76ee2ea47d24385171d935a039b6a84e9c95922"
+    },
+    {
+      "bytes": 592,
+      "path": "environment.lock.json",
+      "role": "environment_lock",
+      "sha256": "bd012c792a71fe9f15f8ed3504cf8cf7092fad787f1bc17215ecbdbca4327257"
+    },
+    {
+      "bytes": 1518,
+      "path": "notebooks/README.md",
+      "role": "executable_notebook",
+      "sha256": "8a24a0963b8f0c0d404931a80d4fd9f9fdada9f1c9c72be6071258165913b682"
+    },
+    {
+      "bytes": 13494,
+      "path": "notebooks/svd_radio.ipynb",
+      "role": "executable_notebook",
+      "sha256": "1a43b3403f499e4011dc39c91daa01d79a3e512c0c28aad8b076401485759ed6"
+    },
+    {
+      "bytes": 6008,
+      "path": "notebooks/tp_ml_classification_rare.ipynb",
+      "role": "executable_notebook",
+      "sha256": "052113892ded82aebc9a7cb37581184cc6a52cf50fb34ef6576388464043572e"
+    },
+    {
+      "bytes": 9477,
+      "path": "notebooks/tp_rl_dqn_relais.ipynb",
+      "role": "executable_notebook",
+      "sha256": "9c986ab13bd33d096fe61e01dc358a10bd4ec56fa691b952f88301c612e7a214"
+    },
+    {
+      "bytes": 6386,
+      "path": "notebooks/tp_rl_retour_q_td.ipynb",
+      "role": "executable_notebook",
+      "sha256": "32e40aae634a0e2dcbf75e873628750cad68b8b1f24d5edc785fe8194e08ffe8"
+    },
+    {
+      "bytes": 474,
+      "path": "pyproject.toml",
+      "role": "project_metadata",
+      "sha256": "e9ab2392d10dcbde8121011127c57645b584d78b70d65c4830751daee15a5b8b"
+    },
+    {
+      "bytes": 7313,
+      "path": "rare_classification_lab.py",
+      "role": "executable_source",
+      "sha256": "12c5bc444b8b99ff9f7b77b390e3a8171fc1abc5dfff731fa96af92c7797c906"
+    },
+    {
+      "bytes": 12567,
+      "path": "results/benchmark_results.json",
+      "role": "benchmark_evidence",
+      "sha256": "bf10cb1a5f670c0d14efb35d16f8c6a88d9bc72290db898a6d37da92e49f6125"
+    },
+    {
+      "bytes": 495,
+      "path": "results/benchmark_summary.csv",
+      "role": "benchmark_evidence",
+      "sha256": "1f375154fe0b4ff733e2ecae82fe4600c083932d61d1b234d127e819d0d880a2"
+    },
+    {
+      "bytes": 55530,
+      "path": "results/constrained_dqn_results.json",
+      "role": "benchmark_evidence",
+      "sha256": "708101c2e7e7d1630d40b9dadd6ff401bc5b2abed4f4e27479865ceebd861dbb"
+    },
+    {
+      "bytes": 1841,
+      "path": "results/constrained_dqn_summary.csv",
+      "role": "benchmark_evidence",
+      "sha256": "576b6c5ecb957cf93fb16f7824c5184ca06adcb8218abeb9b872e41db779bb5e"
+    },
+    {
+      "bytes": 48507,
+      "path": "results/l25_robustness_results.json",
+      "role": "benchmark_evidence",
+      "sha256": "9b028eb8285b52721dbd64f3fda458ae24c72c0d69337b4690de78178758d154"
+    },
+    {
+      "bytes": 4717,
+      "path": "results/l25_robustness_summary.csv",
+      "role": "benchmark_evidence",
+      "sha256": "b8ded571f737d4111b1da2ca573b0fe9524be00b277d204b58e042c2285a3788"
+    },
+    {
+      "bytes": 637231,
+      "path": "results/l26_abstention_results.json",
+      "role": "benchmark_evidence",
+      "sha256": "3a0caca78a5572406cc40af40d506dade23850c9c58a753d1ff61bb8ec687afd"
+    },
+    {
+      "bytes": 104019,
+      "path": "results/l26_abstention_summary.csv",
+      "role": "benchmark_evidence",
+      "sha256": "fbe3b18621505bc8c099c34dfacde39ddc3abab70686081fa0bb72b2f2da7fad"
+    },
+    {
+      "bytes": 553236,
+      "path": "results/l27_support_guard_results.json",
+      "role": "benchmark_evidence",
+      "sha256": "15f498267509cd68b8d884183f7862286fae19707b30e0b95a398a20fb973a2e"
+    },
+    {
+      "bytes": 1601,
+      "path": "results/l27_seed_contract_correction.json",
+      "role": "benchmark_evidence",
+      "sha256": "bd34f3cef5c7f8d00d7f3dc9a47ded929331e2e82f5599f9a15ccf1ceef948f3"
+    },
+    {
+      "bytes": 93232,
+      "path": "results/l27_support_guard_summary.csv",
+      "role": "benchmark_evidence",
+      "sha256": "b95463051e81904c7f8d1c9219ebd35612307c973a5941d8d794632b2f3dee8a"
+    },
+    {
+      "bytes": 4131,
+      "path": "return_td_lab.py",
+      "role": "executable_source",
+      "sha256": "b346ded297ac1949baf01716535217c2ccac582bee0f827a40841d7273161ae5"
+    },
+    {
+      "bytes": 9568,
+      "path": "run_benchmarks.py",
+      "role": "executable_source",
+      "sha256": "2b0402d32d082cc418fc3900f2ce0c27574062d743ae246de9929a35003bea25"
+    },
+    {
+      "bytes": 15664,
+      "path": "run_constrained_dqn_experiment.py",
+      "role": "executable_source",
+      "sha256": "a6359b9090b1117c4b8d6c879cf74ceb34dd744f6f09279142b7e88c53cdc54c"
+    },
+    {
+      "bytes": 16002,
+      "path": "run_l25_robustness_experiment.py",
+      "role": "executable_source",
+      "sha256": "0b080dc3e34d8bc3b6a6a4dd0c14667f77abae71fdeddb8b9d23ba32841f03d1"
+    },
+    {
+      "bytes": 21674,
+      "path": "run_l26_abstention_experiment.py",
+      "role": "executable_source",
+      "sha256": "125b1b8e2098f1cab89ef985a1896d343f2948484282b61df474b10a36ec3d1c"
+    },
+    {
+      "bytes": 28490,
+      "path": "run_l27_support_guard_experiment.py",
+      "role": "executable_source",
+      "sha256": "e892fbe2f92adc82cbbbf9e4dfde780ce6e259dc1bbc1ceaafe61fd71a491bbe"
+    },
+    {
+      "bytes": 1154,
+      "path": "schemas/benchmark_results.schema.json",
+      "role": "machine_readable_schema",
+      "sha256": "e1d51f6015c32781a03d1408efff14598849c917eb8713c1e28ca583da87b307"
+    },
+    {
+      "bytes": 1376,
+      "path": "schemas/constrained_dqn_results.schema.json",
+      "role": "machine_readable_schema",
+      "sha256": "d07f0ae6c9153703e986348b7b0cf02b94ffd49d3592a6abb1ff7e0a62bd01a2"
+    },
+    {
+      "bytes": 1622,
+      "path": "schemas/l25_robustness_results.schema.json",
+      "role": "machine_readable_schema",
+      "sha256": "8f8abd97d88329208ebc63744bd6e844599a7f7e4689fb46d2d05bc9234ee5d6"
+    },
+    {
+      "bytes": 1859,
+      "path": "schemas/l26_abstention_results.schema.json",
+      "role": "machine_readable_schema",
+      "sha256": "307905abe7068d06a73989836a5ab45350d5fdbd61ddb667e479d90725566fe7"
+    },
+    {
+      "bytes": 2182,
+      "path": "schemas/l27_support_guard_results.schema.json",
+      "role": "machine_readable_schema",
+      "sha256": "b1692106dfe14493d34910ad44178f7b72a8fd91cf8c024eb845061fe1724fe8"
+    },
+    {
+      "bytes": 15512,
+      "path": "tests/test_rl_labs.py",
+      "role": "executable_source",
+      "sha256": "01146c1f24d8f188cf5c0e655fb2f9d85fa00b7e0d35a5ddfece871b79b54b5d"
+    },
+    {
+      "bytes": 339682,
+      "path": "uv.lock",
+      "role": "environment_lock",
+      "sha256": "148dc382c775542e8d9fe8ac00296b24179703d25c07255a2fdb5033a3f73f63"
+    },
+    {
+      "bytes": 10931,
+      "path": "verify.py",
+      "role": "executable_source",
+      "sha256": "6668e86c82189cdd86a800d32d68f2ec30d32301303651078718d748a95c2284"
+    },
+    {
+      "bytes": 5149,
+      "path": "verify_notebooks.py",
+      "role": "executable_source",
+      "sha256": "06a6c16d489b48f836cfe40eb90beff014989b0f97c9fed80f95be4e56018df2"
+    }
+  ],
+  "hash_algorithm": "sha256",
+  "package_id": "network-book-machine-learning-labs-v1",
+  "schema_version": "1.0.0",
+  "self_hash": null,
+  "self_hash_note": "The manifest excludes itself to avoid recursion."
+}

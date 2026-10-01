@@ -1,0 +1,478 @@
+{
+  "schema": "reseaux.compagnon-public.v1",
+  "book": "Les Grandes Idées des Réseaux — Édition 1.0, révision 1",
+  "canonical_manuscript_sha256": "8c52ee23111ca9dccc2d65abef644ba32fa4b197828e5a800324f9d68674ab93",
+  "scope": "Supports pédagogiques sélectionnés ; inventaire hors ce manifeste et hors métadonnées Git.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 75,
+      "sha256": "abf5df1da80ea06fbf52ce440900ffcbcc07822142a0221446228b1079f17688"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4568,
+      "sha256": "197b90cb423aa4cad0247d67dd3701887e43502080af4d8fb5e5037a3d3dbba4"
+    },
+    {
+      "path": "assets/ml_svd_rpca_mimo_map.svg",
+      "bytes": 8902,
+      "sha256": "d4b90d9de7372267e73a58425be6956a87233ba15124bbd635abc3d58c8df60e"
+    },
+    {
+      "path": "chiffrement_homomorphe_labs/README.md",
+      "bytes": 2486,
+      "sha256": "3ceb92906777da2f1f30e6da4780e3f060e7ec771e1528898653aa42c6cfb2ea"
+    },
+    {
+      "path": "chiffrement_homomorphe_labs/__init__.py",
+      "bytes": 80,
+      "sha256": "b3fb6422eef3d380cc298610f0edc448e26a85116f2a2c443550fbce51156d96"
+    },
+    {
+      "path": "chiffrement_homomorphe_labs/chiffrement_homomorphe_paillier_validation_fr.json",
+      "bytes": 839,
+      "sha256": "b8a9225cff97b521d2770cb377c721464d840f9eccffee889f05d8b1855a4189"
+    },
+    {
+      "path": "chiffrement_homomorphe_labs/test_paillier_agregation.py",
+      "bytes": 2231,
+      "sha256": "f09a495c01e77b54fa454129384985cb74b97b0592e050f515af72c640059414"
+    },
+    {
+      "path": "chiffrement_homomorphe_labs/tp_paillier_agregation_fr.py",
+      "bytes": 4801,
+      "sha256": "d5c5384654664debb9a2edd0c1c7b8e340d8c8582dbb74b16354136e9da377b6"
+    },
+    {
+      "path": "chiffrement_homomorphe_reseaux_sources_fr.md",
+      "bytes": 2543,
+      "sha256": "ab47d6fd4831c7d4b904b0bc1e29ad8ed4b5a435e8a54214aa659d4769797a3b"
+    },
+    {
+      "path": "core_network_labs/README.md",
+      "bytes": 5946,
+      "sha256": "1aa363326825760c87affce3b3702d1047b9bc83369252e3bfc0435135c0dc10"
+    },
+    {
+      "path": "core_network_labs/__init__.py",
+      "bytes": 166,
+      "sha256": "15249e84a148abc3f751a34980a3b4ac487d877d4fa06aa78f8a85bc95b0d328"
+    },
+    {
+      "path": "core_network_labs/inputs/scenarios.json",
+      "bytes": 988,
+      "sha256": "d87c3aa1375164503e187bfa7f0150eae336f5c8c18db51f460b3e22febbb968"
+    },
+    {
+      "path": "core_network_labs/manifest.json",
+      "bytes": 2720,
+      "sha256": "11de0bc48e28a216f405e2b3f8872f0fe3fe55823b7df0f30c29f3c3a9717ed0"
+    },
+    {
+      "path": "core_network_labs/models.py",
+      "bytes": 9283,
+      "sha256": "eec24b1be74eb00a101d2aaa22f4678328eef46618e98015803f3bfde57fdf9f"
+    },
+    {
+      "path": "core_network_labs/notebooks/tp_bgp_rov.ipynb",
+      "bytes": 4244,
+      "sha256": "362b56d1d711a66a4375b400bd9c827fa5ad0be1854d0f5907c5d6cd12480c97"
+    },
+    {
+      "path": "core_network_labs/notebooks/tp_convergence.ipynb",
+      "bytes": 4663,
+      "sha256": "62f3a5d5f5b1c24898ac9ed1a2dfc8189b1890bfbef691c21a8b7a7a9e5d156a"
+    },
+    {
+      "path": "core_network_labs/notebooks/tp_latence_qos.ipynb",
+      "bytes": 5038,
+      "sha256": "61ab06ceb9d70892bb0adc11f68cae04d84ae63e1484c03d89f08dbe5d328a31"
+    },
+    {
+      "path": "core_network_labs/results/bgp_rov.json",
+      "bytes": 1429,
+      "sha256": "8c50d7a88b19211efccd9e02d2ba20a4d1db389a3b0cd9be81180fd8c431e096"
+    },
+    {
+      "path": "core_network_labs/results/convergence.json",
+      "bytes": 3185,
+      "sha256": "a85b625a20c670110f36647c7d698ef1ec98723e8ddb252f6cf03a2b9916b5a0"
+    },
+    {
+      "path": "core_network_labs/results/latency_qos.json",
+      "bytes": 113342,
+      "sha256": "84cede3de761f7b19f0449c90c5d190f4abf04e196fc2c2c2715df2c8f5ce89d"
+    },
+    {
+      "path": "core_network_labs/run_labs.py",
+      "bytes": 7263,
+      "sha256": "d2cccb86bb0a401a607288a5f3e833d18dd63547e01d73e2573d374c98e0287f"
+    },
+    {
+      "path": "core_network_labs/tests/test_core_labs.py",
+      "bytes": 6293,
+      "sha256": "f490f40bc573d745eab03e97bc0770547275eb183a97be56f7a6ad02b195720b"
+    },
+    {
+      "path": "core_network_labs/verify_notebooks.py",
+      "bytes": 1689,
+      "sha256": "1f29a92ee1424b4845f2e171bf4847dc0b73d686e1c7351835ff07900fd2ec6e"
+    },
+    {
+      "path": "machine_learning_labs/README.md",
+      "bytes": 7821,
+      "sha256": "f51c7962ebee1285c448fa0b2382e55c4c89bae29d0f9f706b9b64056f3db78d"
+    },
+    {
+      "path": "machine_learning_labs/SOURCES.md",
+      "bytes": 4300,
+      "sha256": "fc4eceffdc3e900831cb12d0bed4760f73ec883f8ccfb3974abedd796343004e"
+    },
+    {
+      "path": "machine_learning_labs/__init__.py",
+      "bytes": 80,
+      "sha256": "853b1a844e64967ba11320e142e1515bc570e78dc6bf1800282e01e8c9fa4a2c"
+    },
+    {
+      "path": "machine_learning_labs/build_environment_lock.py",
+      "bytes": 1908,
+      "sha256": "3867bee2189e4b6645736a2c7f5055a7121a6e1f95d7b709b42db453d8ff15b3"
+    },
+    {
+      "path": "machine_learning_labs/build_manifest.py",
+      "bytes": 3741,
+      "sha256": "bf333681adebf7a9ad4a486e71948f4bba7e8376485e7dce20221ed0d82d10bd"
+    },
+    {
+      "path": "machine_learning_labs/dqn_relay_lab.py",
+      "bytes": 22841,
+      "sha256": "b9ab5f3b5ec2c730348abb79a76ee2ea47d24385171d935a039b6a84e9c95922"
+    },
+    {
+      "path": "machine_learning_labs/environment.lock.json",
+      "bytes": 592,
+      "sha256": "bd012c792a71fe9f15f8ed3504cf8cf7092fad787f1bc17215ecbdbca4327257"
+    },
+    {
+      "path": "machine_learning_labs/manifest.json",
+      "bytes": 8200,
+      "sha256": "a4f5cebc8ae41a313ef25f7b2167837424c9d53a4d94cf291a93fa12d5c4e668"
+    },
+    {
+      "path": "machine_learning_labs/notebooks/README.md",
+      "bytes": 1518,
+      "sha256": "8a24a0963b8f0c0d404931a80d4fd9f9fdada9f1c9c72be6071258165913b682"
+    },
+    {
+      "path": "machine_learning_labs/notebooks/svd_radio.ipynb",
+      "bytes": 13494,
+      "sha256": "1a43b3403f499e4011dc39c91daa01d79a3e512c0c28aad8b076401485759ed6"
+    },
+    {
+      "path": "machine_learning_labs/notebooks/tp_ml_classification_rare.ipynb",
+      "bytes": 6008,
+      "sha256": "052113892ded82aebc9a7cb37581184cc6a52cf50fb34ef6576388464043572e"
+    },
+    {
+      "path": "machine_learning_labs/notebooks/tp_rl_dqn_relais.ipynb",
+      "bytes": 9477,
+      "sha256": "9c986ab13bd33d096fe61e01dc358a10bd4ec56fa691b952f88301c612e7a214"
+    },
+    {
+      "path": "machine_learning_labs/notebooks/tp_rl_retour_q_td.ipynb",
+      "bytes": 6386,
+      "sha256": "32e40aae634a0e2dcbf75e873628750cad68b8b1f24d5edc785fe8194e08ffe8"
+    },
+    {
+      "path": "machine_learning_labs/pyproject.toml",
+      "bytes": 474,
+      "sha256": "e9ab2392d10dcbde8121011127c57645b584d78b70d65c4830751daee15a5b8b"
+    },
+    {
+      "path": "machine_learning_labs/rare_classification_lab.py",
+      "bytes": 7313,
+      "sha256": "12c5bc444b8b99ff9f7b77b390e3a8171fc1abc5dfff731fa96af92c7797c906"
+    },
+    {
+      "path": "machine_learning_labs/results/benchmark_results.json",
+      "bytes": 12567,
+      "sha256": "bf10cb1a5f670c0d14efb35d16f8c6a88d9bc72290db898a6d37da92e49f6125"
+    },
+    {
+      "path": "machine_learning_labs/results/benchmark_summary.csv",
+      "bytes": 495,
+      "sha256": "1f375154fe0b4ff733e2ecae82fe4600c083932d61d1b234d127e819d0d880a2"
+    },
+    {
+      "path": "machine_learning_labs/results/constrained_dqn_results.json",
+      "bytes": 55530,
+      "sha256": "708101c2e7e7d1630d40b9dadd6ff401bc5b2abed4f4e27479865ceebd861dbb"
+    },
+    {
+      "path": "machine_learning_labs/results/constrained_dqn_summary.csv",
+      "bytes": 1841,
+      "sha256": "576b6c5ecb957cf93fb16f7824c5184ca06adcb8218abeb9b872e41db779bb5e"
+    },
+    {
+      "path": "machine_learning_labs/results/l25_robustness_results.json",
+      "bytes": 48507,
+      "sha256": "9b028eb8285b52721dbd64f3fda458ae24c72c0d69337b4690de78178758d154"
+    },
+    {
+      "path": "machine_learning_labs/results/l25_robustness_summary.csv",
+      "bytes": 4717,
+      "sha256": "b8ded571f737d4111b1da2ca573b0fe9524be00b277d204b58e042c2285a3788"
+    },
+    {
+      "path": "machine_learning_labs/results/l26_abstention_results.json",
+      "bytes": 637231,
+      "sha256": "3a0caca78a5572406cc40af40d506dade23850c9c58a753d1ff61bb8ec687afd"
+    },
+    {
+      "path": "machine_learning_labs/results/l26_abstention_summary.csv",
+      "bytes": 104019,
+      "sha256": "fbe3b18621505bc8c099c34dfacde39ddc3abab70686081fa0bb72b2f2da7fad"
+    },
+    {
+      "path": "machine_learning_labs/results/l27_seed_contract_correction.json",
+      "bytes": 1601,
+      "sha256": "bd34f3cef5c7f8d00d7f3dc9a47ded929331e2e82f5599f9a15ccf1ceef948f3"
+    },
+    {
+      "path": "machine_learning_labs/results/l27_support_guard_results.json",
+      "bytes": 553236,
+      "sha256": "15f498267509cd68b8d884183f7862286fae19707b30e0b95a398a20fb973a2e"
+    },
+    {
+      "path": "machine_learning_labs/results/l27_support_guard_summary.csv",
+      "bytes": 93232,
+      "sha256": "b95463051e81904c7f8d1c9219ebd35612307c973a5941d8d794632b2f3dee8a"
+    },
+    {
+      "path": "machine_learning_labs/return_td_lab.py",
+      "bytes": 4131,
+      "sha256": "b346ded297ac1949baf01716535217c2ccac582bee0f827a40841d7273161ae5"
+    },
+    {
+      "path": "machine_learning_labs/run_benchmarks.py",
+      "bytes": 9568,
+      "sha256": "2b0402d32d082cc418fc3900f2ce0c27574062d743ae246de9929a35003bea25"
+    },
+    {
+      "path": "machine_learning_labs/run_constrained_dqn_experiment.py",
+      "bytes": 15664,
+      "sha256": "a6359b9090b1117c4b8d6c879cf74ceb34dd744f6f09279142b7e88c53cdc54c"
+    },
+    {
+      "path": "machine_learning_labs/run_l25_robustness_experiment.py",
+      "bytes": 16002,
+      "sha256": "0b080dc3e34d8bc3b6a6a4dd0c14667f77abae71fdeddb8b9d23ba32841f03d1"
+    },
+    {
+      "path": "machine_learning_labs/run_l26_abstention_experiment.py",
+      "bytes": 21674,
+      "sha256": "125b1b8e2098f1cab89ef985a1896d343f2948484282b61df474b10a36ec3d1c"
+    },
+    {
+      "path": "machine_learning_labs/run_l27_support_guard_experiment.py",
+      "bytes": 28490,
+      "sha256": "e892fbe2f92adc82cbbbf9e4dfde780ce6e259dc1bbc1ceaafe61fd71a491bbe"
+    },
+    {
+      "path": "machine_learning_labs/schemas/benchmark_results.schema.json",
+      "bytes": 1154,
+      "sha256": "e1d51f6015c32781a03d1408efff14598849c917eb8713c1e28ca583da87b307"
+    },
+    {
+      "path": "machine_learning_labs/schemas/constrained_dqn_results.schema.json",
+      "bytes": 1376,
+      "sha256": "d07f0ae6c9153703e986348b7b0cf02b94ffd49d3592a6abb1ff7e0a62bd01a2"
+    },
+    {
+      "path": "machine_learning_labs/schemas/l25_robustness_results.schema.json",
+      "bytes": 1622,
+      "sha256": "8f8abd97d88329208ebc63744bd6e844599a7f7e4689fb46d2d05bc9234ee5d6"
+    },
+    {
+      "path": "machine_learning_labs/schemas/l26_abstention_results.schema.json",
+      "bytes": 1859,
+      "sha256": "307905abe7068d06a73989836a5ab45350d5fdbd61ddb667e479d90725566fe7"
+    },
+    {
+      "path": "machine_learning_labs/schemas/l27_support_guard_results.schema.json",
+      "bytes": 2182,
+      "sha256": "b1692106dfe14493d34910ad44178f7b72a8fd91cf8c024eb845061fe1724fe8"
+    },
+    {
+      "path": "machine_learning_labs/tests/test_rl_labs.py",
+      "bytes": 15512,
+      "sha256": "01146c1f24d8f188cf5c0e655fb2f9d85fa00b7e0d35a5ddfece871b79b54b5d"
+    },
+    {
+      "path": "machine_learning_labs/uv.lock",
+      "bytes": 339682,
+      "sha256": "148dc382c775542e8d9fe8ac00296b24179703d25c07255a2fdb5033a3f73f63"
+    },
+    {
+      "path": "machine_learning_labs/verify.py",
+      "bytes": 10931,
+      "sha256": "6668e86c82189cdd86a800d32d68f2ec30d32301303651078718d748a95c2284"
+    },
+    {
+      "path": "machine_learning_labs/verify_notebooks.py",
+      "bytes": 5149,
+      "sha256": "06a6c16d489b48f836cfe40eb90beff014989b0f97c9fed80f95be4e56018df2"
+    },
+    {
+      "path": "network_simulation_labs/README.md",
+      "bytes": 12678,
+      "sha256": "687169ad96d4fcf51159eb09f18091ae31069c8d3c547b4dbedab0ff0e385472"
+    },
+    {
+      "path": "network_simulation_labs/__init__.py",
+      "bytes": 125,
+      "sha256": "55691659860781166dc545ea27b1b04f87f1936c4685237cb797eb1db10a8f8c"
+    },
+    {
+      "path": "network_simulation_labs/contracts.py",
+      "bytes": 13231,
+      "sha256": "193f179048461a0ead4a7b00321154d21ec71c53f4e389ad3eac4214cd734ac0"
+    },
+    {
+      "path": "network_simulation_labs/datasets/calibration_trace.json",
+      "bytes": 1197,
+      "sha256": "0d9e26ef8484698253547f0d9648582983fc3650a19102233da7b00956a10e41"
+    },
+    {
+      "path": "network_simulation_labs/datasets/emulation_request.json",
+      "bytes": 501,
+      "sha256": "f86a9225dd37f794db9fb2768f79aeada9bce8051e308e6661b8beaf79156427"
+    },
+    {
+      "path": "network_simulation_labs/datasets/routing_replay.json",
+      "bytes": 1410,
+      "sha256": "d0e28bdcb80f84e43e22e95f3ffb197fcc7961636de81f34134f307d0fa38de6"
+    },
+    {
+      "path": "network_simulation_labs/datasets/scenario.json",
+      "bytes": 706,
+      "sha256": "c384b4a87071fc32fcceeffe40c26fbe2221f68ba5f1d844d0497c5cc66cd182"
+    },
+    {
+      "path": "network_simulation_labs/manifest.json",
+      "bytes": 4511,
+      "sha256": "b035aa405ada0ae8600bb07d08dd0d39d4059d3c581ca832cfdbdd8722b75836"
+    },
+    {
+      "path": "network_simulation_labs/notebook_contracts.py",
+      "bytes": 12431,
+      "sha256": "4b3558969d62f3258cc3859afa0049561cd6f49430fc17150d28dd9b87b5d2e2"
+    },
+    {
+      "path": "network_simulation_labs/notebooks/mini_fanet_reroutage.ipynb",
+      "bytes": 26339,
+      "sha256": "080fabe4272568d1a1ab5ea2cb105e598302dddb1b98fda3497c8728eb5cac2f"
+    },
+    {
+      "path": "network_simulation_labs/notebooks/tp_capture_replay.ipynb",
+      "bytes": 27892,
+      "sha256": "1c2b6ff915eadaef8257d21d91427b3ef706277e50c2ec7245b9b1ac38b8a1c8"
+    },
+    {
+      "path": "network_simulation_labs/notebooks/tp_detective_reseau.ipynb",
+      "bytes": 21688,
+      "sha256": "c0c13c7ecff81b1bc2092d171464098ebed4366f20b749c082c8671cc59d6fe1"
+    },
+    {
+      "path": "network_simulation_labs/notebooks/tp_dhcp_bail.ipynb",
+      "bytes": 33582,
+      "sha256": "74ffa3d36a62c3f2e9c78c88c48095533435f452c867622092b19de503a59551"
+    },
+    {
+      "path": "network_simulation_labs/notebooks/tp_discovery_reseau.ipynb",
+      "bytes": 18579,
+      "sha256": "fd2bb575640112211517cb2a77cf4cdc66ca243be45cb580eb8b86ead6e6dba6"
+    },
+    {
+      "path": "network_simulation_labs/notebooks/tp_dns_resolution.ipynb",
+      "bytes": 19284,
+      "sha256": "962da8b1af2ac327229cbd29742cd8836ae9580aca971f50516ee1063723cc19"
+    },
+    {
+      "path": "network_simulation_labs/notebooks/tp_modulation_symboles.ipynb",
+      "bytes": 31884,
+      "sha256": "966534034bd6409b27c3a562750655a5ae9a6bcd597301d36c07207f2c018c0a"
+    },
+    {
+      "path": "network_simulation_labs/notebooks/tp_sous_reseau_passerelle.ipynb",
+      "bytes": 27819,
+      "sha256": "939e8c578c47598b63dc47e6a5a35ca85c23687dbacbf8ef8c0a569ae140abd8"
+    },
+    {
+      "path": "network_simulation_labs/notebooks/tp_voix_flowsynth.ipynb",
+      "bytes": 26724,
+      "sha256": "828f40108348262d42006e870b08928b920813e7e2503bc1a11cd7d8be1e91cc"
+    },
+    {
+      "path": "network_simulation_labs/results/benchmark_results.json",
+      "bytes": 10901,
+      "sha256": "53644a36af1a39a6437ed19790a9255b751a64552d1da90dea833ee45e7dddf0"
+    },
+    {
+      "path": "network_simulation_labs/results/emulation_plan.json",
+      "bytes": 1032,
+      "sha256": "e20855af4dcb6444e8e1396224f986bc412be4d3b278c097e3a2f3cd203540be"
+    },
+    {
+      "path": "network_simulation_labs/run_labs.py",
+      "bytes": 6324,
+      "sha256": "49516e15a7170560e1a5cfda6c78a24c00144bd0fbad11fe379185a4ef5d7c87"
+    },
+    {
+      "path": "network_simulation_labs/schemas/datasets.schema.json",
+      "bytes": 854,
+      "sha256": "400f93a108fe8e0181771039fb0ae816d6344713b967213b76449ad73efcca9a"
+    },
+    {
+      "path": "network_simulation_labs/schemas/emulation_plan.schema.json",
+      "bytes": 1189,
+      "sha256": "3ce0c09d6f5cb9bd992d35d10988fdf43fa4f6c8a6386292e9577b6811f6b105"
+    },
+    {
+      "path": "network_simulation_labs/schemas/results.schema.json",
+      "bytes": 1055,
+      "sha256": "3d09df5ce59f7f11ae677fde01ae7e65cc6dcd4fd6a1d244c50f7c929befe4ea"
+    },
+    {
+      "path": "network_simulation_labs/simulator.py",
+      "bytes": 14318,
+      "sha256": "2c42a4b611561ed78a10d6a15e14bff80903d0d1af57ed73306727dc369271fc"
+    },
+    {
+      "path": "network_simulation_labs/tests/__init__.py",
+      "bytes": 66,
+      "sha256": "8b0052397d2639ca566747cfee4041fa184d8c1d9179e74a30e50b1e1261f20a"
+    },
+    {
+      "path": "network_simulation_labs/tests/test_labs.py",
+      "bytes": 5115,
+      "sha256": "9179adc13222e086de4450071af194eb0b68d4614dbd11c2db568e8bedd4edd3"
+    },
+    {
+      "path": "network_simulation_labs/verify.py",
+      "bytes": 6839,
+      "sha256": "4759b0560d93a11c7634312c52f8f98f88d3792c54c7b2b65475378d05751a7b"
+    },
+    {
+      "path": "parcours_curiosite_raisonnement_reseaux_fr.md",
+      "bytes": 5170,
+      "sha256": "f3cd66b2543ba5c2dba8805b8c5d60d3dc5cfc2882ca85e0e0efcafdfc0f3fb4"
+    },
+    {
+      "path": "travaux_pratiques_reseaux_fr.md",
+      "bytes": 46032,
+      "sha256": "3562a86e709818ef4133c0cf053ea7c65ee8b27718a6a04d2fd30048e38d524e"
+    }
+  ]
+}

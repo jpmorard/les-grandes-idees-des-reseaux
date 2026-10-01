@@ -1,0 +1,30 @@
+{
+  "schema": "network-book.evidence-metadata-correction.v1",
+  "correction_id": "2026-09-06-l27-episode-seed-roles",
+  "correction_kind": "metadata_only_no_retraining",
+  "original_artifact": {
+    "path": "results/l27_support_guard_results.json",
+    "git_revision": "965ee4aa31324224b6217984a37b07ea4c33d84e",
+    "sha256": "8ec93ef52f6a7b4778eee3b70d8461ada94ada2a4cd230453f330f70094f1ecd"
+  },
+  "changed_fields": [
+    "seed_role_contract",
+    "success_criteria.monitor_seeds_disjoint_from_training_and_evaluation",
+    "success_criteria.seed_roles_checked_against_training_episode_seeds"
+  ],
+  "reason": "The prior gate compared monitor seeds only with model RNG seeds. Training uses model_seed + episode_index: all 40 reference seeds overlap training initial conditions. Reference reuse is declared and permitted; calibration and evaluation remain disjoint from actual training episode seeds.",
+  "unchanged_evidence": {
+    "fields": [
+      "acceptance_contract",
+      "declared_scenario_results",
+      "deployment_outcome",
+      "final_challenge",
+      "frozen_model_panel"
+    ],
+    "canonicalization": "json.dumps(selected_fields, sort_keys=True, separators=(',', ':')).encode('utf-8')",
+    "sha256": "9a960ca585c0e4f2dd815124ca43e174c26be80c642530cae01444d177b7919e"
+  },
+  "verification_command": "uv run --locked pytest -q tests/test_rl_labs.py -k l27",
+  "verification_working_directory": "machine_learning_labs",
+  "scope": "Corrects an independence assertion; does not add performance observations, repeat training, or change the retained negative deployment conclusion."
+}

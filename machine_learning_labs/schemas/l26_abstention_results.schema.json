@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "l26_abstention_results.schema.json",
+  "title": "Network book L26 disagreement-gated DQN retained evidence",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "experiment_id",
+    "question",
+    "evidence_scope",
+    "frozen_model_panel",
+    "evaluation_seeds",
+    "agreement_thresholds",
+    "acceptance_contract",
+    "declared_scenario_results",
+    "selection",
+    "final_challenge",
+    "deployment_outcome",
+    "success_criteria"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "experiment_id": {"const": "network-book-l26-disagreement-abstention-v1"},
+    "evaluation_seeds": {
+      "type": "array",
+      "minItems": 40,
+      "maxItems": 40,
+      "uniqueItems": true,
+      "items": {"type": "integer"}
+    },
+    "agreement_thresholds": {
+      "type": "array",
+      "minItems": 2,
+      "uniqueItems": true,
+      "items": {"type": "number", "exclusiveMinimum": 0.5, "maximum": 1.0}
+    },
+    "declared_scenario_results": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5
+    },
+    "selection": {
+      "type": "object",
+      "required": [
+        "performed_before_final_challenge",
+        "ranking_rule",
+        "threshold_reports",
+        "selected_minimum_majority_vote_share",
+        "selected_candidate_passes_declared_gate"
+      ]
+    },
+    "final_challenge": {
+      "type": "object",
+      "required": [
+        "sealed_scenario_sha256",
+        "open_count",
+        "used_for_threshold_selection",
+        "result"
+      ],
+      "properties": {
+        "open_count": {"const": 1},
+        "used_for_threshold_selection": {"const": false}
+      }
+    },
+    "success_criteria": {
+      "type": "object",
+      "additionalProperties": {"type": "boolean"}
+    }
+  },
+  "additionalProperties": true
+}

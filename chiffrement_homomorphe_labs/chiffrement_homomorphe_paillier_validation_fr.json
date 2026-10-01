@@ -1,0 +1,38 @@
+{
+  "schema": "reseaux.tp-paillier.v1",
+  "securite": "AUCUNE : petits facteurs publics et aléas fixes ; démonstration arithmétique seulement",
+  "famille": "partiellement homomorphe additif, pas FHE",
+  "parametres_publics": {
+    "n": 323,
+    "g": 324,
+    "n_carre": 104329
+  },
+  "mesures_synthetiques": [
+    12,
+    18,
+    30
+  ],
+  "chiffres": [
+    78803,
+    97369,
+    99507
+  ],
+  "chiffre_agrege": 54727,
+  "somme_dechiffree": 60,
+  "moyenne_apres_dechiffrement": 20.0,
+  "somme_ponderee_2x12_plus_18": 42,
+  "meme_message_autre_alea": {
+    "chiffre": 44509,
+    "dechiffre": 12
+  },
+  "depassement_modulaire": {
+    "somme_entiere": 400,
+    "modulo": 323,
+    "dechiffre": 77
+  },
+  "limites": [
+    "aucune preuve d'intégrité",
+    "aucune confidentialité du résultat publié",
+    "aucun coût FHE mesuré"
+  ]
+}

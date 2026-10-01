@@ -1,0 +1,4251 @@
+{
+  "cases": {
+    "fifo_large": {
+      "delivered": [
+        {
+          "arrival_us": 0,
+          "finish_us": 12000,
+          "flow": "bulk",
+          "packet_id": "bulk-0000",
+          "size_bytes": 1500,
+          "sojourn_us": 12000,
+          "start_us": 0,
+          "waiting_us": 0
+        },
+        {
+          "arrival_us": 0,
+          "finish_us": 13600,
+          "flow": "voice",
+          "packet_id": "voice-0000",
+          "size_bytes": 200,
+          "sojourn_us": 13600,
+          "start_us": 12000,
+          "waiting_us": 12000
+        },
+        {
+          "arrival_us": 10000,
+          "finish_us": 25600,
+          "flow": "bulk",
+          "packet_id": "bulk-0001",
+          "size_bytes": 1500,
+          "sojourn_us": 15600,
+          "start_us": 13600,
+          "waiting_us": 3600
+        },
+        {
+          "arrival_us": 20000,
+          "finish_us": 37600,
+          "flow": "bulk",
+          "packet_id": "bulk-0002",
+          "size_bytes": 1500,
+          "sojourn_us": 17600,
+          "start_us": 25600,
+          "waiting_us": 5600
+        },
+        {
+          "arrival_us": 20000,
+          "finish_us": 39200,
+          "flow": "voice",
+          "packet_id": "voice-0001",
+          "size_bytes": 200,
+          "sojourn_us": 19200,
+          "start_us": 37600,
+          "waiting_us": 17600
+        },
+        {
+          "arrival_us": 30000,
+          "finish_us": 51200,
+          "flow": "bulk",
+          "packet_id": "bulk-0003",
+          "size_bytes": 1500,
+          "sojourn_us": 21200,
+          "start_us": 39200,
+          "waiting_us": 9200
+        },
+        {
+          "arrival_us": 40000,
+          "finish_us": 63200,
+          "flow": "bulk",
+          "packet_id": "bulk-0004",
+          "size_bytes": 1500,
+          "sojourn_us": 23200,
+          "start_us": 51200,
+          "waiting_us": 11200
+        },
+        {
+          "arrival_us": 40000,
+          "finish_us": 64800,
+          "flow": "voice",
+          "packet_id": "voice-0002",
+          "size_bytes": 200,
+          "sojourn_us": 24800,
+          "start_us": 63200,
+          "waiting_us": 23200
+        },
+        {
+          "arrival_us": 50000,
+          "finish_us": 76800,
+          "flow": "bulk",
+          "packet_id": "bulk-0005",
+          "size_bytes": 1500,
+          "sojourn_us": 26800,
+          "start_us": 64800,
+          "waiting_us": 14800
+        },
+        {
+          "arrival_us": 60000,
+          "finish_us": 88800,
+          "flow": "bulk",
+          "packet_id": "bulk-0006",
+          "size_bytes": 1500,
+          "sojourn_us": 28800,
+          "start_us": 76800,
+          "waiting_us": 16800
+        },
+        {
+          "arrival_us": 60000,
+          "finish_us": 90400,
+          "flow": "voice",
+          "packet_id": "voice-0003",
+          "size_bytes": 200,
+          "sojourn_us": 30400,
+          "start_us": 88800,
+          "waiting_us": 28800
+        },
+        {
+          "arrival_us": 70000,
+          "finish_us": 102400,
+          "flow": "bulk",
+          "packet_id": "bulk-0007",
+          "size_bytes": 1500,
+          "sojourn_us": 32400,
+          "start_us": 90400,
+          "waiting_us": 20400
+        },
+        {
+          "arrival_us": 80000,
+          "finish_us": 114400,
+          "flow": "bulk",
+          "packet_id": "bulk-0008",
+          "size_bytes": 1500,
+          "sojourn_us": 34400,
+          "start_us": 102400,
+          "waiting_us": 22400
+        },
+        {
+          "arrival_us": 80000,
+          "finish_us": 116000,
+          "flow": "voice",
+          "packet_id": "voice-0004",
+          "size_bytes": 200,
+          "sojourn_us": 36000,
+          "start_us": 114400,
+          "waiting_us": 34400
+        },
+        {
+          "arrival_us": 90000,
+          "finish_us": 128000,
+          "flow": "bulk",
+          "packet_id": "bulk-0009",
+          "size_bytes": 1500,
+          "sojourn_us": 38000,
+          "start_us": 116000,
+          "waiting_us": 26000
+        },
+        {
+          "arrival_us": 100000,
+          "finish_us": 140000,
+          "flow": "bulk",
+          "packet_id": "bulk-0010",
+          "size_bytes": 1500,
+          "sojourn_us": 40000,
+          "start_us": 128000,
+          "waiting_us": 28000
+        },
+        {
+          "arrival_us": 100000,
+          "finish_us": 141600,
+          "flow": "voice",
+          "packet_id": "voice-0005",
+          "size_bytes": 200,
+          "sojourn_us": 41600,
+          "start_us": 140000,
+          "waiting_us": 40000
+        },
+        {
+          "arrival_us": 110000,
+          "finish_us": 153600,
+          "flow": "bulk",
+          "packet_id": "bulk-0011",
+          "size_bytes": 1500,
+          "sojourn_us": 43600,
+          "start_us": 141600,
+          "waiting_us": 31600
+        },
+        {
+          "arrival_us": 120000,
+          "finish_us": 165600,
+          "flow": "bulk",
+          "packet_id": "bulk-0012",
+          "size_bytes": 1500,
+          "sojourn_us": 45600,
+          "start_us": 153600,
+          "waiting_us": 33600
+        },
+        {
+          "arrival_us": 120000,
+          "finish_us": 167200,
+          "flow": "voice",
+          "packet_id": "voice-0006",
+          "size_bytes": 200,
+          "sojourn_us": 47200,
+          "start_us": 165600,
+          "waiting_us": 45600
+        },
+        {
+          "arrival_us": 130000,
+          "finish_us": 179200,
+          "flow": "bulk",
+          "packet_id": "bulk-0013",
+          "size_bytes": 1500,
+          "sojourn_us": 49200,
+          "start_us": 167200,
+          "waiting_us": 37200
+        },
+        {
+          "arrival_us": 140000,
+          "finish_us": 191200,
+          "flow": "bulk",
+          "packet_id": "bulk-0014",
+          "size_bytes": 1500,
+          "sojourn_us": 51200,
+          "start_us": 179200,
+          "waiting_us": 39200
+        },
+        {
+          "arrival_us": 140000,
+          "finish_us": 192800,
+          "flow": "voice",
+          "packet_id": "voice-0007",
+          "size_bytes": 200,
+          "sojourn_us": 52800,
+          "start_us": 191200,
+          "waiting_us": 51200
+        },
+        {
+          "arrival_us": 150000,
+          "finish_us": 204800,
+          "flow": "bulk",
+          "packet_id": "bulk-0015",
+          "size_bytes": 1500,
+          "sojourn_us": 54800,
+          "start_us": 192800,
+          "waiting_us": 42800
+        },
+        {
+          "arrival_us": 160000,
+          "finish_us": 216800,
+          "flow": "bulk",
+          "packet_id": "bulk-0016",
+          "size_bytes": 1500,
+          "sojourn_us": 56800,
+          "start_us": 204800,
+          "waiting_us": 44800
+        },
+        {
+          "arrival_us": 160000,
+          "finish_us": 218400,
+          "flow": "voice",
+          "packet_id": "voice-0008",
+          "size_bytes": 200,
+          "sojourn_us": 58400,
+          "start_us": 216800,
+          "waiting_us": 56800
+        },
+        {
+          "arrival_us": 170000,
+          "finish_us": 230400,
+          "flow": "bulk",
+          "packet_id": "bulk-0017",
+          "size_bytes": 1500,
+          "sojourn_us": 60400,
+          "start_us": 218400,
+          "waiting_us": 48400
+        },
+        {
+          "arrival_us": 180000,
+          "finish_us": 242400,
+          "flow": "bulk",
+          "packet_id": "bulk-0018",
+          "size_bytes": 1500,
+          "sojourn_us": 62400,
+          "start_us": 230400,
+          "waiting_us": 50400
+        },
+        {
+          "arrival_us": 180000,
+          "finish_us": 244000,
+          "flow": "voice",
+          "packet_id": "voice-0009",
+          "size_bytes": 200,
+          "sojourn_us": 64000,
+          "start_us": 242400,
+          "waiting_us": 62400
+        },
+        {
+          "arrival_us": 190000,
+          "finish_us": 256000,
+          "flow": "bulk",
+          "packet_id": "bulk-0019",
+          "size_bytes": 1500,
+          "sojourn_us": 66000,
+          "start_us": 244000,
+          "waiting_us": 54000
+        },
+        {
+          "arrival_us": 200000,
+          "finish_us": 268000,
+          "flow": "bulk",
+          "packet_id": "bulk-0020",
+          "size_bytes": 1500,
+          "sojourn_us": 68000,
+          "start_us": 256000,
+          "waiting_us": 56000
+        },
+        {
+          "arrival_us": 200000,
+          "finish_us": 269600,
+          "flow": "voice",
+          "packet_id": "voice-0010",
+          "size_bytes": 200,
+          "sojourn_us": 69600,
+          "start_us": 268000,
+          "waiting_us": 68000
+        },
+        {
+          "arrival_us": 210000,
+          "finish_us": 281600,
+          "flow": "bulk",
+          "packet_id": "bulk-0021",
+          "size_bytes": 1500,
+          "sojourn_us": 71600,
+          "start_us": 269600,
+          "waiting_us": 59600
+        },
+        {
+          "arrival_us": 220000,
+          "finish_us": 293600,
+          "flow": "bulk",
+          "packet_id": "bulk-0022",
+          "size_bytes": 1500,
+          "sojourn_us": 73600,
+          "start_us": 281600,
+          "waiting_us": 61600
+        },
+        {
+          "arrival_us": 220000,
+          "finish_us": 295200,
+          "flow": "voice",
+          "packet_id": "voice-0011",
+          "size_bytes": 200,
+          "sojourn_us": 75200,
+          "start_us": 293600,
+          "waiting_us": 73600
+        },
+        {
+          "arrival_us": 230000,
+          "finish_us": 307200,
+          "flow": "bulk",
+          "packet_id": "bulk-0023",
+          "size_bytes": 1500,
+          "sojourn_us": 77200,
+          "start_us": 295200,
+          "waiting_us": 65200
+        },
+        {
+          "arrival_us": 240000,
+          "finish_us": 319200,
+          "flow": "bulk",
+          "packet_id": "bulk-0024",
+          "size_bytes": 1500,
+          "sojourn_us": 79200,
+          "start_us": 307200,
+          "waiting_us": 67200
+        },
+        {
+          "arrival_us": 240000,
+          "finish_us": 320800,
+          "flow": "voice",
+          "packet_id": "voice-0012",
+          "size_bytes": 200,
+          "sojourn_us": 80800,
+          "start_us": 319200,
+          "waiting_us": 79200
+        },
+        {
+          "arrival_us": 250000,
+          "finish_us": 332800,
+          "flow": "bulk",
+          "packet_id": "bulk-0025",
+          "size_bytes": 1500,
+          "sojourn_us": 82800,
+          "start_us": 320800,
+          "waiting_us": 70800
+        },
+        {
+          "arrival_us": 260000,
+          "finish_us": 344800,
+          "flow": "bulk",
+          "packet_id": "bulk-0026",
+          "size_bytes": 1500,
+          "sojourn_us": 84800,
+          "start_us": 332800,
+          "waiting_us": 72800
+        },
+        {
+          "arrival_us": 260000,
+          "finish_us": 346400,
+          "flow": "voice",
+          "packet_id": "voice-0013",
+          "size_bytes": 200,
+          "sojourn_us": 86400,
+          "start_us": 344800,
+          "waiting_us": 84800
+        },
+        {
+          "arrival_us": 270000,
+          "finish_us": 358400,
+          "flow": "bulk",
+          "packet_id": "bulk-0027",
+          "size_bytes": 1500,
+          "sojourn_us": 88400,
+          "start_us": 346400,
+          "waiting_us": 76400
+        },
+        {
+          "arrival_us": 280000,
+          "finish_us": 370400,
+          "flow": "bulk",
+          "packet_id": "bulk-0028",
+          "size_bytes": 1500,
+          "sojourn_us": 90400,
+          "start_us": 358400,
+          "waiting_us": 78400
+        },
+        {
+          "arrival_us": 280000,
+          "finish_us": 372000,
+          "flow": "voice",
+          "packet_id": "voice-0014",
+          "size_bytes": 200,
+          "sojourn_us": 92000,
+          "start_us": 370400,
+          "waiting_us": 90400
+        },
+        {
+          "arrival_us": 290000,
+          "finish_us": 384000,
+          "flow": "bulk",
+          "packet_id": "bulk-0029",
+          "size_bytes": 1500,
+          "sojourn_us": 94000,
+          "start_us": 372000,
+          "waiting_us": 82000
+        },
+        {
+          "arrival_us": 300000,
+          "finish_us": 396000,
+          "flow": "bulk",
+          "packet_id": "bulk-0030",
+          "size_bytes": 1500,
+          "sojourn_us": 96000,
+          "start_us": 384000,
+          "waiting_us": 84000
+        },
+        {
+          "arrival_us": 300000,
+          "finish_us": 397600,
+          "flow": "voice",
+          "packet_id": "voice-0015",
+          "size_bytes": 200,
+          "sojourn_us": 97600,
+          "start_us": 396000,
+          "waiting_us": 96000
+        },
+        {
+          "arrival_us": 310000,
+          "finish_us": 409600,
+          "flow": "bulk",
+          "packet_id": "bulk-0031",
+          "size_bytes": 1500,
+          "sojourn_us": 99600,
+          "start_us": 397600,
+          "waiting_us": 87600
+        },
+        {
+          "arrival_us": 320000,
+          "finish_us": 421600,
+          "flow": "bulk",
+          "packet_id": "bulk-0032",
+          "size_bytes": 1500,
+          "sojourn_us": 101600,
+          "start_us": 409600,
+          "waiting_us": 89600
+        },
+        {
+          "arrival_us": 320000,
+          "finish_us": 423200,
+          "flow": "voice",
+          "packet_id": "voice-0016",
+          "size_bytes": 200,
+          "sojourn_us": 103200,
+          "start_us": 421600,
+          "waiting_us": 101600
+        },
+        {
+          "arrival_us": 330000,
+          "finish_us": 435200,
+          "flow": "bulk",
+          "packet_id": "bulk-0033",
+          "size_bytes": 1500,
+          "sojourn_us": 105200,
+          "start_us": 423200,
+          "waiting_us": 93200
+        },
+        {
+          "arrival_us": 340000,
+          "finish_us": 447200,
+          "flow": "bulk",
+          "packet_id": "bulk-0034",
+          "size_bytes": 1500,
+          "sojourn_us": 107200,
+          "start_us": 435200,
+          "waiting_us": 95200
+        },
+        {
+          "arrival_us": 340000,
+          "finish_us": 448800,
+          "flow": "voice",
+          "packet_id": "voice-0017",
+          "size_bytes": 200,
+          "sojourn_us": 108800,
+          "start_us": 447200,
+          "waiting_us": 107200
+        },
+        {
+          "arrival_us": 350000,
+          "finish_us": 460800,
+          "flow": "bulk",
+          "packet_id": "bulk-0035",
+          "size_bytes": 1500,
+          "sojourn_us": 110800,
+          "start_us": 448800,
+          "waiting_us": 98800
+        },
+        {
+          "arrival_us": 360000,
+          "finish_us": 472800,
+          "flow": "bulk",
+          "packet_id": "bulk-0036",
+          "size_bytes": 1500,
+          "sojourn_us": 112800,
+          "start_us": 460800,
+          "waiting_us": 100800
+        },
+        {
+          "arrival_us": 360000,
+          "finish_us": 474400,
+          "flow": "voice",
+          "packet_id": "voice-0018",
+          "size_bytes": 200,
+          "sojourn_us": 114400,
+          "start_us": 472800,
+          "waiting_us": 112800
+        },
+        {
+          "arrival_us": 370000,
+          "finish_us": 486400,
+          "flow": "bulk",
+          "packet_id": "bulk-0037",
+          "size_bytes": 1500,
+          "sojourn_us": 116400,
+          "start_us": 474400,
+          "waiting_us": 104400
+        },
+        {
+          "arrival_us": 380000,
+          "finish_us": 498400,
+          "flow": "bulk",
+          "packet_id": "bulk-0038",
+          "size_bytes": 1500,
+          "sojourn_us": 118400,
+          "start_us": 486400,
+          "waiting_us": 106400
+        },
+        {
+          "arrival_us": 380000,
+          "finish_us": 500000,
+          "flow": "voice",
+          "packet_id": "voice-0019",
+          "size_bytes": 200,
+          "sojourn_us": 120000,
+          "start_us": 498400,
+          "waiting_us": 118400
+        },
+        {
+          "arrival_us": 390000,
+          "finish_us": 512000,
+          "flow": "bulk",
+          "packet_id": "bulk-0039",
+          "size_bytes": 1500,
+          "sojourn_us": 122000,
+          "start_us": 500000,
+          "waiting_us": 110000
+        },
+        {
+          "arrival_us": 400000,
+          "finish_us": 524000,
+          "flow": "bulk",
+          "packet_id": "bulk-0040",
+          "size_bytes": 1500,
+          "sojourn_us": 124000,
+          "start_us": 512000,
+          "waiting_us": 112000
+        },
+        {
+          "arrival_us": 400000,
+          "finish_us": 525600,
+          "flow": "voice",
+          "packet_id": "voice-0020",
+          "size_bytes": 200,
+          "sojourn_us": 125600,
+          "start_us": 524000,
+          "waiting_us": 124000
+        },
+        {
+          "arrival_us": 410000,
+          "finish_us": 537600,
+          "flow": "bulk",
+          "packet_id": "bulk-0041",
+          "size_bytes": 1500,
+          "sojourn_us": 127600,
+          "start_us": 525600,
+          "waiting_us": 115600
+        },
+        {
+          "arrival_us": 420000,
+          "finish_us": 549600,
+          "flow": "bulk",
+          "packet_id": "bulk-0042",
+          "size_bytes": 1500,
+          "sojourn_us": 129600,
+          "start_us": 537600,
+          "waiting_us": 117600
+        },
+        {
+          "arrival_us": 420000,
+          "finish_us": 551200,
+          "flow": "voice",
+          "packet_id": "voice-0021",
+          "size_bytes": 200,
+          "sojourn_us": 131200,
+          "start_us": 549600,
+          "waiting_us": 129600
+        },
+        {
+          "arrival_us": 430000,
+          "finish_us": 563200,
+          "flow": "bulk",
+          "packet_id": "bulk-0043",
+          "size_bytes": 1500,
+          "sojourn_us": 133200,
+          "start_us": 551200,
+          "waiting_us": 121200
+        },
+        {
+          "arrival_us": 440000,
+          "finish_us": 575200,
+          "flow": "bulk",
+          "packet_id": "bulk-0044",
+          "size_bytes": 1500,
+          "sojourn_us": 135200,
+          "start_us": 563200,
+          "waiting_us": 123200
+        },
+        {
+          "arrival_us": 440000,
+          "finish_us": 576800,
+          "flow": "voice",
+          "packet_id": "voice-0022",
+          "size_bytes": 200,
+          "sojourn_us": 136800,
+          "start_us": 575200,
+          "waiting_us": 135200
+        },
+        {
+          "arrival_us": 450000,
+          "finish_us": 588800,
+          "flow": "bulk",
+          "packet_id": "bulk-0045",
+          "size_bytes": 1500,
+          "sojourn_us": 138800,
+          "start_us": 576800,
+          "waiting_us": 126800
+        },
+        {
+          "arrival_us": 460000,
+          "finish_us": 600800,
+          "flow": "bulk",
+          "packet_id": "bulk-0046",
+          "size_bytes": 1500,
+          "sojourn_us": 140800,
+          "start_us": 588800,
+          "waiting_us": 128800
+        },
+        {
+          "arrival_us": 460000,
+          "finish_us": 602400,
+          "flow": "voice",
+          "packet_id": "voice-0023",
+          "size_bytes": 200,
+          "sojourn_us": 142400,
+          "start_us": 600800,
+          "waiting_us": 140800
+        },
+        {
+          "arrival_us": 470000,
+          "finish_us": 614400,
+          "flow": "bulk",
+          "packet_id": "bulk-0047",
+          "size_bytes": 1500,
+          "sojourn_us": 144400,
+          "start_us": 602400,
+          "waiting_us": 132400
+        },
+        {
+          "arrival_us": 480000,
+          "finish_us": 626400,
+          "flow": "bulk",
+          "packet_id": "bulk-0048",
+          "size_bytes": 1500,
+          "sojourn_us": 146400,
+          "start_us": 614400,
+          "waiting_us": 134400
+        },
+        {
+          "arrival_us": 480000,
+          "finish_us": 628000,
+          "flow": "voice",
+          "packet_id": "voice-0024",
+          "size_bytes": 200,
+          "sojourn_us": 148000,
+          "start_us": 626400,
+          "waiting_us": 146400
+        },
+        {
+          "arrival_us": 490000,
+          "finish_us": 640000,
+          "flow": "bulk",
+          "packet_id": "bulk-0049",
+          "size_bytes": 1500,
+          "sojourn_us": 150000,
+          "start_us": 628000,
+          "waiting_us": 138000
+        },
+        {
+          "arrival_us": 500000,
+          "finish_us": 652000,
+          "flow": "bulk",
+          "packet_id": "bulk-0050",
+          "size_bytes": 1500,
+          "sojourn_us": 152000,
+          "start_us": 640000,
+          "waiting_us": 140000
+        },
+        {
+          "arrival_us": 500000,
+          "finish_us": 653600,
+          "flow": "voice",
+          "packet_id": "voice-0025",
+          "size_bytes": 200,
+          "sojourn_us": 153600,
+          "start_us": 652000,
+          "waiting_us": 152000
+        },
+        {
+          "arrival_us": 510000,
+          "finish_us": 665600,
+          "flow": "bulk",
+          "packet_id": "bulk-0051",
+          "size_bytes": 1500,
+          "sojourn_us": 155600,
+          "start_us": 653600,
+          "waiting_us": 143600
+        },
+        {
+          "arrival_us": 520000,
+          "finish_us": 677600,
+          "flow": "bulk",
+          "packet_id": "bulk-0052",
+          "size_bytes": 1500,
+          "sojourn_us": 157600,
+          "start_us": 665600,
+          "waiting_us": 145600
+        },
+        {
+          "arrival_us": 520000,
+          "finish_us": 679200,
+          "flow": "voice",
+          "packet_id": "voice-0026",
+          "size_bytes": 200,
+          "sojourn_us": 159200,
+          "start_us": 677600,
+          "waiting_us": 157600
+        },
+        {
+          "arrival_us": 530000,
+          "finish_us": 691200,
+          "flow": "bulk",
+          "packet_id": "bulk-0053",
+          "size_bytes": 1500,
+          "sojourn_us": 161200,
+          "start_us": 679200,
+          "waiting_us": 149200
+        },
+        {
+          "arrival_us": 540000,
+          "finish_us": 703200,
+          "flow": "bulk",
+          "packet_id": "bulk-0054",
+          "size_bytes": 1500,
+          "sojourn_us": 163200,
+          "start_us": 691200,
+          "waiting_us": 151200
+        },
+        {
+          "arrival_us": 540000,
+          "finish_us": 704800,
+          "flow": "voice",
+          "packet_id": "voice-0027",
+          "size_bytes": 200,
+          "sojourn_us": 164800,
+          "start_us": 703200,
+          "waiting_us": 163200
+        },
+        {
+          "arrival_us": 550000,
+          "finish_us": 716800,
+          "flow": "bulk",
+          "packet_id": "bulk-0055",
+          "size_bytes": 1500,
+          "sojourn_us": 166800,
+          "start_us": 704800,
+          "waiting_us": 154800
+        },
+        {
+          "arrival_us": 560000,
+          "finish_us": 728800,
+          "flow": "bulk",
+          "packet_id": "bulk-0056",
+          "size_bytes": 1500,
+          "sojourn_us": 168800,
+          "start_us": 716800,
+          "waiting_us": 156800
+        },
+        {
+          "arrival_us": 560000,
+          "finish_us": 730400,
+          "flow": "voice",
+          "packet_id": "voice-0028",
+          "size_bytes": 200,
+          "sojourn_us": 170400,
+          "start_us": 728800,
+          "waiting_us": 168800
+        },
+        {
+          "arrival_us": 570000,
+          "finish_us": 742400,
+          "flow": "bulk",
+          "packet_id": "bulk-0057",
+          "size_bytes": 1500,
+          "sojourn_us": 172400,
+          "start_us": 730400,
+          "waiting_us": 160400
+        },
+        {
+          "arrival_us": 580000,
+          "finish_us": 754400,
+          "flow": "bulk",
+          "packet_id": "bulk-0058",
+          "size_bytes": 1500,
+          "sojourn_us": 174400,
+          "start_us": 742400,
+          "waiting_us": 162400
+        },
+        {
+          "arrival_us": 580000,
+          "finish_us": 756000,
+          "flow": "voice",
+          "packet_id": "voice-0029",
+          "size_bytes": 200,
+          "sojourn_us": 176000,
+          "start_us": 754400,
+          "waiting_us": 174400
+        },
+        {
+          "arrival_us": 590000,
+          "finish_us": 768000,
+          "flow": "bulk",
+          "packet_id": "bulk-0059",
+          "size_bytes": 1500,
+          "sojourn_us": 178000,
+          "start_us": 756000,
+          "waiting_us": 166000
+        },
+        {
+          "arrival_us": 610000,
+          "finish_us": 780000,
+          "flow": "bulk",
+          "packet_id": "bulk-0061",
+          "size_bytes": 1500,
+          "sojourn_us": 170000,
+          "start_us": 768000,
+          "waiting_us": 158000
+        },
+        {
+          "arrival_us": 620000,
+          "finish_us": 792000,
+          "flow": "bulk",
+          "packet_id": "bulk-0062",
+          "size_bytes": 1500,
+          "sojourn_us": 172000,
+          "start_us": 780000,
+          "waiting_us": 160000
+        },
+        {
+          "arrival_us": 620000,
+          "finish_us": 793600,
+          "flow": "voice",
+          "packet_id": "voice-0031",
+          "size_bytes": 200,
+          "sojourn_us": 173600,
+          "start_us": 792000,
+          "waiting_us": 172000
+        },
+        {
+          "arrival_us": 630000,
+          "finish_us": 805600,
+          "flow": "bulk",
+          "packet_id": "bulk-0063",
+          "size_bytes": 1500,
+          "sojourn_us": 175600,
+          "start_us": 793600,
+          "waiting_us": 163600
+        },
+        {
+          "arrival_us": 640000,
+          "finish_us": 817600,
+          "flow": "bulk",
+          "packet_id": "bulk-0064",
+          "size_bytes": 1500,
+          "sojourn_us": 177600,
+          "start_us": 805600,
+          "waiting_us": 165600
+        },
+        {
+          "arrival_us": 640000,
+          "finish_us": 819200,
+          "flow": "voice",
+          "packet_id": "voice-0032",
+          "size_bytes": 200,
+          "sojourn_us": 179200,
+          "start_us": 817600,
+          "waiting_us": 177600
+        },
+        {
+          "arrival_us": 660000,
+          "finish_us": 831200,
+          "flow": "bulk",
+          "packet_id": "bulk-0066",
+          "size_bytes": 1500,
+          "sojourn_us": 171200,
+          "start_us": 819200,
+          "waiting_us": 159200
+        },
+        {
+          "arrival_us": 660000,
+          "finish_us": 832800,
+          "flow": "voice",
+          "packet_id": "voice-0033",
+          "size_bytes": 200,
+          "sojourn_us": 172800,
+          "start_us": 831200,
+          "waiting_us": 171200
+        },
+        {
+          "arrival_us": 670000,
+          "finish_us": 844800,
+          "flow": "bulk",
+          "packet_id": "bulk-0067",
+          "size_bytes": 1500,
+          "sojourn_us": 174800,
+          "start_us": 832800,
+          "waiting_us": 162800
+        },
+        {
+          "arrival_us": 680000,
+          "finish_us": 856800,
+          "flow": "bulk",
+          "packet_id": "bulk-0068",
+          "size_bytes": 1500,
+          "sojourn_us": 176800,
+          "start_us": 844800,
+          "waiting_us": 164800
+        },
+        {
+          "arrival_us": 680000,
+          "finish_us": 858400,
+          "flow": "voice",
+          "packet_id": "voice-0034",
+          "size_bytes": 200,
+          "sojourn_us": 178400,
+          "start_us": 856800,
+          "waiting_us": 176800
+        },
+        {
+          "arrival_us": 700000,
+          "finish_us": 870400,
+          "flow": "bulk",
+          "packet_id": "bulk-0070",
+          "size_bytes": 1500,
+          "sojourn_us": 170400,
+          "start_us": 858400,
+          "waiting_us": 158400
+        },
+        {
+          "arrival_us": 710000,
+          "finish_us": 882400,
+          "flow": "bulk",
+          "packet_id": "bulk-0071",
+          "size_bytes": 1500,
+          "sojourn_us": 172400,
+          "start_us": 870400,
+          "waiting_us": 160400
+        },
+        {
+          "arrival_us": 720000,
+          "finish_us": 894400,
+          "flow": "bulk",
+          "packet_id": "bulk-0072",
+          "size_bytes": 1500,
+          "sojourn_us": 174400,
+          "start_us": 882400,
+          "waiting_us": 162400
+        },
+        {
+          "arrival_us": 720000,
+          "finish_us": 896000,
+          "flow": "voice",
+          "packet_id": "voice-0036",
+          "size_bytes": 200,
+          "sojourn_us": 176000,
+          "start_us": 894400,
+          "waiting_us": 174400
+        },
+        {
+          "arrival_us": 730000,
+          "finish_us": 908000,
+          "flow": "bulk",
+          "packet_id": "bulk-0073",
+          "size_bytes": 1500,
+          "sojourn_us": 178000,
+          "start_us": 896000,
+          "waiting_us": 166000
+        },
+        {
+          "arrival_us": 740000,
+          "finish_us": 920000,
+          "flow": "bulk",
+          "packet_id": "bulk-0074",
+          "size_bytes": 1500,
+          "sojourn_us": 180000,
+          "start_us": 908000,
+          "waiting_us": 168000
+        },
+        {
+          "arrival_us": 750000,
+          "finish_us": 932000,
+          "flow": "bulk",
+          "packet_id": "bulk-0075",
+          "size_bytes": 1500,
+          "sojourn_us": 182000,
+          "start_us": 920000,
+          "waiting_us": 170000
+        },
+        {
+          "arrival_us": 760000,
+          "finish_us": 944000,
+          "flow": "bulk",
+          "packet_id": "bulk-0076",
+          "size_bytes": 1500,
+          "sojourn_us": 184000,
+          "start_us": 932000,
+          "waiting_us": 172000
+        },
+        {
+          "arrival_us": 760000,
+          "finish_us": 945600,
+          "flow": "voice",
+          "packet_id": "voice-0038",
+          "size_bytes": 200,
+          "sojourn_us": 185600,
+          "start_us": 944000,
+          "waiting_us": 184000
+        },
+        {
+          "arrival_us": 770000,
+          "finish_us": 957600,
+          "flow": "bulk",
+          "packet_id": "bulk-0077",
+          "size_bytes": 1500,
+          "sojourn_us": 187600,
+          "start_us": 945600,
+          "waiting_us": 175600
+        },
+        {
+          "arrival_us": 780000,
+          "finish_us": 969600,
+          "flow": "bulk",
+          "packet_id": "bulk-0078",
+          "size_bytes": 1500,
+          "sojourn_us": 189600,
+          "start_us": 957600,
+          "waiting_us": 177600
+        },
+        {
+          "arrival_us": 800000,
+          "finish_us": 981600,
+          "flow": "bulk",
+          "packet_id": "bulk-0080",
+          "size_bytes": 1500,
+          "sojourn_us": 181600,
+          "start_us": 969600,
+          "waiting_us": 169600
+        },
+        {
+          "arrival_us": 800000,
+          "finish_us": 983200,
+          "flow": "voice",
+          "packet_id": "voice-0040",
+          "size_bytes": 200,
+          "sojourn_us": 183200,
+          "start_us": 981600,
+          "waiting_us": 181600
+        },
+        {
+          "arrival_us": 810000,
+          "finish_us": 995200,
+          "flow": "bulk",
+          "packet_id": "bulk-0081",
+          "size_bytes": 1500,
+          "sojourn_us": 185200,
+          "start_us": 983200,
+          "waiting_us": 173200
+        },
+        {
+          "arrival_us": 820000,
+          "finish_us": 1007200,
+          "flow": "bulk",
+          "packet_id": "bulk-0082",
+          "size_bytes": 1500,
+          "sojourn_us": 187200,
+          "start_us": 995200,
+          "waiting_us": 175200
+        },
+        {
+          "arrival_us": 820000,
+          "finish_us": 1008800,
+          "flow": "voice",
+          "packet_id": "voice-0041",
+          "size_bytes": 200,
+          "sojourn_us": 188800,
+          "start_us": 1007200,
+          "waiting_us": 187200
+        },
+        {
+          "arrival_us": 840000,
+          "finish_us": 1020800,
+          "flow": "bulk",
+          "packet_id": "bulk-0084",
+          "size_bytes": 1500,
+          "sojourn_us": 180800,
+          "start_us": 1008800,
+          "waiting_us": 168800
+        },
+        {
+          "arrival_us": 840000,
+          "finish_us": 1022400,
+          "flow": "voice",
+          "packet_id": "voice-0042",
+          "size_bytes": 200,
+          "sojourn_us": 182400,
+          "start_us": 1020800,
+          "waiting_us": 180800
+        },
+        {
+          "arrival_us": 850000,
+          "finish_us": 1034400,
+          "flow": "bulk",
+          "packet_id": "bulk-0085",
+          "size_bytes": 1500,
+          "sojourn_us": 184400,
+          "start_us": 1022400,
+          "waiting_us": 172400
+        },
+        {
+          "arrival_us": 860000,
+          "finish_us": 1046400,
+          "flow": "bulk",
+          "packet_id": "bulk-0086",
+          "size_bytes": 1500,
+          "sojourn_us": 186400,
+          "start_us": 1034400,
+          "waiting_us": 174400
+        },
+        {
+          "arrival_us": 860000,
+          "finish_us": 1048000,
+          "flow": "voice",
+          "packet_id": "voice-0043",
+          "size_bytes": 200,
+          "sojourn_us": 188000,
+          "start_us": 1046400,
+          "waiting_us": 186400
+        },
+        {
+          "arrival_us": 880000,
+          "finish_us": 1060000,
+          "flow": "bulk",
+          "packet_id": "bulk-0088",
+          "size_bytes": 1500,
+          "sojourn_us": 180000,
+          "start_us": 1048000,
+          "waiting_us": 168000
+        },
+        {
+          "arrival_us": 890000,
+          "finish_us": 1072000,
+          "flow": "bulk",
+          "packet_id": "bulk-0089",
+          "size_bytes": 1500,
+          "sojourn_us": 182000,
+          "start_us": 1060000,
+          "waiting_us": 170000
+        },
+        {
+          "arrival_us": 900000,
+          "finish_us": 1084000,
+          "flow": "bulk",
+          "packet_id": "bulk-0090",
+          "size_bytes": 1500,
+          "sojourn_us": 184000,
+          "start_us": 1072000,
+          "waiting_us": 172000
+        },
+        {
+          "arrival_us": 900000,
+          "finish_us": 1085600,
+          "flow": "voice",
+          "packet_id": "voice-0045",
+          "size_bytes": 200,
+          "sojourn_us": 185600,
+          "start_us": 1084000,
+          "waiting_us": 184000
+        },
+        {
+          "arrival_us": 910000,
+          "finish_us": 1097600,
+          "flow": "bulk",
+          "packet_id": "bulk-0091",
+          "size_bytes": 1500,
+          "sojourn_us": 187600,
+          "start_us": 1085600,
+          "waiting_us": 175600
+        },
+        {
+          "arrival_us": 920000,
+          "finish_us": 1109600,
+          "flow": "bulk",
+          "packet_id": "bulk-0092",
+          "size_bytes": 1500,
+          "sojourn_us": 189600,
+          "start_us": 1097600,
+          "waiting_us": 177600
+        },
+        {
+          "arrival_us": 940000,
+          "finish_us": 1121600,
+          "flow": "bulk",
+          "packet_id": "bulk-0094",
+          "size_bytes": 1500,
+          "sojourn_us": 181600,
+          "start_us": 1109600,
+          "waiting_us": 169600
+        },
+        {
+          "arrival_us": 950000,
+          "finish_us": 1133600,
+          "flow": "bulk",
+          "packet_id": "bulk-0095",
+          "size_bytes": 1500,
+          "sojourn_us": 183600,
+          "start_us": 1121600,
+          "waiting_us": 171600
+        },
+        {
+          "arrival_us": 960000,
+          "finish_us": 1145600,
+          "flow": "bulk",
+          "packet_id": "bulk-0096",
+          "size_bytes": 1500,
+          "sojourn_us": 185600,
+          "start_us": 1133600,
+          "waiting_us": 173600
+        },
+        {
+          "arrival_us": 960000,
+          "finish_us": 1147200,
+          "flow": "voice",
+          "packet_id": "voice-0048",
+          "size_bytes": 200,
+          "sojourn_us": 187200,
+          "start_us": 1145600,
+          "waiting_us": 185600
+        },
+        {
+          "arrival_us": 970000,
+          "finish_us": 1159200,
+          "flow": "bulk",
+          "packet_id": "bulk-0097",
+          "size_bytes": 1500,
+          "sojourn_us": 189200,
+          "start_us": 1147200,
+          "waiting_us": 177200
+        },
+        {
+          "arrival_us": 990000,
+          "finish_us": 1171200,
+          "flow": "bulk",
+          "packet_id": "bulk-0099",
+          "size_bytes": 1500,
+          "sojourn_us": 181200,
+          "start_us": 1159200,
+          "waiting_us": 169200
+        }
+      ],
+      "dropped": [
+        {
+          "arrival_us": 600000,
+          "flow": "bulk",
+          "packet_id": "bulk-0060",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 600000,
+          "flow": "voice",
+          "packet_id": "voice-0030",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 650000,
+          "flow": "bulk",
+          "packet_id": "bulk-0065",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 690000,
+          "flow": "bulk",
+          "packet_id": "bulk-0069",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 700000,
+          "flow": "voice",
+          "packet_id": "voice-0035",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 740000,
+          "flow": "voice",
+          "packet_id": "voice-0037",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 780000,
+          "flow": "voice",
+          "packet_id": "voice-0039",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 790000,
+          "flow": "bulk",
+          "packet_id": "bulk-0079",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 830000,
+          "flow": "bulk",
+          "packet_id": "bulk-0083",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 870000,
+          "flow": "bulk",
+          "packet_id": "bulk-0087",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 880000,
+          "flow": "voice",
+          "packet_id": "voice-0044",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 920000,
+          "flow": "voice",
+          "packet_id": "voice-0046",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 930000,
+          "flow": "bulk",
+          "packet_id": "bulk-0093",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 940000,
+          "flow": "voice",
+          "packet_id": "voice-0047",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 980000,
+          "flow": "bulk",
+          "packet_id": "bulk-0098",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 980000,
+          "flow": "voice",
+          "packet_id": "voice-0049",
+          "reason": "waiting_buffer_full"
+        }
+      ],
+      "flows": [
+        {
+          "delivered": 92,
+          "dropped": 8,
+          "flow": "bulk",
+          "mean_sojourn_ms": 124.852174,
+          "offered": 100,
+          "p95_sojourn_ms": 187.6
+        },
+        {
+          "delivered": 42,
+          "dropped": 8,
+          "flow": "voice",
+          "mean_sojourn_ms": 119.638095,
+          "offered": 50,
+          "p95_sojourn_ms": 187.2
+        }
+      ],
+      "policy": "fifo",
+      "rate_bps": 1000000,
+      "waiting_slots": 20
+    },
+    "fifo_small": {
+      "delivered": [
+        {
+          "arrival_us": 0,
+          "finish_us": 12000,
+          "flow": "bulk",
+          "packet_id": "bulk-0000",
+          "size_bytes": 1500,
+          "sojourn_us": 12000,
+          "start_us": 0,
+          "waiting_us": 0
+        },
+        {
+          "arrival_us": 0,
+          "finish_us": 13600,
+          "flow": "voice",
+          "packet_id": "voice-0000",
+          "size_bytes": 200,
+          "sojourn_us": 13600,
+          "start_us": 12000,
+          "waiting_us": 12000
+        },
+        {
+          "arrival_us": 10000,
+          "finish_us": 25600,
+          "flow": "bulk",
+          "packet_id": "bulk-0001",
+          "size_bytes": 1500,
+          "sojourn_us": 15600,
+          "start_us": 13600,
+          "waiting_us": 3600
+        },
+        {
+          "arrival_us": 20000,
+          "finish_us": 37600,
+          "flow": "bulk",
+          "packet_id": "bulk-0002",
+          "size_bytes": 1500,
+          "sojourn_us": 17600,
+          "start_us": 25600,
+          "waiting_us": 5600
+        },
+        {
+          "arrival_us": 20000,
+          "finish_us": 39200,
+          "flow": "voice",
+          "packet_id": "voice-0001",
+          "size_bytes": 200,
+          "sojourn_us": 19200,
+          "start_us": 37600,
+          "waiting_us": 17600
+        },
+        {
+          "arrival_us": 30000,
+          "finish_us": 51200,
+          "flow": "bulk",
+          "packet_id": "bulk-0003",
+          "size_bytes": 1500,
+          "sojourn_us": 21200,
+          "start_us": 39200,
+          "waiting_us": 9200
+        },
+        {
+          "arrival_us": 40000,
+          "finish_us": 63200,
+          "flow": "bulk",
+          "packet_id": "bulk-0004",
+          "size_bytes": 1500,
+          "sojourn_us": 23200,
+          "start_us": 51200,
+          "waiting_us": 11200
+        },
+        {
+          "arrival_us": 40000,
+          "finish_us": 64800,
+          "flow": "voice",
+          "packet_id": "voice-0002",
+          "size_bytes": 200,
+          "sojourn_us": 24800,
+          "start_us": 63200,
+          "waiting_us": 23200
+        },
+        {
+          "arrival_us": 60000,
+          "finish_us": 76800,
+          "flow": "bulk",
+          "packet_id": "bulk-0006",
+          "size_bytes": 1500,
+          "sojourn_us": 16800,
+          "start_us": 64800,
+          "waiting_us": 4800
+        },
+        {
+          "arrival_us": 70000,
+          "finish_us": 88800,
+          "flow": "bulk",
+          "packet_id": "bulk-0007",
+          "size_bytes": 1500,
+          "sojourn_us": 18800,
+          "start_us": 76800,
+          "waiting_us": 6800
+        },
+        {
+          "arrival_us": 80000,
+          "finish_us": 100800,
+          "flow": "bulk",
+          "packet_id": "bulk-0008",
+          "size_bytes": 1500,
+          "sojourn_us": 20800,
+          "start_us": 88800,
+          "waiting_us": 8800
+        },
+        {
+          "arrival_us": 80000,
+          "finish_us": 102400,
+          "flow": "voice",
+          "packet_id": "voice-0004",
+          "size_bytes": 200,
+          "sojourn_us": 22400,
+          "start_us": 100800,
+          "waiting_us": 20800
+        },
+        {
+          "arrival_us": 90000,
+          "finish_us": 114400,
+          "flow": "bulk",
+          "packet_id": "bulk-0009",
+          "size_bytes": 1500,
+          "sojourn_us": 24400,
+          "start_us": 102400,
+          "waiting_us": 12400
+        },
+        {
+          "arrival_us": 110000,
+          "finish_us": 126400,
+          "flow": "bulk",
+          "packet_id": "bulk-0011",
+          "size_bytes": 1500,
+          "sojourn_us": 16400,
+          "start_us": 114400,
+          "waiting_us": 4400
+        },
+        {
+          "arrival_us": 120000,
+          "finish_us": 138400,
+          "flow": "bulk",
+          "packet_id": "bulk-0012",
+          "size_bytes": 1500,
+          "sojourn_us": 18400,
+          "start_us": 126400,
+          "waiting_us": 6400
+        },
+        {
+          "arrival_us": 120000,
+          "finish_us": 140000,
+          "flow": "voice",
+          "packet_id": "voice-0006",
+          "size_bytes": 200,
+          "sojourn_us": 20000,
+          "start_us": 138400,
+          "waiting_us": 18400
+        },
+        {
+          "arrival_us": 130000,
+          "finish_us": 152000,
+          "flow": "bulk",
+          "packet_id": "bulk-0013",
+          "size_bytes": 1500,
+          "sojourn_us": 22000,
+          "start_us": 140000,
+          "waiting_us": 10000
+        },
+        {
+          "arrival_us": 140000,
+          "finish_us": 164000,
+          "flow": "bulk",
+          "packet_id": "bulk-0014",
+          "size_bytes": 1500,
+          "sojourn_us": 24000,
+          "start_us": 152000,
+          "waiting_us": 12000
+        },
+        {
+          "arrival_us": 140000,
+          "finish_us": 165600,
+          "flow": "voice",
+          "packet_id": "voice-0007",
+          "size_bytes": 200,
+          "sojourn_us": 25600,
+          "start_us": 164000,
+          "waiting_us": 24000
+        },
+        {
+          "arrival_us": 160000,
+          "finish_us": 177600,
+          "flow": "bulk",
+          "packet_id": "bulk-0016",
+          "size_bytes": 1500,
+          "sojourn_us": 17600,
+          "start_us": 165600,
+          "waiting_us": 5600
+        },
+        {
+          "arrival_us": 170000,
+          "finish_us": 189600,
+          "flow": "bulk",
+          "packet_id": "bulk-0017",
+          "size_bytes": 1500,
+          "sojourn_us": 19600,
+          "start_us": 177600,
+          "waiting_us": 7600
+        },
+        {
+          "arrival_us": 180000,
+          "finish_us": 201600,
+          "flow": "bulk",
+          "packet_id": "bulk-0018",
+          "size_bytes": 1500,
+          "sojourn_us": 21600,
+          "start_us": 189600,
+          "waiting_us": 9600
+        },
+        {
+          "arrival_us": 180000,
+          "finish_us": 203200,
+          "flow": "voice",
+          "packet_id": "voice-0009",
+          "size_bytes": 200,
+          "sojourn_us": 23200,
+          "start_us": 201600,
+          "waiting_us": 21600
+        },
+        {
+          "arrival_us": 190000,
+          "finish_us": 215200,
+          "flow": "bulk",
+          "packet_id": "bulk-0019",
+          "size_bytes": 1500,
+          "sojourn_us": 25200,
+          "start_us": 203200,
+          "waiting_us": 13200
+        },
+        {
+          "arrival_us": 210000,
+          "finish_us": 227200,
+          "flow": "bulk",
+          "packet_id": "bulk-0021",
+          "size_bytes": 1500,
+          "sojourn_us": 17200,
+          "start_us": 215200,
+          "waiting_us": 5200
+        },
+        {
+          "arrival_us": 220000,
+          "finish_us": 239200,
+          "flow": "bulk",
+          "packet_id": "bulk-0022",
+          "size_bytes": 1500,
+          "sojourn_us": 19200,
+          "start_us": 227200,
+          "waiting_us": 7200
+        },
+        {
+          "arrival_us": 220000,
+          "finish_us": 240800,
+          "flow": "voice",
+          "packet_id": "voice-0011",
+          "size_bytes": 200,
+          "sojourn_us": 20800,
+          "start_us": 239200,
+          "waiting_us": 19200
+        },
+        {
+          "arrival_us": 230000,
+          "finish_us": 252800,
+          "flow": "bulk",
+          "packet_id": "bulk-0023",
+          "size_bytes": 1500,
+          "sojourn_us": 22800,
+          "start_us": 240800,
+          "waiting_us": 10800
+        },
+        {
+          "arrival_us": 240000,
+          "finish_us": 264800,
+          "flow": "bulk",
+          "packet_id": "bulk-0024",
+          "size_bytes": 1500,
+          "sojourn_us": 24800,
+          "start_us": 252800,
+          "waiting_us": 12800
+        },
+        {
+          "arrival_us": 250000,
+          "finish_us": 276800,
+          "flow": "bulk",
+          "packet_id": "bulk-0025",
+          "size_bytes": 1500,
+          "sojourn_us": 26800,
+          "start_us": 264800,
+          "waiting_us": 14800
+        },
+        {
+          "arrival_us": 260000,
+          "finish_us": 288800,
+          "flow": "bulk",
+          "packet_id": "bulk-0026",
+          "size_bytes": 1500,
+          "sojourn_us": 28800,
+          "start_us": 276800,
+          "waiting_us": 16800
+        },
+        {
+          "arrival_us": 270000,
+          "finish_us": 300800,
+          "flow": "bulk",
+          "packet_id": "bulk-0027",
+          "size_bytes": 1500,
+          "sojourn_us": 30800,
+          "start_us": 288800,
+          "waiting_us": 18800
+        },
+        {
+          "arrival_us": 280000,
+          "finish_us": 312800,
+          "flow": "bulk",
+          "packet_id": "bulk-0028",
+          "size_bytes": 1500,
+          "sojourn_us": 32800,
+          "start_us": 300800,
+          "waiting_us": 20800
+        },
+        {
+          "arrival_us": 290000,
+          "finish_us": 324800,
+          "flow": "bulk",
+          "packet_id": "bulk-0029",
+          "size_bytes": 1500,
+          "sojourn_us": 34800,
+          "start_us": 312800,
+          "waiting_us": 22800
+        },
+        {
+          "arrival_us": 310000,
+          "finish_us": 336800,
+          "flow": "bulk",
+          "packet_id": "bulk-0031",
+          "size_bytes": 1500,
+          "sojourn_us": 26800,
+          "start_us": 324800,
+          "waiting_us": 14800
+        },
+        {
+          "arrival_us": 320000,
+          "finish_us": 348800,
+          "flow": "bulk",
+          "packet_id": "bulk-0032",
+          "size_bytes": 1500,
+          "sojourn_us": 28800,
+          "start_us": 336800,
+          "waiting_us": 16800
+        },
+        {
+          "arrival_us": 330000,
+          "finish_us": 360800,
+          "flow": "bulk",
+          "packet_id": "bulk-0033",
+          "size_bytes": 1500,
+          "sojourn_us": 30800,
+          "start_us": 348800,
+          "waiting_us": 18800
+        },
+        {
+          "arrival_us": 340000,
+          "finish_us": 372800,
+          "flow": "bulk",
+          "packet_id": "bulk-0034",
+          "size_bytes": 1500,
+          "sojourn_us": 32800,
+          "start_us": 360800,
+          "waiting_us": 20800
+        },
+        {
+          "arrival_us": 350000,
+          "finish_us": 384800,
+          "flow": "bulk",
+          "packet_id": "bulk-0035",
+          "size_bytes": 1500,
+          "sojourn_us": 34800,
+          "start_us": 372800,
+          "waiting_us": 22800
+        },
+        {
+          "arrival_us": 370000,
+          "finish_us": 396800,
+          "flow": "bulk",
+          "packet_id": "bulk-0037",
+          "size_bytes": 1500,
+          "sojourn_us": 26800,
+          "start_us": 384800,
+          "waiting_us": 14800
+        },
+        {
+          "arrival_us": 380000,
+          "finish_us": 408800,
+          "flow": "bulk",
+          "packet_id": "bulk-0038",
+          "size_bytes": 1500,
+          "sojourn_us": 28800,
+          "start_us": 396800,
+          "waiting_us": 16800
+        },
+        {
+          "arrival_us": 390000,
+          "finish_us": 420800,
+          "flow": "bulk",
+          "packet_id": "bulk-0039",
+          "size_bytes": 1500,
+          "sojourn_us": 30800,
+          "start_us": 408800,
+          "waiting_us": 18800
+        },
+        {
+          "arrival_us": 400000,
+          "finish_us": 432800,
+          "flow": "bulk",
+          "packet_id": "bulk-0040",
+          "size_bytes": 1500,
+          "sojourn_us": 32800,
+          "start_us": 420800,
+          "waiting_us": 20800
+        },
+        {
+          "arrival_us": 410000,
+          "finish_us": 444800,
+          "flow": "bulk",
+          "packet_id": "bulk-0041",
+          "size_bytes": 1500,
+          "sojourn_us": 34800,
+          "start_us": 432800,
+          "waiting_us": 22800
+        },
+        {
+          "arrival_us": 430000,
+          "finish_us": 456800,
+          "flow": "bulk",
+          "packet_id": "bulk-0043",
+          "size_bytes": 1500,
+          "sojourn_us": 26800,
+          "start_us": 444800,
+          "waiting_us": 14800
+        },
+        {
+          "arrival_us": 440000,
+          "finish_us": 468800,
+          "flow": "bulk",
+          "packet_id": "bulk-0044",
+          "size_bytes": 1500,
+          "sojourn_us": 28800,
+          "start_us": 456800,
+          "waiting_us": 16800
+        },
+        {
+          "arrival_us": 450000,
+          "finish_us": 480800,
+          "flow": "bulk",
+          "packet_id": "bulk-0045",
+          "size_bytes": 1500,
+          "sojourn_us": 30800,
+          "start_us": 468800,
+          "waiting_us": 18800
+        },
+        {
+          "arrival_us": 460000,
+          "finish_us": 492800,
+          "flow": "bulk",
+          "packet_id": "bulk-0046",
+          "size_bytes": 1500,
+          "sojourn_us": 32800,
+          "start_us": 480800,
+          "waiting_us": 20800
+        },
+        {
+          "arrival_us": 470000,
+          "finish_us": 504800,
+          "flow": "bulk",
+          "packet_id": "bulk-0047",
+          "size_bytes": 1500,
+          "sojourn_us": 34800,
+          "start_us": 492800,
+          "waiting_us": 22800
+        },
+        {
+          "arrival_us": 490000,
+          "finish_us": 516800,
+          "flow": "bulk",
+          "packet_id": "bulk-0049",
+          "size_bytes": 1500,
+          "sojourn_us": 26800,
+          "start_us": 504800,
+          "waiting_us": 14800
+        },
+        {
+          "arrival_us": 500000,
+          "finish_us": 528800,
+          "flow": "bulk",
+          "packet_id": "bulk-0050",
+          "size_bytes": 1500,
+          "sojourn_us": 28800,
+          "start_us": 516800,
+          "waiting_us": 16800
+        },
+        {
+          "arrival_us": 510000,
+          "finish_us": 540800,
+          "flow": "bulk",
+          "packet_id": "bulk-0051",
+          "size_bytes": 1500,
+          "sojourn_us": 30800,
+          "start_us": 528800,
+          "waiting_us": 18800
+        },
+        {
+          "arrival_us": 520000,
+          "finish_us": 552800,
+          "flow": "bulk",
+          "packet_id": "bulk-0052",
+          "size_bytes": 1500,
+          "sojourn_us": 32800,
+          "start_us": 540800,
+          "waiting_us": 20800
+        },
+        {
+          "arrival_us": 530000,
+          "finish_us": 564800,
+          "flow": "bulk",
+          "packet_id": "bulk-0053",
+          "size_bytes": 1500,
+          "sojourn_us": 34800,
+          "start_us": 552800,
+          "waiting_us": 22800
+        },
+        {
+          "arrival_us": 550000,
+          "finish_us": 576800,
+          "flow": "bulk",
+          "packet_id": "bulk-0055",
+          "size_bytes": 1500,
+          "sojourn_us": 26800,
+          "start_us": 564800,
+          "waiting_us": 14800
+        },
+        {
+          "arrival_us": 560000,
+          "finish_us": 588800,
+          "flow": "bulk",
+          "packet_id": "bulk-0056",
+          "size_bytes": 1500,
+          "sojourn_us": 28800,
+          "start_us": 576800,
+          "waiting_us": 16800
+        },
+        {
+          "arrival_us": 570000,
+          "finish_us": 600800,
+          "flow": "bulk",
+          "packet_id": "bulk-0057",
+          "size_bytes": 1500,
+          "sojourn_us": 30800,
+          "start_us": 588800,
+          "waiting_us": 18800
+        },
+        {
+          "arrival_us": 580000,
+          "finish_us": 612800,
+          "flow": "bulk",
+          "packet_id": "bulk-0058",
+          "size_bytes": 1500,
+          "sojourn_us": 32800,
+          "start_us": 600800,
+          "waiting_us": 20800
+        },
+        {
+          "arrival_us": 590000,
+          "finish_us": 624800,
+          "flow": "bulk",
+          "packet_id": "bulk-0059",
+          "size_bytes": 1500,
+          "sojourn_us": 34800,
+          "start_us": 612800,
+          "waiting_us": 22800
+        },
+        {
+          "arrival_us": 610000,
+          "finish_us": 636800,
+          "flow": "bulk",
+          "packet_id": "bulk-0061",
+          "size_bytes": 1500,
+          "sojourn_us": 26800,
+          "start_us": 624800,
+          "waiting_us": 14800
+        },
+        {
+          "arrival_us": 620000,
+          "finish_us": 648800,
+          "flow": "bulk",
+          "packet_id": "bulk-0062",
+          "size_bytes": 1500,
+          "sojourn_us": 28800,
+          "start_us": 636800,
+          "waiting_us": 16800
+        },
+        {
+          "arrival_us": 630000,
+          "finish_us": 660800,
+          "flow": "bulk",
+          "packet_id": "bulk-0063",
+          "size_bytes": 1500,
+          "sojourn_us": 30800,
+          "start_us": 648800,
+          "waiting_us": 18800
+        },
+        {
+          "arrival_us": 640000,
+          "finish_us": 672800,
+          "flow": "bulk",
+          "packet_id": "bulk-0064",
+          "size_bytes": 1500,
+          "sojourn_us": 32800,
+          "start_us": 660800,
+          "waiting_us": 20800
+        },
+        {
+          "arrival_us": 650000,
+          "finish_us": 684800,
+          "flow": "bulk",
+          "packet_id": "bulk-0065",
+          "size_bytes": 1500,
+          "sojourn_us": 34800,
+          "start_us": 672800,
+          "waiting_us": 22800
+        },
+        {
+          "arrival_us": 670000,
+          "finish_us": 696800,
+          "flow": "bulk",
+          "packet_id": "bulk-0067",
+          "size_bytes": 1500,
+          "sojourn_us": 26800,
+          "start_us": 684800,
+          "waiting_us": 14800
+        },
+        {
+          "arrival_us": 680000,
+          "finish_us": 708800,
+          "flow": "bulk",
+          "packet_id": "bulk-0068",
+          "size_bytes": 1500,
+          "sojourn_us": 28800,
+          "start_us": 696800,
+          "waiting_us": 16800
+        },
+        {
+          "arrival_us": 690000,
+          "finish_us": 720800,
+          "flow": "bulk",
+          "packet_id": "bulk-0069",
+          "size_bytes": 1500,
+          "sojourn_us": 30800,
+          "start_us": 708800,
+          "waiting_us": 18800
+        },
+        {
+          "arrival_us": 700000,
+          "finish_us": 732800,
+          "flow": "bulk",
+          "packet_id": "bulk-0070",
+          "size_bytes": 1500,
+          "sojourn_us": 32800,
+          "start_us": 720800,
+          "waiting_us": 20800
+        },
+        {
+          "arrival_us": 710000,
+          "finish_us": 744800,
+          "flow": "bulk",
+          "packet_id": "bulk-0071",
+          "size_bytes": 1500,
+          "sojourn_us": 34800,
+          "start_us": 732800,
+          "waiting_us": 22800
+        },
+        {
+          "arrival_us": 730000,
+          "finish_us": 756800,
+          "flow": "bulk",
+          "packet_id": "bulk-0073",
+          "size_bytes": 1500,
+          "sojourn_us": 26800,
+          "start_us": 744800,
+          "waiting_us": 14800
+        },
+        {
+          "arrival_us": 740000,
+          "finish_us": 768800,
+          "flow": "bulk",
+          "packet_id": "bulk-0074",
+          "size_bytes": 1500,
+          "sojourn_us": 28800,
+          "start_us": 756800,
+          "waiting_us": 16800
+        },
+        {
+          "arrival_us": 750000,
+          "finish_us": 780800,
+          "flow": "bulk",
+          "packet_id": "bulk-0075",
+          "size_bytes": 1500,
+          "sojourn_us": 30800,
+          "start_us": 768800,
+          "waiting_us": 18800
+        },
+        {
+          "arrival_us": 760000,
+          "finish_us": 792800,
+          "flow": "bulk",
+          "packet_id": "bulk-0076",
+          "size_bytes": 1500,
+          "sojourn_us": 32800,
+          "start_us": 780800,
+          "waiting_us": 20800
+        },
+        {
+          "arrival_us": 770000,
+          "finish_us": 804800,
+          "flow": "bulk",
+          "packet_id": "bulk-0077",
+          "size_bytes": 1500,
+          "sojourn_us": 34800,
+          "start_us": 792800,
+          "waiting_us": 22800
+        },
+        {
+          "arrival_us": 790000,
+          "finish_us": 816800,
+          "flow": "bulk",
+          "packet_id": "bulk-0079",
+          "size_bytes": 1500,
+          "sojourn_us": 26800,
+          "start_us": 804800,
+          "waiting_us": 14800
+        },
+        {
+          "arrival_us": 800000,
+          "finish_us": 828800,
+          "flow": "bulk",
+          "packet_id": "bulk-0080",
+          "size_bytes": 1500,
+          "sojourn_us": 28800,
+          "start_us": 816800,
+          "waiting_us": 16800
+        },
+        {
+          "arrival_us": 810000,
+          "finish_us": 840800,
+          "flow": "bulk",
+          "packet_id": "bulk-0081",
+          "size_bytes": 1500,
+          "sojourn_us": 30800,
+          "start_us": 828800,
+          "waiting_us": 18800
+        },
+        {
+          "arrival_us": 820000,
+          "finish_us": 852800,
+          "flow": "bulk",
+          "packet_id": "bulk-0082",
+          "size_bytes": 1500,
+          "sojourn_us": 32800,
+          "start_us": 840800,
+          "waiting_us": 20800
+        },
+        {
+          "arrival_us": 830000,
+          "finish_us": 864800,
+          "flow": "bulk",
+          "packet_id": "bulk-0083",
+          "size_bytes": 1500,
+          "sojourn_us": 34800,
+          "start_us": 852800,
+          "waiting_us": 22800
+        },
+        {
+          "arrival_us": 850000,
+          "finish_us": 876800,
+          "flow": "bulk",
+          "packet_id": "bulk-0085",
+          "size_bytes": 1500,
+          "sojourn_us": 26800,
+          "start_us": 864800,
+          "waiting_us": 14800
+        },
+        {
+          "arrival_us": 860000,
+          "finish_us": 888800,
+          "flow": "bulk",
+          "packet_id": "bulk-0086",
+          "size_bytes": 1500,
+          "sojourn_us": 28800,
+          "start_us": 876800,
+          "waiting_us": 16800
+        },
+        {
+          "arrival_us": 870000,
+          "finish_us": 900800,
+          "flow": "bulk",
+          "packet_id": "bulk-0087",
+          "size_bytes": 1500,
+          "sojourn_us": 30800,
+          "start_us": 888800,
+          "waiting_us": 18800
+        },
+        {
+          "arrival_us": 880000,
+          "finish_us": 912800,
+          "flow": "bulk",
+          "packet_id": "bulk-0088",
+          "size_bytes": 1500,
+          "sojourn_us": 32800,
+          "start_us": 900800,
+          "waiting_us": 20800
+        },
+        {
+          "arrival_us": 890000,
+          "finish_us": 924800,
+          "flow": "bulk",
+          "packet_id": "bulk-0089",
+          "size_bytes": 1500,
+          "sojourn_us": 34800,
+          "start_us": 912800,
+          "waiting_us": 22800
+        },
+        {
+          "arrival_us": 910000,
+          "finish_us": 936800,
+          "flow": "bulk",
+          "packet_id": "bulk-0091",
+          "size_bytes": 1500,
+          "sojourn_us": 26800,
+          "start_us": 924800,
+          "waiting_us": 14800
+        },
+        {
+          "arrival_us": 920000,
+          "finish_us": 948800,
+          "flow": "bulk",
+          "packet_id": "bulk-0092",
+          "size_bytes": 1500,
+          "sojourn_us": 28800,
+          "start_us": 936800,
+          "waiting_us": 16800
+        },
+        {
+          "arrival_us": 930000,
+          "finish_us": 960800,
+          "flow": "bulk",
+          "packet_id": "bulk-0093",
+          "size_bytes": 1500,
+          "sojourn_us": 30800,
+          "start_us": 948800,
+          "waiting_us": 18800
+        },
+        {
+          "arrival_us": 940000,
+          "finish_us": 972800,
+          "flow": "bulk",
+          "packet_id": "bulk-0094",
+          "size_bytes": 1500,
+          "sojourn_us": 32800,
+          "start_us": 960800,
+          "waiting_us": 20800
+        },
+        {
+          "arrival_us": 950000,
+          "finish_us": 984800,
+          "flow": "bulk",
+          "packet_id": "bulk-0095",
+          "size_bytes": 1500,
+          "sojourn_us": 34800,
+          "start_us": 972800,
+          "waiting_us": 22800
+        },
+        {
+          "arrival_us": 970000,
+          "finish_us": 996800,
+          "flow": "bulk",
+          "packet_id": "bulk-0097",
+          "size_bytes": 1500,
+          "sojourn_us": 26800,
+          "start_us": 984800,
+          "waiting_us": 14800
+        },
+        {
+          "arrival_us": 980000,
+          "finish_us": 1008800,
+          "flow": "bulk",
+          "packet_id": "bulk-0098",
+          "size_bytes": 1500,
+          "sojourn_us": 28800,
+          "start_us": 996800,
+          "waiting_us": 16800
+        },
+        {
+          "arrival_us": 990000,
+          "finish_us": 1020800,
+          "flow": "bulk",
+          "packet_id": "bulk-0099",
+          "size_bytes": 1500,
+          "sojourn_us": 30800,
+          "start_us": 1008800,
+          "waiting_us": 18800
+        }
+      ],
+      "dropped": [
+        {
+          "arrival_us": 50000,
+          "flow": "bulk",
+          "packet_id": "bulk-0005",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 60000,
+          "flow": "voice",
+          "packet_id": "voice-0003",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 100000,
+          "flow": "bulk",
+          "packet_id": "bulk-0010",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 100000,
+          "flow": "voice",
+          "packet_id": "voice-0005",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 150000,
+          "flow": "bulk",
+          "packet_id": "bulk-0015",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 160000,
+          "flow": "voice",
+          "packet_id": "voice-0008",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 200000,
+          "flow": "bulk",
+          "packet_id": "bulk-0020",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 200000,
+          "flow": "voice",
+          "packet_id": "voice-0010",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 240000,
+          "flow": "voice",
+          "packet_id": "voice-0012",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 260000,
+          "flow": "voice",
+          "packet_id": "voice-0013",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 280000,
+          "flow": "voice",
+          "packet_id": "voice-0014",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 300000,
+          "flow": "bulk",
+          "packet_id": "bulk-0030",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 300000,
+          "flow": "voice",
+          "packet_id": "voice-0015",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 320000,
+          "flow": "voice",
+          "packet_id": "voice-0016",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 340000,
+          "flow": "voice",
+          "packet_id": "voice-0017",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 360000,
+          "flow": "bulk",
+          "packet_id": "bulk-0036",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 360000,
+          "flow": "voice",
+          "packet_id": "voice-0018",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 380000,
+          "flow": "voice",
+          "packet_id": "voice-0019",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 400000,
+          "flow": "voice",
+          "packet_id": "voice-0020",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 420000,
+          "flow": "bulk",
+          "packet_id": "bulk-0042",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 420000,
+          "flow": "voice",
+          "packet_id": "voice-0021",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 440000,
+          "flow": "voice",
+          "packet_id": "voice-0022",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 460000,
+          "flow": "voice",
+          "packet_id": "voice-0023",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 480000,
+          "flow": "bulk",
+          "packet_id": "bulk-0048",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 480000,
+          "flow": "voice",
+          "packet_id": "voice-0024",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 500000,
+          "flow": "voice",
+          "packet_id": "voice-0025",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 520000,
+          "flow": "voice",
+          "packet_id": "voice-0026",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 540000,
+          "flow": "bulk",
+          "packet_id": "bulk-0054",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 540000,
+          "flow": "voice",
+          "packet_id": "voice-0027",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 560000,
+          "flow": "voice",
+          "packet_id": "voice-0028",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 580000,
+          "flow": "voice",
+          "packet_id": "voice-0029",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 600000,
+          "flow": "bulk",
+          "packet_id": "bulk-0060",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 600000,
+          "flow": "voice",
+          "packet_id": "voice-0030",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 620000,
+          "flow": "voice",
+          "packet_id": "voice-0031",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 640000,
+          "flow": "voice",
+          "packet_id": "voice-0032",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 660000,
+          "flow": "bulk",
+          "packet_id": "bulk-0066",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 660000,
+          "flow": "voice",
+          "packet_id": "voice-0033",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 680000,
+          "flow": "voice",
+          "packet_id": "voice-0034",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 700000,
+          "flow": "voice",
+          "packet_id": "voice-0035",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 720000,
+          "flow": "bulk",
+          "packet_id": "bulk-0072",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 720000,
+          "flow": "voice",
+          "packet_id": "voice-0036",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 740000,
+          "flow": "voice",
+          "packet_id": "voice-0037",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 760000,
+          "flow": "voice",
+          "packet_id": "voice-0038",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 780000,
+          "flow": "bulk",
+          "packet_id": "bulk-0078",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 780000,
+          "flow": "voice",
+          "packet_id": "voice-0039",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 800000,
+          "flow": "voice",
+          "packet_id": "voice-0040",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 820000,
+          "flow": "voice",
+          "packet_id": "voice-0041",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 840000,
+          "flow": "bulk",
+          "packet_id": "bulk-0084",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 840000,
+          "flow": "voice",
+          "packet_id": "voice-0042",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 860000,
+          "flow": "voice",
+          "packet_id": "voice-0043",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 880000,
+          "flow": "voice",
+          "packet_id": "voice-0044",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 900000,
+          "flow": "bulk",
+          "packet_id": "bulk-0090",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 900000,
+          "flow": "voice",
+          "packet_id": "voice-0045",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 920000,
+          "flow": "voice",
+          "packet_id": "voice-0046",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 940000,
+          "flow": "voice",
+          "packet_id": "voice-0047",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 960000,
+          "flow": "bulk",
+          "packet_id": "bulk-0096",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 960000,
+          "flow": "voice",
+          "packet_id": "voice-0048",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 980000,
+          "flow": "voice",
+          "packet_id": "voice-0049",
+          "reason": "waiting_buffer_full"
+        }
+      ],
+      "flows": [
+        {
+          "delivered": 84,
+          "dropped": 16,
+          "flow": "bulk",
+          "mean_sojourn_ms": 28.019048,
+          "offered": 100,
+          "p95_sojourn_ms": 34.8
+        },
+        {
+          "delivered": 8,
+          "dropped": 42,
+          "flow": "voice",
+          "mean_sojourn_ms": 21.2,
+          "offered": 50,
+          "p95_sojourn_ms": 25.6
+        }
+      ],
+      "policy": "fifo",
+      "rate_bps": 1000000,
+      "waiting_slots": 2
+    },
+    "priority_large": {
+      "delivered": [
+        {
+          "arrival_us": 0,
+          "finish_us": 12000,
+          "flow": "bulk",
+          "packet_id": "bulk-0000",
+          "size_bytes": 1500,
+          "sojourn_us": 12000,
+          "start_us": 0,
+          "waiting_us": 0
+        },
+        {
+          "arrival_us": 0,
+          "finish_us": 13600,
+          "flow": "voice",
+          "packet_id": "voice-0000",
+          "size_bytes": 200,
+          "sojourn_us": 13600,
+          "start_us": 12000,
+          "waiting_us": 12000
+        },
+        {
+          "arrival_us": 10000,
+          "finish_us": 25600,
+          "flow": "bulk",
+          "packet_id": "bulk-0001",
+          "size_bytes": 1500,
+          "sojourn_us": 15600,
+          "start_us": 13600,
+          "waiting_us": 3600
+        },
+        {
+          "arrival_us": 20000,
+          "finish_us": 27200,
+          "flow": "voice",
+          "packet_id": "voice-0001",
+          "size_bytes": 200,
+          "sojourn_us": 7200,
+          "start_us": 25600,
+          "waiting_us": 5600
+        },
+        {
+          "arrival_us": 20000,
+          "finish_us": 39200,
+          "flow": "bulk",
+          "packet_id": "bulk-0002",
+          "size_bytes": 1500,
+          "sojourn_us": 19200,
+          "start_us": 27200,
+          "waiting_us": 7200
+        },
+        {
+          "arrival_us": 30000,
+          "finish_us": 51200,
+          "flow": "bulk",
+          "packet_id": "bulk-0003",
+          "size_bytes": 1500,
+          "sojourn_us": 21200,
+          "start_us": 39200,
+          "waiting_us": 9200
+        },
+        {
+          "arrival_us": 40000,
+          "finish_us": 52800,
+          "flow": "voice",
+          "packet_id": "voice-0002",
+          "size_bytes": 200,
+          "sojourn_us": 12800,
+          "start_us": 51200,
+          "waiting_us": 11200
+        },
+        {
+          "arrival_us": 40000,
+          "finish_us": 64800,
+          "flow": "bulk",
+          "packet_id": "bulk-0004",
+          "size_bytes": 1500,
+          "sojourn_us": 24800,
+          "start_us": 52800,
+          "waiting_us": 12800
+        },
+        {
+          "arrival_us": 60000,
+          "finish_us": 66400,
+          "flow": "voice",
+          "packet_id": "voice-0003",
+          "size_bytes": 200,
+          "sojourn_us": 6400,
+          "start_us": 64800,
+          "waiting_us": 4800
+        },
+        {
+          "arrival_us": 50000,
+          "finish_us": 78400,
+          "flow": "bulk",
+          "packet_id": "bulk-0005",
+          "size_bytes": 1500,
+          "sojourn_us": 28400,
+          "start_us": 66400,
+          "waiting_us": 16400
+        },
+        {
+          "arrival_us": 60000,
+          "finish_us": 90400,
+          "flow": "bulk",
+          "packet_id": "bulk-0006",
+          "size_bytes": 1500,
+          "sojourn_us": 30400,
+          "start_us": 78400,
+          "waiting_us": 18400
+        },
+        {
+          "arrival_us": 80000,
+          "finish_us": 92000,
+          "flow": "voice",
+          "packet_id": "voice-0004",
+          "size_bytes": 200,
+          "sojourn_us": 12000,
+          "start_us": 90400,
+          "waiting_us": 10400
+        },
+        {
+          "arrival_us": 70000,
+          "finish_us": 104000,
+          "flow": "bulk",
+          "packet_id": "bulk-0007",
+          "size_bytes": 1500,
+          "sojourn_us": 34000,
+          "start_us": 92000,
+          "waiting_us": 22000
+        },
+        {
+          "arrival_us": 100000,
+          "finish_us": 105600,
+          "flow": "voice",
+          "packet_id": "voice-0005",
+          "size_bytes": 200,
+          "sojourn_us": 5600,
+          "start_us": 104000,
+          "waiting_us": 4000
+        },
+        {
+          "arrival_us": 80000,
+          "finish_us": 117600,
+          "flow": "bulk",
+          "packet_id": "bulk-0008",
+          "size_bytes": 1500,
+          "sojourn_us": 37600,
+          "start_us": 105600,
+          "waiting_us": 25600
+        },
+        {
+          "arrival_us": 90000,
+          "finish_us": 129600,
+          "flow": "bulk",
+          "packet_id": "bulk-0009",
+          "size_bytes": 1500,
+          "sojourn_us": 39600,
+          "start_us": 117600,
+          "waiting_us": 27600
+        },
+        {
+          "arrival_us": 120000,
+          "finish_us": 131200,
+          "flow": "voice",
+          "packet_id": "voice-0006",
+          "size_bytes": 200,
+          "sojourn_us": 11200,
+          "start_us": 129600,
+          "waiting_us": 9600
+        },
+        {
+          "arrival_us": 100000,
+          "finish_us": 143200,
+          "flow": "bulk",
+          "packet_id": "bulk-0010",
+          "size_bytes": 1500,
+          "sojourn_us": 43200,
+          "start_us": 131200,
+          "waiting_us": 31200
+        },
+        {
+          "arrival_us": 140000,
+          "finish_us": 144800,
+          "flow": "voice",
+          "packet_id": "voice-0007",
+          "size_bytes": 200,
+          "sojourn_us": 4800,
+          "start_us": 143200,
+          "waiting_us": 3200
+        },
+        {
+          "arrival_us": 110000,
+          "finish_us": 156800,
+          "flow": "bulk",
+          "packet_id": "bulk-0011",
+          "size_bytes": 1500,
+          "sojourn_us": 46800,
+          "start_us": 144800,
+          "waiting_us": 34800
+        },
+        {
+          "arrival_us": 120000,
+          "finish_us": 168800,
+          "flow": "bulk",
+          "packet_id": "bulk-0012",
+          "size_bytes": 1500,
+          "sojourn_us": 48800,
+          "start_us": 156800,
+          "waiting_us": 36800
+        },
+        {
+          "arrival_us": 160000,
+          "finish_us": 170400,
+          "flow": "voice",
+          "packet_id": "voice-0008",
+          "size_bytes": 200,
+          "sojourn_us": 10400,
+          "start_us": 168800,
+          "waiting_us": 8800
+        },
+        {
+          "arrival_us": 130000,
+          "finish_us": 182400,
+          "flow": "bulk",
+          "packet_id": "bulk-0013",
+          "size_bytes": 1500,
+          "sojourn_us": 52400,
+          "start_us": 170400,
+          "waiting_us": 40400
+        },
+        {
+          "arrival_us": 180000,
+          "finish_us": 184000,
+          "flow": "voice",
+          "packet_id": "voice-0009",
+          "size_bytes": 200,
+          "sojourn_us": 4000,
+          "start_us": 182400,
+          "waiting_us": 2400
+        },
+        {
+          "arrival_us": 140000,
+          "finish_us": 196000,
+          "flow": "bulk",
+          "packet_id": "bulk-0014",
+          "size_bytes": 1500,
+          "sojourn_us": 56000,
+          "start_us": 184000,
+          "waiting_us": 44000
+        },
+        {
+          "arrival_us": 150000,
+          "finish_us": 208000,
+          "flow": "bulk",
+          "packet_id": "bulk-0015",
+          "size_bytes": 1500,
+          "sojourn_us": 58000,
+          "start_us": 196000,
+          "waiting_us": 46000
+        },
+        {
+          "arrival_us": 200000,
+          "finish_us": 209600,
+          "flow": "voice",
+          "packet_id": "voice-0010",
+          "size_bytes": 200,
+          "sojourn_us": 9600,
+          "start_us": 208000,
+          "waiting_us": 8000
+        },
+        {
+          "arrival_us": 160000,
+          "finish_us": 221600,
+          "flow": "bulk",
+          "packet_id": "bulk-0016",
+          "size_bytes": 1500,
+          "sojourn_us": 61600,
+          "start_us": 209600,
+          "waiting_us": 49600
+        },
+        {
+          "arrival_us": 220000,
+          "finish_us": 223200,
+          "flow": "voice",
+          "packet_id": "voice-0011",
+          "size_bytes": 200,
+          "sojourn_us": 3200,
+          "start_us": 221600,
+          "waiting_us": 1600
+        },
+        {
+          "arrival_us": 170000,
+          "finish_us": 235200,
+          "flow": "bulk",
+          "packet_id": "bulk-0017",
+          "size_bytes": 1500,
+          "sojourn_us": 65200,
+          "start_us": 223200,
+          "waiting_us": 53200
+        },
+        {
+          "arrival_us": 180000,
+          "finish_us": 247200,
+          "flow": "bulk",
+          "packet_id": "bulk-0018",
+          "size_bytes": 1500,
+          "sojourn_us": 67200,
+          "start_us": 235200,
+          "waiting_us": 55200
+        },
+        {
+          "arrival_us": 240000,
+          "finish_us": 248800,
+          "flow": "voice",
+          "packet_id": "voice-0012",
+          "size_bytes": 200,
+          "sojourn_us": 8800,
+          "start_us": 247200,
+          "waiting_us": 7200
+        },
+        {
+          "arrival_us": 190000,
+          "finish_us": 260800,
+          "flow": "bulk",
+          "packet_id": "bulk-0019",
+          "size_bytes": 1500,
+          "sojourn_us": 70800,
+          "start_us": 248800,
+          "waiting_us": 58800
+        },
+        {
+          "arrival_us": 260000,
+          "finish_us": 262400,
+          "flow": "voice",
+          "packet_id": "voice-0013",
+          "size_bytes": 200,
+          "sojourn_us": 2400,
+          "start_us": 260800,
+          "waiting_us": 800
+        },
+        {
+          "arrival_us": 200000,
+          "finish_us": 274400,
+          "flow": "bulk",
+          "packet_id": "bulk-0020",
+          "size_bytes": 1500,
+          "sojourn_us": 74400,
+          "start_us": 262400,
+          "waiting_us": 62400
+        },
+        {
+          "arrival_us": 210000,
+          "finish_us": 286400,
+          "flow": "bulk",
+          "packet_id": "bulk-0021",
+          "size_bytes": 1500,
+          "sojourn_us": 76400,
+          "start_us": 274400,
+          "waiting_us": 64400
+        },
+        {
+          "arrival_us": 280000,
+          "finish_us": 288000,
+          "flow": "voice",
+          "packet_id": "voice-0014",
+          "size_bytes": 200,
+          "sojourn_us": 8000,
+          "start_us": 286400,
+          "waiting_us": 6400
+        },
+        {
+          "arrival_us": 220000,
+          "finish_us": 300000,
+          "flow": "bulk",
+          "packet_id": "bulk-0022",
+          "size_bytes": 1500,
+          "sojourn_us": 80000,
+          "start_us": 288000,
+          "waiting_us": 68000
+        },
+        {
+          "arrival_us": 230000,
+          "finish_us": 312000,
+          "flow": "bulk",
+          "packet_id": "bulk-0023",
+          "size_bytes": 1500,
+          "sojourn_us": 82000,
+          "start_us": 300000,
+          "waiting_us": 70000
+        },
+        {
+          "arrival_us": 300000,
+          "finish_us": 313600,
+          "flow": "voice",
+          "packet_id": "voice-0015",
+          "size_bytes": 200,
+          "sojourn_us": 13600,
+          "start_us": 312000,
+          "waiting_us": 12000
+        },
+        {
+          "arrival_us": 240000,
+          "finish_us": 325600,
+          "flow": "bulk",
+          "packet_id": "bulk-0024",
+          "size_bytes": 1500,
+          "sojourn_us": 85600,
+          "start_us": 313600,
+          "waiting_us": 73600
+        },
+        {
+          "arrival_us": 320000,
+          "finish_us": 327200,
+          "flow": "voice",
+          "packet_id": "voice-0016",
+          "size_bytes": 200,
+          "sojourn_us": 7200,
+          "start_us": 325600,
+          "waiting_us": 5600
+        },
+        {
+          "arrival_us": 250000,
+          "finish_us": 339200,
+          "flow": "bulk",
+          "packet_id": "bulk-0025",
+          "size_bytes": 1500,
+          "sojourn_us": 89200,
+          "start_us": 327200,
+          "waiting_us": 77200
+        },
+        {
+          "arrival_us": 260000,
+          "finish_us": 351200,
+          "flow": "bulk",
+          "packet_id": "bulk-0026",
+          "size_bytes": 1500,
+          "sojourn_us": 91200,
+          "start_us": 339200,
+          "waiting_us": 79200
+        },
+        {
+          "arrival_us": 340000,
+          "finish_us": 352800,
+          "flow": "voice",
+          "packet_id": "voice-0017",
+          "size_bytes": 200,
+          "sojourn_us": 12800,
+          "start_us": 351200,
+          "waiting_us": 11200
+        },
+        {
+          "arrival_us": 270000,
+          "finish_us": 364800,
+          "flow": "bulk",
+          "packet_id": "bulk-0027",
+          "size_bytes": 1500,
+          "sojourn_us": 94800,
+          "start_us": 352800,
+          "waiting_us": 82800
+        },
+        {
+          "arrival_us": 360000,
+          "finish_us": 366400,
+          "flow": "voice",
+          "packet_id": "voice-0018",
+          "size_bytes": 200,
+          "sojourn_us": 6400,
+          "start_us": 364800,
+          "waiting_us": 4800
+        },
+        {
+          "arrival_us": 280000,
+          "finish_us": 378400,
+          "flow": "bulk",
+          "packet_id": "bulk-0028",
+          "size_bytes": 1500,
+          "sojourn_us": 98400,
+          "start_us": 366400,
+          "waiting_us": 86400
+        },
+        {
+          "arrival_us": 290000,
+          "finish_us": 390400,
+          "flow": "bulk",
+          "packet_id": "bulk-0029",
+          "size_bytes": 1500,
+          "sojourn_us": 100400,
+          "start_us": 378400,
+          "waiting_us": 88400
+        },
+        {
+          "arrival_us": 380000,
+          "finish_us": 392000,
+          "flow": "voice",
+          "packet_id": "voice-0019",
+          "size_bytes": 200,
+          "sojourn_us": 12000,
+          "start_us": 390400,
+          "waiting_us": 10400
+        },
+        {
+          "arrival_us": 300000,
+          "finish_us": 404000,
+          "flow": "bulk",
+          "packet_id": "bulk-0030",
+          "size_bytes": 1500,
+          "sojourn_us": 104000,
+          "start_us": 392000,
+          "waiting_us": 92000
+        },
+        {
+          "arrival_us": 400000,
+          "finish_us": 405600,
+          "flow": "voice",
+          "packet_id": "voice-0020",
+          "size_bytes": 200,
+          "sojourn_us": 5600,
+          "start_us": 404000,
+          "waiting_us": 4000
+        },
+        {
+          "arrival_us": 310000,
+          "finish_us": 417600,
+          "flow": "bulk",
+          "packet_id": "bulk-0031",
+          "size_bytes": 1500,
+          "sojourn_us": 107600,
+          "start_us": 405600,
+          "waiting_us": 95600
+        },
+        {
+          "arrival_us": 320000,
+          "finish_us": 429600,
+          "flow": "bulk",
+          "packet_id": "bulk-0032",
+          "size_bytes": 1500,
+          "sojourn_us": 109600,
+          "start_us": 417600,
+          "waiting_us": 97600
+        },
+        {
+          "arrival_us": 420000,
+          "finish_us": 431200,
+          "flow": "voice",
+          "packet_id": "voice-0021",
+          "size_bytes": 200,
+          "sojourn_us": 11200,
+          "start_us": 429600,
+          "waiting_us": 9600
+        },
+        {
+          "arrival_us": 330000,
+          "finish_us": 443200,
+          "flow": "bulk",
+          "packet_id": "bulk-0033",
+          "size_bytes": 1500,
+          "sojourn_us": 113200,
+          "start_us": 431200,
+          "waiting_us": 101200
+        },
+        {
+          "arrival_us": 440000,
+          "finish_us": 444800,
+          "flow": "voice",
+          "packet_id": "voice-0022",
+          "size_bytes": 200,
+          "sojourn_us": 4800,
+          "start_us": 443200,
+          "waiting_us": 3200
+        },
+        {
+          "arrival_us": 340000,
+          "finish_us": 456800,
+          "flow": "bulk",
+          "packet_id": "bulk-0034",
+          "size_bytes": 1500,
+          "sojourn_us": 116800,
+          "start_us": 444800,
+          "waiting_us": 104800
+        },
+        {
+          "arrival_us": 350000,
+          "finish_us": 468800,
+          "flow": "bulk",
+          "packet_id": "bulk-0035",
+          "size_bytes": 1500,
+          "sojourn_us": 118800,
+          "start_us": 456800,
+          "waiting_us": 106800
+        },
+        {
+          "arrival_us": 460000,
+          "finish_us": 470400,
+          "flow": "voice",
+          "packet_id": "voice-0023",
+          "size_bytes": 200,
+          "sojourn_us": 10400,
+          "start_us": 468800,
+          "waiting_us": 8800
+        },
+        {
+          "arrival_us": 360000,
+          "finish_us": 482400,
+          "flow": "bulk",
+          "packet_id": "bulk-0036",
+          "size_bytes": 1500,
+          "sojourn_us": 122400,
+          "start_us": 470400,
+          "waiting_us": 110400
+        },
+        {
+          "arrival_us": 480000,
+          "finish_us": 484000,
+          "flow": "voice",
+          "packet_id": "voice-0024",
+          "size_bytes": 200,
+          "sojourn_us": 4000,
+          "start_us": 482400,
+          "waiting_us": 2400
+        },
+        {
+          "arrival_us": 370000,
+          "finish_us": 496000,
+          "flow": "bulk",
+          "packet_id": "bulk-0037",
+          "size_bytes": 1500,
+          "sojourn_us": 126000,
+          "start_us": 484000,
+          "waiting_us": 114000
+        },
+        {
+          "arrival_us": 380000,
+          "finish_us": 508000,
+          "flow": "bulk",
+          "packet_id": "bulk-0038",
+          "size_bytes": 1500,
+          "sojourn_us": 128000,
+          "start_us": 496000,
+          "waiting_us": 116000
+        },
+        {
+          "arrival_us": 500000,
+          "finish_us": 509600,
+          "flow": "voice",
+          "packet_id": "voice-0025",
+          "size_bytes": 200,
+          "sojourn_us": 9600,
+          "start_us": 508000,
+          "waiting_us": 8000
+        },
+        {
+          "arrival_us": 390000,
+          "finish_us": 521600,
+          "flow": "bulk",
+          "packet_id": "bulk-0039",
+          "size_bytes": 1500,
+          "sojourn_us": 131600,
+          "start_us": 509600,
+          "waiting_us": 119600
+        },
+        {
+          "arrival_us": 520000,
+          "finish_us": 523200,
+          "flow": "voice",
+          "packet_id": "voice-0026",
+          "size_bytes": 200,
+          "sojourn_us": 3200,
+          "start_us": 521600,
+          "waiting_us": 1600
+        },
+        {
+          "arrival_us": 400000,
+          "finish_us": 535200,
+          "flow": "bulk",
+          "packet_id": "bulk-0040",
+          "size_bytes": 1500,
+          "sojourn_us": 135200,
+          "start_us": 523200,
+          "waiting_us": 123200
+        },
+        {
+          "arrival_us": 410000,
+          "finish_us": 547200,
+          "flow": "bulk",
+          "packet_id": "bulk-0041",
+          "size_bytes": 1500,
+          "sojourn_us": 137200,
+          "start_us": 535200,
+          "waiting_us": 125200
+        },
+        {
+          "arrival_us": 540000,
+          "finish_us": 548800,
+          "flow": "voice",
+          "packet_id": "voice-0027",
+          "size_bytes": 200,
+          "sojourn_us": 8800,
+          "start_us": 547200,
+          "waiting_us": 7200
+        },
+        {
+          "arrival_us": 420000,
+          "finish_us": 560800,
+          "flow": "bulk",
+          "packet_id": "bulk-0042",
+          "size_bytes": 1500,
+          "sojourn_us": 140800,
+          "start_us": 548800,
+          "waiting_us": 128800
+        },
+        {
+          "arrival_us": 560000,
+          "finish_us": 562400,
+          "flow": "voice",
+          "packet_id": "voice-0028",
+          "size_bytes": 200,
+          "sojourn_us": 2400,
+          "start_us": 560800,
+          "waiting_us": 800
+        },
+        {
+          "arrival_us": 430000,
+          "finish_us": 574400,
+          "flow": "bulk",
+          "packet_id": "bulk-0043",
+          "size_bytes": 1500,
+          "sojourn_us": 144400,
+          "start_us": 562400,
+          "waiting_us": 132400
+        },
+        {
+          "arrival_us": 440000,
+          "finish_us": 586400,
+          "flow": "bulk",
+          "packet_id": "bulk-0044",
+          "size_bytes": 1500,
+          "sojourn_us": 146400,
+          "start_us": 574400,
+          "waiting_us": 134400
+        },
+        {
+          "arrival_us": 580000,
+          "finish_us": 588000,
+          "flow": "voice",
+          "packet_id": "voice-0029",
+          "size_bytes": 200,
+          "sojourn_us": 8000,
+          "start_us": 586400,
+          "waiting_us": 6400
+        },
+        {
+          "arrival_us": 450000,
+          "finish_us": 600000,
+          "flow": "bulk",
+          "packet_id": "bulk-0045",
+          "size_bytes": 1500,
+          "sojourn_us": 150000,
+          "start_us": 588000,
+          "waiting_us": 138000
+        },
+        {
+          "arrival_us": 460000,
+          "finish_us": 612000,
+          "flow": "bulk",
+          "packet_id": "bulk-0046",
+          "size_bytes": 1500,
+          "sojourn_us": 152000,
+          "start_us": 600000,
+          "waiting_us": 140000
+        },
+        {
+          "arrival_us": 600000,
+          "finish_us": 613600,
+          "flow": "voice",
+          "packet_id": "voice-0030",
+          "size_bytes": 200,
+          "sojourn_us": 13600,
+          "start_us": 612000,
+          "waiting_us": 12000
+        },
+        {
+          "arrival_us": 470000,
+          "finish_us": 625600,
+          "flow": "bulk",
+          "packet_id": "bulk-0047",
+          "size_bytes": 1500,
+          "sojourn_us": 155600,
+          "start_us": 613600,
+          "waiting_us": 143600
+        },
+        {
+          "arrival_us": 620000,
+          "finish_us": 627200,
+          "flow": "voice",
+          "packet_id": "voice-0031",
+          "size_bytes": 200,
+          "sojourn_us": 7200,
+          "start_us": 625600,
+          "waiting_us": 5600
+        },
+        {
+          "arrival_us": 480000,
+          "finish_us": 639200,
+          "flow": "bulk",
+          "packet_id": "bulk-0048",
+          "size_bytes": 1500,
+          "sojourn_us": 159200,
+          "start_us": 627200,
+          "waiting_us": 147200
+        },
+        {
+          "arrival_us": 490000,
+          "finish_us": 651200,
+          "flow": "bulk",
+          "packet_id": "bulk-0049",
+          "size_bytes": 1500,
+          "sojourn_us": 161200,
+          "start_us": 639200,
+          "waiting_us": 149200
+        },
+        {
+          "arrival_us": 640000,
+          "finish_us": 652800,
+          "flow": "voice",
+          "packet_id": "voice-0032",
+          "size_bytes": 200,
+          "sojourn_us": 12800,
+          "start_us": 651200,
+          "waiting_us": 11200
+        },
+        {
+          "arrival_us": 500000,
+          "finish_us": 664800,
+          "flow": "bulk",
+          "packet_id": "bulk-0050",
+          "size_bytes": 1500,
+          "sojourn_us": 164800,
+          "start_us": 652800,
+          "waiting_us": 152800
+        },
+        {
+          "arrival_us": 660000,
+          "finish_us": 666400,
+          "flow": "voice",
+          "packet_id": "voice-0033",
+          "size_bytes": 200,
+          "sojourn_us": 6400,
+          "start_us": 664800,
+          "waiting_us": 4800
+        },
+        {
+          "arrival_us": 510000,
+          "finish_us": 678400,
+          "flow": "bulk",
+          "packet_id": "bulk-0051",
+          "size_bytes": 1500,
+          "sojourn_us": 168400,
+          "start_us": 666400,
+          "waiting_us": 156400
+        },
+        {
+          "arrival_us": 520000,
+          "finish_us": 690400,
+          "flow": "bulk",
+          "packet_id": "bulk-0052",
+          "size_bytes": 1500,
+          "sojourn_us": 170400,
+          "start_us": 678400,
+          "waiting_us": 158400
+        },
+        {
+          "arrival_us": 680000,
+          "finish_us": 692000,
+          "flow": "voice",
+          "packet_id": "voice-0034",
+          "size_bytes": 200,
+          "sojourn_us": 12000,
+          "start_us": 690400,
+          "waiting_us": 10400
+        },
+        {
+          "arrival_us": 530000,
+          "finish_us": 704000,
+          "flow": "bulk",
+          "packet_id": "bulk-0053",
+          "size_bytes": 1500,
+          "sojourn_us": 174000,
+          "start_us": 692000,
+          "waiting_us": 162000
+        },
+        {
+          "arrival_us": 700000,
+          "finish_us": 705600,
+          "flow": "voice",
+          "packet_id": "voice-0035",
+          "size_bytes": 200,
+          "sojourn_us": 5600,
+          "start_us": 704000,
+          "waiting_us": 4000
+        },
+        {
+          "arrival_us": 540000,
+          "finish_us": 717600,
+          "flow": "bulk",
+          "packet_id": "bulk-0054",
+          "size_bytes": 1500,
+          "sojourn_us": 177600,
+          "start_us": 705600,
+          "waiting_us": 165600
+        },
+        {
+          "arrival_us": 550000,
+          "finish_us": 729600,
+          "flow": "bulk",
+          "packet_id": "bulk-0055",
+          "size_bytes": 1500,
+          "sojourn_us": 179600,
+          "start_us": 717600,
+          "waiting_us": 167600
+        },
+        {
+          "arrival_us": 720000,
+          "finish_us": 731200,
+          "flow": "voice",
+          "packet_id": "voice-0036",
+          "size_bytes": 200,
+          "sojourn_us": 11200,
+          "start_us": 729600,
+          "waiting_us": 9600
+        },
+        {
+          "arrival_us": 560000,
+          "finish_us": 743200,
+          "flow": "bulk",
+          "packet_id": "bulk-0056",
+          "size_bytes": 1500,
+          "sojourn_us": 183200,
+          "start_us": 731200,
+          "waiting_us": 171200
+        },
+        {
+          "arrival_us": 740000,
+          "finish_us": 744800,
+          "flow": "voice",
+          "packet_id": "voice-0037",
+          "size_bytes": 200,
+          "sojourn_us": 4800,
+          "start_us": 743200,
+          "waiting_us": 3200
+        },
+        {
+          "arrival_us": 570000,
+          "finish_us": 756800,
+          "flow": "bulk",
+          "packet_id": "bulk-0057",
+          "size_bytes": 1500,
+          "sojourn_us": 186800,
+          "start_us": 744800,
+          "waiting_us": 174800
+        },
+        {
+          "arrival_us": 580000,
+          "finish_us": 768800,
+          "flow": "bulk",
+          "packet_id": "bulk-0058",
+          "size_bytes": 1500,
+          "sojourn_us": 188800,
+          "start_us": 756800,
+          "waiting_us": 176800
+        },
+        {
+          "arrival_us": 760000,
+          "finish_us": 770400,
+          "flow": "voice",
+          "packet_id": "voice-0038",
+          "size_bytes": 200,
+          "sojourn_us": 10400,
+          "start_us": 768800,
+          "waiting_us": 8800
+        },
+        {
+          "arrival_us": 590000,
+          "finish_us": 782400,
+          "flow": "bulk",
+          "packet_id": "bulk-0059",
+          "size_bytes": 1500,
+          "sojourn_us": 192400,
+          "start_us": 770400,
+          "waiting_us": 180400
+        },
+        {
+          "arrival_us": 780000,
+          "finish_us": 784000,
+          "flow": "voice",
+          "packet_id": "voice-0039",
+          "size_bytes": 200,
+          "sojourn_us": 4000,
+          "start_us": 782400,
+          "waiting_us": 2400
+        },
+        {
+          "arrival_us": 600000,
+          "finish_us": 796000,
+          "flow": "bulk",
+          "packet_id": "bulk-0060",
+          "size_bytes": 1500,
+          "sojourn_us": 196000,
+          "start_us": 784000,
+          "waiting_us": 184000
+        },
+        {
+          "arrival_us": 610000,
+          "finish_us": 808000,
+          "flow": "bulk",
+          "packet_id": "bulk-0061",
+          "size_bytes": 1500,
+          "sojourn_us": 198000,
+          "start_us": 796000,
+          "waiting_us": 186000
+        },
+        {
+          "arrival_us": 800000,
+          "finish_us": 809600,
+          "flow": "voice",
+          "packet_id": "voice-0040",
+          "size_bytes": 200,
+          "sojourn_us": 9600,
+          "start_us": 808000,
+          "waiting_us": 8000
+        },
+        {
+          "arrival_us": 620000,
+          "finish_us": 821600,
+          "flow": "bulk",
+          "packet_id": "bulk-0062",
+          "size_bytes": 1500,
+          "sojourn_us": 201600,
+          "start_us": 809600,
+          "waiting_us": 189600
+        },
+        {
+          "arrival_us": 630000,
+          "finish_us": 833600,
+          "flow": "bulk",
+          "packet_id": "bulk-0063",
+          "size_bytes": 1500,
+          "sojourn_us": 203600,
+          "start_us": 821600,
+          "waiting_us": 191600
+        },
+        {
+          "arrival_us": 640000,
+          "finish_us": 845600,
+          "flow": "bulk",
+          "packet_id": "bulk-0064",
+          "size_bytes": 1500,
+          "sojourn_us": 205600,
+          "start_us": 833600,
+          "waiting_us": 193600
+        },
+        {
+          "arrival_us": 650000,
+          "finish_us": 857600,
+          "flow": "bulk",
+          "packet_id": "bulk-0065",
+          "size_bytes": 1500,
+          "sojourn_us": 207600,
+          "start_us": 845600,
+          "waiting_us": 195600
+        },
+        {
+          "arrival_us": 660000,
+          "finish_us": 869600,
+          "flow": "bulk",
+          "packet_id": "bulk-0066",
+          "size_bytes": 1500,
+          "sojourn_us": 209600,
+          "start_us": 857600,
+          "waiting_us": 197600
+        },
+        {
+          "arrival_us": 670000,
+          "finish_us": 881600,
+          "flow": "bulk",
+          "packet_id": "bulk-0067",
+          "size_bytes": 1500,
+          "sojourn_us": 211600,
+          "start_us": 869600,
+          "waiting_us": 199600
+        },
+        {
+          "arrival_us": 680000,
+          "finish_us": 893600,
+          "flow": "bulk",
+          "packet_id": "bulk-0068",
+          "size_bytes": 1500,
+          "sojourn_us": 213600,
+          "start_us": 881600,
+          "waiting_us": 201600
+        },
+        {
+          "arrival_us": 690000,
+          "finish_us": 905600,
+          "flow": "bulk",
+          "packet_id": "bulk-0069",
+          "size_bytes": 1500,
+          "sojourn_us": 215600,
+          "start_us": 893600,
+          "waiting_us": 203600
+        },
+        {
+          "arrival_us": 700000,
+          "finish_us": 917600,
+          "flow": "bulk",
+          "packet_id": "bulk-0070",
+          "size_bytes": 1500,
+          "sojourn_us": 217600,
+          "start_us": 905600,
+          "waiting_us": 205600
+        },
+        {
+          "arrival_us": 710000,
+          "finish_us": 929600,
+          "flow": "bulk",
+          "packet_id": "bulk-0071",
+          "size_bytes": 1500,
+          "sojourn_us": 219600,
+          "start_us": 917600,
+          "waiting_us": 207600
+        },
+        {
+          "arrival_us": 720000,
+          "finish_us": 941600,
+          "flow": "bulk",
+          "packet_id": "bulk-0072",
+          "size_bytes": 1500,
+          "sojourn_us": 221600,
+          "start_us": 929600,
+          "waiting_us": 209600
+        },
+        {
+          "arrival_us": 730000,
+          "finish_us": 953600,
+          "flow": "bulk",
+          "packet_id": "bulk-0073",
+          "size_bytes": 1500,
+          "sojourn_us": 223600,
+          "start_us": 941600,
+          "waiting_us": 211600
+        },
+        {
+          "arrival_us": 740000,
+          "finish_us": 965600,
+          "flow": "bulk",
+          "packet_id": "bulk-0074",
+          "size_bytes": 1500,
+          "sojourn_us": 225600,
+          "start_us": 953600,
+          "waiting_us": 213600
+        },
+        {
+          "arrival_us": 750000,
+          "finish_us": 977600,
+          "flow": "bulk",
+          "packet_id": "bulk-0075",
+          "size_bytes": 1500,
+          "sojourn_us": 227600,
+          "start_us": 965600,
+          "waiting_us": 215600
+        },
+        {
+          "arrival_us": 760000,
+          "finish_us": 989600,
+          "flow": "bulk",
+          "packet_id": "bulk-0076",
+          "size_bytes": 1500,
+          "sojourn_us": 229600,
+          "start_us": 977600,
+          "waiting_us": 217600
+        },
+        {
+          "arrival_us": 770000,
+          "finish_us": 1001600,
+          "flow": "bulk",
+          "packet_id": "bulk-0077",
+          "size_bytes": 1500,
+          "sojourn_us": 231600,
+          "start_us": 989600,
+          "waiting_us": 219600
+        },
+        {
+          "arrival_us": 780000,
+          "finish_us": 1013600,
+          "flow": "bulk",
+          "packet_id": "bulk-0078",
+          "size_bytes": 1500,
+          "sojourn_us": 233600,
+          "start_us": 1001600,
+          "waiting_us": 221600
+        },
+        {
+          "arrival_us": 790000,
+          "finish_us": 1025600,
+          "flow": "bulk",
+          "packet_id": "bulk-0079",
+          "size_bytes": 1500,
+          "sojourn_us": 235600,
+          "start_us": 1013600,
+          "waiting_us": 223600
+        },
+        {
+          "arrival_us": 800000,
+          "finish_us": 1037600,
+          "flow": "bulk",
+          "packet_id": "bulk-0080",
+          "size_bytes": 1500,
+          "sojourn_us": 237600,
+          "start_us": 1025600,
+          "waiting_us": 225600
+        },
+        {
+          "arrival_us": 810000,
+          "finish_us": 1049600,
+          "flow": "bulk",
+          "packet_id": "bulk-0081",
+          "size_bytes": 1500,
+          "sojourn_us": 239600,
+          "start_us": 1037600,
+          "waiting_us": 227600
+        },
+        {
+          "arrival_us": 820000,
+          "finish_us": 1061600,
+          "flow": "bulk",
+          "packet_id": "bulk-0082",
+          "size_bytes": 1500,
+          "sojourn_us": 241600,
+          "start_us": 1049600,
+          "waiting_us": 229600
+        },
+        {
+          "arrival_us": 830000,
+          "finish_us": 1073600,
+          "flow": "bulk",
+          "packet_id": "bulk-0083",
+          "size_bytes": 1500,
+          "sojourn_us": 243600,
+          "start_us": 1061600,
+          "waiting_us": 231600
+        },
+        {
+          "arrival_us": 840000,
+          "finish_us": 1085600,
+          "flow": "bulk",
+          "packet_id": "bulk-0084",
+          "size_bytes": 1500,
+          "sojourn_us": 245600,
+          "start_us": 1073600,
+          "waiting_us": 233600
+        },
+        {
+          "arrival_us": 850000,
+          "finish_us": 1097600,
+          "flow": "bulk",
+          "packet_id": "bulk-0085",
+          "size_bytes": 1500,
+          "sojourn_us": 247600,
+          "start_us": 1085600,
+          "waiting_us": 235600
+        },
+        {
+          "arrival_us": 860000,
+          "finish_us": 1109600,
+          "flow": "bulk",
+          "packet_id": "bulk-0086",
+          "size_bytes": 1500,
+          "sojourn_us": 249600,
+          "start_us": 1097600,
+          "waiting_us": 237600
+        },
+        {
+          "arrival_us": 870000,
+          "finish_us": 1121600,
+          "flow": "bulk",
+          "packet_id": "bulk-0087",
+          "size_bytes": 1500,
+          "sojourn_us": 251600,
+          "start_us": 1109600,
+          "waiting_us": 239600
+        },
+        {
+          "arrival_us": 890000,
+          "finish_us": 1133600,
+          "flow": "bulk",
+          "packet_id": "bulk-0089",
+          "size_bytes": 1500,
+          "sojourn_us": 243600,
+          "start_us": 1121600,
+          "waiting_us": 231600
+        },
+        {
+          "arrival_us": 900000,
+          "finish_us": 1145600,
+          "flow": "bulk",
+          "packet_id": "bulk-0090",
+          "size_bytes": 1500,
+          "sojourn_us": 245600,
+          "start_us": 1133600,
+          "waiting_us": 233600
+        },
+        {
+          "arrival_us": 910000,
+          "finish_us": 1157600,
+          "flow": "bulk",
+          "packet_id": "bulk-0091",
+          "size_bytes": 1500,
+          "sojourn_us": 247600,
+          "start_us": 1145600,
+          "waiting_us": 235600
+        },
+        {
+          "arrival_us": 920000,
+          "finish_us": 1169600,
+          "flow": "bulk",
+          "packet_id": "bulk-0092",
+          "size_bytes": 1500,
+          "sojourn_us": 249600,
+          "start_us": 1157600,
+          "waiting_us": 237600
+        },
+        {
+          "arrival_us": 930000,
+          "finish_us": 1181600,
+          "flow": "bulk",
+          "packet_id": "bulk-0093",
+          "size_bytes": 1500,
+          "sojourn_us": 251600,
+          "start_us": 1169600,
+          "waiting_us": 239600
+        },
+        {
+          "arrival_us": 950000,
+          "finish_us": 1193600,
+          "flow": "bulk",
+          "packet_id": "bulk-0095",
+          "size_bytes": 1500,
+          "sojourn_us": 243600,
+          "start_us": 1181600,
+          "waiting_us": 231600
+        },
+        {
+          "arrival_us": 960000,
+          "finish_us": 1205600,
+          "flow": "bulk",
+          "packet_id": "bulk-0096",
+          "size_bytes": 1500,
+          "sojourn_us": 245600,
+          "start_us": 1193600,
+          "waiting_us": 233600
+        },
+        {
+          "arrival_us": 970000,
+          "finish_us": 1217600,
+          "flow": "bulk",
+          "packet_id": "bulk-0097",
+          "size_bytes": 1500,
+          "sojourn_us": 247600,
+          "start_us": 1205600,
+          "waiting_us": 235600
+        },
+        {
+          "arrival_us": 980000,
+          "finish_us": 1229600,
+          "flow": "bulk",
+          "packet_id": "bulk-0098",
+          "size_bytes": 1500,
+          "sojourn_us": 249600,
+          "start_us": 1217600,
+          "waiting_us": 237600
+        },
+        {
+          "arrival_us": 990000,
+          "finish_us": 1241600,
+          "flow": "bulk",
+          "packet_id": "bulk-0099",
+          "size_bytes": 1500,
+          "sojourn_us": 251600,
+          "start_us": 1229600,
+          "waiting_us": 239600
+        }
+      ],
+      "dropped": [
+        {
+          "arrival_us": 820000,
+          "flow": "voice",
+          "packet_id": "voice-0041",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 840000,
+          "flow": "voice",
+          "packet_id": "voice-0042",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 860000,
+          "flow": "voice",
+          "packet_id": "voice-0043",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 880000,
+          "flow": "bulk",
+          "packet_id": "bulk-0088",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 880000,
+          "flow": "voice",
+          "packet_id": "voice-0044",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 900000,
+          "flow": "voice",
+          "packet_id": "voice-0045",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 920000,
+          "flow": "voice",
+          "packet_id": "voice-0046",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 940000,
+          "flow": "bulk",
+          "packet_id": "bulk-0094",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 940000,
+          "flow": "voice",
+          "packet_id": "voice-0047",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 960000,
+          "flow": "voice",
+          "packet_id": "voice-0048",
+          "reason": "waiting_buffer_full"
+        },
+        {
+          "arrival_us": 980000,
+          "flow": "voice",
+          "packet_id": "voice-0049",
+          "reason": "waiting_buffer_full"
+        }
+      ],
+      "flows": [
+        {
+          "delivered": 98,
+          "dropped": 2,
+          "flow": "bulk",
+          "mean_sojourn_ms": 152.171429,
+          "offered": 100,
+          "p95_sojourn_ms": 249.6
+        },
+        {
+          "delivered": 41,
+          "dropped": 9,
+          "flow": "voice",
+          "mean_sojourn_ms": 8.234146,
+          "offered": 50,
+          "p95_sojourn_ms": 13.6
+        }
+      ],
+      "policy": "priority",
+      "rate_bps": 1000000,
+      "waiting_slots": 20
+    }
+  },
+  "evidence_scope": "deterministic_synthetic_teaching_model_not_real_protocol_execution",
+  "experiment": "queue_capacity_and_service_order",
+  "producer": "python3 -m core_network_labs.run_labs",
+  "scenario_sha256": "d87c3aa1375164503e187bfa7f0150eae336f5c8c18db51f460b3e22febbb968",
+  "schema": "network-book.core-labs.result.v1",
+  "time_resolution": "integer microseconds for queue; integer milliseconds for FIB events"
+}

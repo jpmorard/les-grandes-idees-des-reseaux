@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "synthetic": true,
+  "provenance": {
+    "kind": "synthetic",
+    "generator": "M/M/1 mean-response formula with fixed hand-authored residuals",
+    "license": "CC0-1.0",
+    "description": "Training and held-out samples emulate a service rate near 120 packets/s; the final held-out point is intentionally out of distribution."
+  },
+  "model": "mm1_mean_response_time",
+  "records": [
+    {"split": "train", "arrival_rate_pps": 20.0, "observed_mean_delay_ms": 10.2, "ood": false},
+    {"split": "train", "arrival_rate_pps": 40.0, "observed_mean_delay_ms": 12.2, "ood": false},
+    {"split": "train", "arrival_rate_pps": 60.0, "observed_mean_delay_ms": 16.9, "ood": false},
+    {"split": "train", "arrival_rate_pps": 80.0, "observed_mean_delay_ms": 24.8, "ood": false},
+    {"split": "holdout", "arrival_rate_pps": 30.0, "observed_mean_delay_ms": 11.0, "ood": false},
+    {"split": "holdout", "arrival_rate_pps": 70.0, "observed_mean_delay_ms": 19.5, "ood": false},
+    {"split": "holdout", "arrival_rate_pps": 90.0, "observed_mean_delay_ms": 35.0, "ood": false},
+    {"split": "holdout", "arrival_rate_pps": 108.0, "observed_mean_delay_ms": 95.0, "ood": true}
+  ]
+}

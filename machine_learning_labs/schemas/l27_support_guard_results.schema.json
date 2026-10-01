@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "l27_support_guard_results.schema.json",
+  "title": "Network book L27 nominal-support guard retained evidence",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "experiment_id",
+    "question",
+    "evidence_scope",
+    "frozen_model_panel",
+    "monitor_contract",
+    "seed_role_contract",
+    "evaluation_seeds",
+    "acceptance_contract",
+    "declared_scenario_results",
+    "final_challenge",
+    "deployment_outcome",
+    "success_criteria"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "experiment_id": {"const": "network-book-l27-nominal-support-guard-v1"},
+    "evaluation_seeds": {
+      "type": "array",
+      "minItems": 40,
+      "maxItems": 40,
+      "uniqueItems": true,
+      "items": {"type": "integer"}
+    },
+    "monitor_contract": {
+      "type": "object",
+      "required": [
+        "distance",
+        "reference_scenario",
+        "reference_seeds",
+        "reference_sha256",
+        "calibration_scenario",
+        "calibration_seeds",
+        "calibration_quantile",
+        "threshold"
+      ]
+    },
+    "seed_role_contract": {
+      "type": "object",
+      "required": [
+        "training_episode_seed_rule",
+        "training_episodes_per_model",
+        "training_environment_seeds",
+        "reference_training_overlap_seeds",
+        "reference_training_reuse_allowed",
+        "all_monitor_seeds_disjoint_from_training",
+        "calibration_disjoint_from_training_reference_and_evaluation",
+        "evaluation_disjoint_from_training_and_reference"
+      ]
+    },
+    "declared_scenario_results": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5
+    },
+    "final_challenge": {
+      "type": "object",
+      "required": [
+        "sealed_scenario_sha256",
+        "open_count",
+        "used_for_monitor_calibration",
+        "result"
+      ],
+      "properties": {
+        "open_count": {"const": 1},
+        "used_for_monitor_calibration": {"const": false}
+      }
+    },
+    "success_criteria": {
+      "type": "object",
+      "additionalProperties": {"type": "boolean"}
+    }
+  },
+  "additionalProperties": true
+}

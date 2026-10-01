@@ -1,0 +1,25 @@
+{
+  "evidence_environment": {
+    "machine": "arm64",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "python_implementation": "CPython",
+    "python_version": "3.12.12"
+  },
+  "packages": {
+    "gymnasium": "1.2.3",
+    "jupyter": "1.1.1",
+    "matplotlib": "3.11.1",
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "torch": "2.10.0"
+  },
+  "project_contract": {
+    "dependency_lock": "uv.lock",
+    "device": "cpu",
+    "network_required": false,
+    "privileges_required": false,
+    "python": ">=3.12,<3.15"
+  },
+  "python_executable_name": "python3",
+  "schema_version": "1.0.0"
+}
