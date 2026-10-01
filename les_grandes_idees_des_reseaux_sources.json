@@ -1,7 +1,7 @@
 {
   "schema": "reseaux.compagnon-public.v1",
   "book": "Les Grandes Idées des Réseaux — Édition 1.0, révision 1",
-  "canonical_manuscript_sha256": "6577f07bc43495eca6ea153315d1da4b44784d2a5c731b28704b04a12836ffa6",
+  "canonical_manuscript_sha256": "a6e66f371dfeb9d06cb82b21d27f939378a1626baf7be7d3cadea86838a07216",
   "scope": "Supports pédagogiques sélectionnés ; inventaire hors ce manifeste et hors métadonnées Git.",
   "files": [
     {
@@ -11,8 +11,18 @@
     },
     {
       "path": "README.md",
-      "bytes": 5097,
-      "sha256": "7602da2cb77f2439aa34429442bfea1a7427fd2f7b97eccab89e1e5372d4fca6"
+      "bytes": 5537,
+      "sha256": "7e1e415562b19179e11f94e7de5a2b5070ee33baa0fd8957a9ef57d58fc4ad26"
+    },
+    {
+      "path": "assets/innovation_portefeuille_dix_pistes_renouvellement_fr.svg",
+      "bytes": 6432,
+      "sha256": "8ef351d222507cb2242be03b17ecd4a1e7b0a5aa9b101ade5c57cea0130d8806"
+    },
+    {
+      "path": "assets/innovation_risques_marche_produit_technologie_3d_fr.svg",
+      "bytes": 5119,
+      "sha256": "bc5d05de48036776df19895376f615562abb9cc85fbe19270c9391f64e85edff"
     },
     {
       "path": "assets/ml_svd_rpca_mimo_map.svg",

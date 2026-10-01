@@ -5,6 +5,12 @@ mécanisme, formuler une prédiction, exécuter une expérience et expliquer ses
 limites. L'innovation suit ce même fil : du besoin à l'hypothèse, puis au
 prototype, aux essais et au partage des résultats.
 
+Le [schéma 3D des risques de l’innovation](assets/innovation_risques_marche_produit_technologie_3d_fr.svg)
+relie **marché, produit et technologie**. C’est une grille qualitative pour
+choisir les observations à recueillir, sans calcul de probabilité d’échec.
+Le [portefeuille de dix pistes](assets/innovation_portefeuille_dix_pistes_renouvellement_fr.svg)
+montre comment arrêter, approfondir et remplacer les pistes en continu.
+
 ## Choisir un parcours
 
 Commencer par le [parcours de curiosité et de raisonnement](parcours_curiosite_raisonnement_reseaux_fr.md) :

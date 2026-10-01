@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="800" viewBox="0 0 1260 800" role="img" aria-labelledby="title desc">
+<title id="title">Dix pistes d’innovation, un portefeuille renouvelé en continu</title>
+<desc id="desc">Dix emplacements figurent dix pistes actives à différents degrés d’avancement. Un essai court permet d’arrêter une piste en conservant ses enseignements, ou de l’approfondir jusqu’à un résultat utilisable. Chaque piste arrêtée ou achevée est remplacée pour maintenir le portefeuille. Le schéma illustre un processus, pas un taux de réussite d’une piste sur dix.</desc>
+<defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 5 L0 10 Z" fill="#315b73"/></marker><marker id="return" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 5 L0 10 Z" fill="#007d75"/></marker></defs>
+<rect width="1260" height="800" fill="#ffffff"/>
+<g font-family="DejaVu Sans, Arial, sans-serif" fill="#153b50">
+<text x="50" y="49" font-size="34" font-weight="bold">Dix pistes ouvertes, un portefeuille vivant</text>
+<text x="50" y="88" font-size="24" fill="#496274">Éprouver tôt, arrêter, remplacer, approfondir</text>
+<rect x="50" y="125" width="438" height="490" rx="14" fill="#eff5f9" stroke="#b9cbd5" stroke-width="2"/>
+<text x="75" y="169" font-size="30" font-weight="bold">10 pistes actives</text>
+<rect x="74" y="208" width="184" height="54" rx="9" fill="#ffffff" stroke="#b9cbd5"/><circle cx="99" cy="235" r="15" fill="#ddecf5"/><text x="99" y="242" text-anchor="middle" font-size="20" font-weight="bold">1</text><text x="125" y="242" font-size="23">Piste 1</text>
+<rect x="281" y="208" width="184" height="54" rx="9" fill="#ffffff" stroke="#b9cbd5"/><circle cx="306" cy="235" r="15" fill="#ddecf5"/><text x="306" y="242" text-anchor="middle" font-size="20" font-weight="bold">2</text><text x="332" y="242" font-size="23">Piste 2</text>
+<rect x="74" y="278" width="184" height="54" rx="9" fill="#ffffff" stroke="#b9cbd5"/><circle cx="99" cy="305" r="15" fill="#ddecf5"/><text x="99" y="312" text-anchor="middle" font-size="20" font-weight="bold">3</text><text x="125" y="312" font-size="23">Piste 3</text>
+<rect x="281" y="278" width="184" height="54" rx="9" fill="#ffffff" stroke="#b9cbd5"/><circle cx="306" cy="305" r="15" fill="#ddecf5"/><text x="306" y="312" text-anchor="middle" font-size="20" font-weight="bold">4</text><text x="332" y="312" font-size="23">Piste 4</text>
+<rect x="74" y="348" width="184" height="54" rx="9" fill="#ffffff" stroke="#b9cbd5"/><circle cx="99" cy="375" r="15" fill="#ddecf5"/><text x="99" y="382" text-anchor="middle" font-size="20" font-weight="bold">5</text><text x="125" y="382" font-size="23">Piste 5</text>
+<rect x="281" y="348" width="184" height="54" rx="9" fill="#ffffff" stroke="#b9cbd5"/><circle cx="306" cy="375" r="15" fill="#ddecf5"/><text x="306" y="382" text-anchor="middle" font-size="20" font-weight="bold">6</text><text x="332" y="382" font-size="23">Piste 6</text>
+<rect x="74" y="418" width="184" height="54" rx="9" fill="#ffffff" stroke="#b9cbd5"/><circle cx="99" cy="445" r="15" fill="#ddecf5"/><text x="99" y="452" text-anchor="middle" font-size="20" font-weight="bold">7</text><text x="125" y="452" font-size="23">Piste 7</text>
+<rect x="281" y="418" width="184" height="54" rx="9" fill="#ffffff" stroke="#b9cbd5"/><circle cx="306" cy="445" r="15" fill="#ddecf5"/><text x="306" y="452" text-anchor="middle" font-size="20" font-weight="bold">8</text><text x="332" y="452" font-size="23">Piste 8</text>
+<rect x="74" y="488" width="184" height="54" rx="9" fill="#ffffff" stroke="#b9cbd5"/><circle cx="99" cy="515" r="15" fill="#ddecf5"/><text x="99" y="522" text-anchor="middle" font-size="20" font-weight="bold">9</text><text x="125" y="522" font-size="23">Piste 9</text>
+<rect x="281" y="488" width="184" height="54" rx="9" fill="#ffffff" stroke="#b9cbd5"/><circle cx="306" cy="515" r="15" fill="#ddecf5"/><text x="306" y="522" text-anchor="middle" font-size="20" font-weight="bold">10</text><text x="332" y="522" font-size="23">Piste 10</text>
+<text x="74" y="594" font-size="21" fill="#496274">Des moyens et des stades différents</text>
+
+<path d="M488 370 H547" fill="none" stroke="#315b73" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="550" y="290" width="260" height="175" rx="12" fill="#e7f2f5" stroke="#9eb9c7" stroke-width="2"/>
+<text x="577" y="333" font-size="29" font-weight="bold">ÉPROUVER</text>
+<text x="573" y="370" font-size="22">Question prioritaire</text>
+<text x="573" y="403" font-size="22">Essai court</text>
+<text x="573" y="437" font-size="22">Budget et délai</text>
+
+<path d="M810 360 H901 V267 H947" fill="none" stroke="#315b73" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="820" y="306" font-size="20">Preuves</text>
+<text x="820" y="333" font-size="20">utiles</text>
+<rect x="950" y="190" width="260" height="155" rx="12" fill="#edf5fc" stroke="#a8c5dc" stroke-width="2"/>
+<text x="970" y="232" font-size="27" font-weight="bold">APPROFONDIR</text>
+<text x="971" y="270" font-size="22">Plus de moyens</text>
+<text x="971" y="304" font-size="22">Essais plus exigeants</text>
+
+<path d="M1080 345 V442" fill="none" stroke="#315b73" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="950" y="445" width="260" height="160" rx="12" fill="#eaf6f2" stroke="#9cc6b9" stroke-width="2"/>
+<text x="974" y="490" font-size="29" font-weight="bold">ABOUTIR</text>
+<text x="973" y="529" font-size="22">Une piste devient</text>
+<text x="973" y="564" font-size="22">un résultat utilisable</text>
+
+<path d="M680 465 V517" fill="none" stroke="#315b73" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="550" y="520" width="260" height="130" rx="12" fill="#faf1e7" stroke="#d8b894" stroke-width="2"/>
+<text x="577" y="560" font-size="29" font-weight="bold">ARRÊTER</text>
+<text x="573" y="594" font-size="22">Conserver ce qui</text>
+<text x="573" y="625" font-size="22">a été appris</text>
+
+<path d="M680 650 V662 H899 V713 M1080 605 V713 H269 V618" fill="none" stroke="#007d75" stroke-width="4" marker-end="url(#return)"/>
+<text x="378" y="692" font-size="22" font-weight="bold" fill="#007d75">Remplacer chaque piste arrêtée ou achevée</text>
+<text x="50" y="762" font-size="22">Croiser les métiers ouvre de nouvelles pistes.</text>
+</g>
+</svg>

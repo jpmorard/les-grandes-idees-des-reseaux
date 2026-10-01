@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="780" viewBox="0 0 1260 780" role="img" aria-labelledby="title desc">
+  <title id="title">Les risques de l’innovation : marché, produit, technologie</title>
+  <desc id="desc">Cube en perspective à trois axes qualitatifs partant d’une origine commune : marché vers la droite, produit vers la gauche et technologie vers le haut. Chaque direction représente davantage d’hypothèses restant à éprouver. Les trois axes appellent des observations différentes : engagement d’adoption, bénéfice d’usage et essais techniques représentatifs. Il ne s’agit ni d’une échelle chiffrée ni d’une probabilité d’échec. La sécurité, le droit, l’environnement et les effets sociaux concernent les trois axes.</desc>
+  <defs>
+    <marker id="arrow-market" markerWidth="16" markerHeight="16" refX="14" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L14 7 L0 14 Z" fill="#1266a2"/></marker>
+    <marker id="arrow-product" markerWidth="16" markerHeight="16" refX="14" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L14 7 L0 14 Z" fill="#007d75"/></marker>
+    <marker id="arrow-tech" markerWidth="16" markerHeight="16" refX="14" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L14 7 L0 14 Z" fill="#71469a"/></marker>
+  </defs>
+  <rect width="1260" height="780" fill="#ffffff"/>
+  <g font-family="DejaVu Sans, Arial, sans-serif" fill="#153b50">
+    <text x="50" y="49" font-size="34" font-weight="bold">Les risques de l’innovation</text>
+    <text x="50" y="86" font-size="24" fill="#496274">Trois incertitudes à explorer ensemble</text>
+
+    <g stroke="#bccbd3" stroke-width="2" stroke-linejoin="round">
+      <path d="M370 590 L655 490 L655 230 L370 330 Z" fill="#edf5fc"/>
+      <path d="M370 590 L125 470 L125 210 L370 330 Z" fill="#eaf6f2"/>
+      <path d="M370 330 L655 230 L410 110 L125 210 Z" fill="#f4eef8"/>
+      <path d="M655 490 L410 370 L125 470 M410 370 L410 110" fill="none" stroke-dasharray="7 7"/>
+      <path d="M465 557 L465 297 M560 523 L560 263 M370 503 L655 403 M370 417 L655 317
+               M288 550 L288 290 M207 510 L207 250 M370 503 L125 383 M370 417 L125 297
+               M465 297 L220 177 M560 263 L315 143 M288 290 L573 190 M207 250 L492 150" fill="none" stroke="#d6e0e6" stroke-width="1.5"/>
+    </g>
+    <g fill="none" stroke-width="5" stroke-linecap="round">
+      <path d="M370 590 L682 481" stroke="#1266a2" marker-end="url(#arrow-market)"/>
+      <path d="M370 590 L103 459" stroke="#007d75" marker-end="url(#arrow-product)"/>
+      <path d="M370 590 L370 302" stroke="#71469a" marker-end="url(#arrow-tech)"/>
+    </g>
+    <circle cx="370" cy="590" r="7" fill="#153b50"/>
+    <text x="592" y="537" font-size="28" font-weight="bold" fill="#1266a2">MARCHÉ</text>
+    <text x="67" y="521" font-size="28" font-weight="bold" fill="#007d75">PRODUIT</text>
+    <rect x="387" y="305" width="257" height="38" rx="8" fill="#ffffff" fill-opacity="0.95"/>
+    <text x="399" y="333" font-size="27" font-weight="bold" fill="#71469a">TECHNOLOGIE</text>
+    <text x="370" y="627" text-anchor="middle" font-size="22" fill="#496274">Hypothèses déjà étayées</text>
+
+    <g>
+      <rect x="767" y="125" width="443" height="148" rx="12" fill="#edf5fc"/>
+      <rect x="767" y="125" width="6" height="148" rx="3" fill="#1266a2"/>
+      <text x="792" y="160" font-size="26" font-weight="bold" fill="#1266a2">Marché : adoption et viabilité</text>
+      <text x="792" y="197" font-size="23">Qui décide ? Qui finance ?</text>
+      <text x="792" y="232" font-size="22">À éprouver : un engagement concret.</text>
+
+      <rect x="767" y="296" width="443" height="148" rx="12" fill="#eaf6f2"/>
+      <rect x="767" y="296" width="6" height="148" rx="3" fill="#007d75"/>
+      <text x="792" y="331" font-size="26" font-weight="bold" fill="#007d75">Produit : besoin et usage</text>
+      <text x="792" y="368" font-size="23">Quel problème est réellement résolu ?</text>
+      <text x="792" y="403" font-size="22">À éprouver : un gain observé à l’usage.</text>
+
+      <rect x="767" y="467" width="443" height="163" rx="12" fill="#f4eef8"/>
+      <rect x="767" y="467" width="6" height="163" rx="3" fill="#71469a"/>
+      <text x="792" y="502" font-size="26" font-weight="bold" fill="#71469a">Technologie : faisabilité</text>
+      <text x="792" y="539" font-size="23">Cela tient-il hors du laboratoire ?</text>
+      <text x="792" y="574" font-size="22">À éprouver : fiabilité, intégration</text>
+      <text x="792" y="603" font-size="22">et passage à l’échelle.</text>
+    </g>
+    <path d="M50 660 H1210" stroke="#bccbd3" stroke-width="1.5"/>
+    <text x="50" y="691" font-size="22">Sur chaque axe, la flèche va vers davantage d’inconnues à éprouver.</text>
+    <text x="50" y="722" font-size="22">Représentation qualitative : les longueurs et le volume ne chiffrent pas le risque.</text>
+    <text x="50" y="755" font-size="21" font-weight="bold">Sur les trois axes : sécurité, droit, environnement et effets sociaux.</text>
+  </g>
+</svg>
