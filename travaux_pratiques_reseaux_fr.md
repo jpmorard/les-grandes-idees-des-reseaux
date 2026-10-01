@@ -1019,8 +1019,8 @@ le schéma et `manifest.json` lient les artefacts au code qui les a produits.
 un entier. Le support est autonome, en bibliothèque standard, sans donnée
 réelle ni accès réseau.
 
-**Question :** comment un prestataire peut-il additionner trois compteurs
-sans recevoir leurs valeurs en clair ni la clé privée ?
+**Question :** comment additionner trois compteurs chiffrés sans connaître
+leurs valeurs ni la clé privée ?
 
 1. Prédire la somme et la moyenne des mesures synthétiques 12, 18 et 30.
 2. Exécuter le code ci-dessous et repérer les rôles : producteurs, calculateur
