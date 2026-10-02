@@ -3,7 +3,7 @@
   "book": "Les Grandes Idées des Réseaux — Édition 1.0, révision 2",
   "edition": "1.0",
   "edition_revision": 2,
-  "canonical_manuscript_sha256": "fbb650d269b0353331416f9c10ab59d087566a5d5b2f70f34d5db380a4a59fe1",
+  "canonical_manuscript_sha256": "f2316ba726d8b7e4da63c768d57a5e96090a4530889ddc20d3eef9f2f12f168b",
   "scope": "Supports pédagogiques sélectionnés ; inventaire hors ce manifeste et hors métadonnées Git.",
   "files": [
     {
@@ -488,8 +488,8 @@
     },
     {
       "path": "parcours_curiosite_raisonnement_reseaux_fr.md",
-      "bytes": 8949,
-      "sha256": "3c55cce246b1bb32f3552dfbeb8a973ca4ef11b770de960050dae056ccb1c63b"
+      "bytes": 8448,
+      "sha256": "9ad77b2d3381ff794ee536568ab68b2e9667f5918c0867225422b1ad7a36b0a3"
     },
     {
       "path": "premiers_pas_reseaux_fr.md",
@@ -503,8 +503,8 @@
     },
     {
       "path": "travaux_pratiques_reseaux_fr.md",
-      "bytes": 42687,
-      "sha256": "886e881d5dff3e101f3ce81576abaec7cd81c796ab539f307e144176c134a562"
+      "bytes": 42586,
+      "sha256": "68f7169ce45e0d1610a67feb610827a0d62d9d3bfb5dfe65c489382b028951bd"
     }
   ]
 }

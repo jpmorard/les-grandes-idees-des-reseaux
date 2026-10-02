@@ -2,19 +2,17 @@
 
 ## Pour une progression complète : cultiver la curiosité et apprendre à chercher
 
-On peut entrer dans les réseaux par une question très simple : comment une
-phrase prononcée ici devient-elle une voix entendue ailleurs ? Cette question
-en appelle d'autres : que faut-il transmettre, que peut-on perdre, pourquoi
-faut-il attendre, comment savoir si l'on a été compris ? Le plaisir de
-comprendre vient souvent de ces déplacements du regard.
+Comment une phrase prononcée ici devient-elle une voix entendue ailleurs ?
+Cette question ouvre les réseaux : que transmettre, que perdre, pourquoi
+attendre, comment savoir si l’on a été compris ? Le plaisir de comprendre
+vient souvent de ces déplacements du regard.
 
-Le parcours proposé associe deux apprentissages : **chercher une idée** et
-**la confronter à une situation concrète**. Les mathématiques entraînent à
-repérer une structure, imaginer un contre-exemple et justifier une conclusion.
-Les réseaux donnent à ces raisonnements une matière observable : messages,
-délais, chemins, ressources partagées et décisions prises avec une information
-incomplète. Chacun peut commencer à son niveau, puis approfondir ce qui éveille
-sa curiosité.
+Le parcours associe **chercher une idée** et **l’éprouver concrètement**.
+Les mathématiques entraînent à repérer une structure, imaginer un
+contre-exemple et justifier une conclusion. Les réseaux rendent ces
+raisonnements observables : messages, délais, chemins, ressources partagées
+et décisions sous information incomplète. Chacun commence à son niveau
+et approfondit ce qui éveille sa curiosité.
 
 <a id="une-méthode-qui-accompagne-tout-le-chemin"></a>
 
@@ -108,35 +106,32 @@ Trois compétences se travaillent ensemble :
 | **Pensée systémique** | Relier les mécanismes, les contraintes et les conséquences, y compris pour les autres acteurs |
 | **Résolution de problèmes** | Formuler une question, comparer des possibilités et apprendre d’un résultat inattendu |
 
-L’IA peut aider à retrouver et organiser de l’information, proposer une
-explication ou préparer une expérience. Les connaissances du domaine
-donnent à l’élève les moyens de questionner ces propositions. Comprendre
-un délai, un débit ou une file d’attente permet de repérer une hypothèse
-oubliée et de demander une mesure pertinente. L’effort d’apprentissage
-porte aussi sur la capacité à reconnaître ce que l’on ne sait pas encore.
+L’IA peut retrouver et organiser de l’information, proposer une explication
+ou préparer une expérience. Les connaissances du domaine permettent de
+questionner ses propositions : comprendre délais, débits et files d’attente
+aide à repérer une hypothèse oubliée et à demander une mesure pertinente.
+Apprendre, c’est aussi reconnaître ce que l’on ignore.
 
-**Déléguer devient donc un apprentissage.** Avant de confier une tâche
-à une IA, on précise le résultat attendu, les limites à respecter et la
-manière de vérifier la réussite. Après l’exécution, on examine le résultat
-et l’on assume la décision de l’utiliser. Un texte convaincant ou un
-programme qui s’exécute ne suffit pas à montrer que le problème est résolu.
+**Déléguer devient donc un apprentissage.** Avant de confier une tâche à
+une IA, on définit le résultat, les limites et la vérification. Ensuite,
+on examine ce qui a été produit et assume son utilisation. Un texte
+convaincant ou un programme qui s’exécute ne prouve pas que le problème
+est résolu.
 
 <a id="une-séance-pour-rendre-le-raisonnement-visible"></a>
 
 ### Une séance pour rendre le raisonnement visible
 
-Prenons une question accessible : faut-il donner la priorité aux messages
-d’alerte sur un réseau partagé ? Par petits groupes, les élèves dessinent
-une file, prédisent les effets d’une priorité, puis comparent deux essais
-avec les mêmes arrivées de messages. Ils mesurent l’attente des alertes
+Faut-il donner priorité aux alertes sur un réseau partagé ? Par groupes,
+les élèves dessinent une file, prédisent les effets, puis comparent deux
+essais avec les mêmes arrivées. Ils mesurent l’attente des alertes
 **et celle des autres messages**. L’IA peut proposer une simulation ;
-le groupe en vérifie les règles avec un exemple calculé à la main.
+le groupe en vérifie les règles par un calcul à la main.
 
-Un autre groupe relit ensuite le protocole et cherche une situation où
-la conclusion pourrait changer. La discussion porte sur ce que les mesures
-permettent d’affirmer, sur ce qui reste hors de l’expérience et sur le
-prochain essai utile. Un résultat inattendu devient une occasion de
-préciser le modèle.
+Un autre groupe relit le protocole et cherche ce qui ferait changer la
+conclusion. La discussion précise ce que les mesures soutiennent, les limites
+de l’expérience et le prochain essai. Un résultat inattendu aide à affiner
+le modèle.
 
 L’évaluation peut alors considérer la justesse des connaissances mobilisées,
 la qualité de l’expérience, l’explication des limites et la contribution

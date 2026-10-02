@@ -18,14 +18,13 @@ reste disponible dans le dépôt compagnon.
 | Quand une adresse connue devient-elle fausse ? | L04 / G03 | cache simulé |
 | Faut-il minimiser les relais ou le coût ? | L05 / G04 | graphe et script |
 
-Les autres fiches L01 à L19 sont des **projets à construire** selon leurs
-outils et prérequis. Un **notebook** est un document exécutable qui réunit
-explications, code et résultats. Les trois notebooks cœur réseau portent sur
-la latence/QoS, la stabilisation des chemins et les annonces échangées entre
-réseaux autonomes (BGP). Ils apportent des modèles complémentaires ; ils n’exécutent
-pas de pile TCP, OSPF ou BGP réelle. Les fiches avancées indiquent leur
-support disponible et ce qui reste à réaliser. Le nombre de fiches ne
-désigne donc pas un nombre identique de procédures autonomes.
+Les autres fiches L01 à L19 sont des **projets à construire**, avec leurs
+outils et prérequis. Un **notebook** réunit explications, code exécutable et
+résultats. Les trois notebooks cœur réseau modélisent latence/QoS,
+stabilisation des chemins et annonces entre réseaux autonomes (BGP) ;
+ils n’exécutent pas de pile TCP, OSPF ou BGP réelle. Les fiches avancées
+précisent leur support disponible et le travail restant. Le nombre de fiches
+ne correspond donc pas à autant de procédures autonomes.
 
 <a id="l00-construire-le-banc"></a>
 
