@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "synthetic": true,
+  "provenance": {
+    "kind": "synthetic",
+    "generator": "hand-authored deterministic routing event sequence",
+    "license": "CC0-1.0",
+    "description": "Small undirected topology designed to expose a transient blackhole and deterministic path changes."
+  },
+  "source": "A",
+  "destination": "D",
+  "nodes": ["A", "B", "C", "D"],
+  "links": [
+    {"a": "A", "b": "B", "cost": 1.0, "up": true},
+    {"a": "A", "b": "C", "cost": 1.2, "up": true},
+    {"a": "B", "b": "C", "cost": 0.4, "up": true},
+    {"a": "B", "b": "D", "cost": 1.0, "up": true},
+    {"a": "C", "b": "D", "cost": 1.2, "up": true}
+  ],
+  "events": [
+    {
+      "observed_at_ms": 100,
+      "applied_at_ms": 145,
+      "action": "link_down",
+      "a": "B",
+      "b": "D",
+      "expected_path": ["A", "C", "D"]
+    },
+    {
+      "observed_at_ms": 300,
+      "applied_at_ms": 330,
+      "action": "cost_change",
+      "a": "A",
+      "b": "C",
+      "value": 4.0,
+      "expected_path": ["A", "B", "C", "D"]
+    },
+    {
+      "observed_at_ms": 500,
+      "applied_at_ms": 555,
+      "action": "link_up",
+      "a": "B",
+      "b": "D",
+      "expected_path": ["A", "B", "D"]
+    },
+    {
+      "observed_at_ms": 700,
+      "applied_at_ms": 725,
+      "action": "cost_change",
+      "a": "B",
+      "b": "D",
+      "value": 5.0,
+      "expected_path": ["A", "B", "C", "D"]
+    }
+  ]
+}

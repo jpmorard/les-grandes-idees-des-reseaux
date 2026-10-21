@@ -1,0 +1,135 @@
+{
+  "schema": "les-grandes-idees-des-reseaux.publication-pdf.v1",
+  "updated_at": "2026-10-21",
+  "author": "Jean-Pierre Morard",
+  "language": "fr",
+  "books": [
+    {
+      "pdf": "La_passion_avant_la_carriere_Parcours_d_un_ingenieur_fr.pdf",
+      "pages": 45,
+      "bytes": 888403,
+      "sha256": "b448cb66ea30546489bbfc99cbe1f55964cb9acb3422a6b9c6ce34ad64a47a5e",
+      "source_sha256": "ccb14e27ce0cdfe9e0984fe4fa8c642fa260decc2a8c8c78364adc78bb315440",
+      "relative_pdf_links": 4,
+      "embedded_files": 0,
+      "title": "La passion avant la carrière — Parcours d’un ingénieur",
+      "public": "Récit, rencontres et choix de formation",
+      "preview": {
+        "path": "couvertures/La_passion_avant_la_carriere_Parcours_d_un_ingenieur_fr_couverture_fr.png",
+        "sha256": "70471f9a210bf71a69c03cc847fc67a687429f47c019960846982a52372e5910",
+        "bytes": 36316,
+        "width": 745,
+        "height": 1053,
+        "pdf_page": 1,
+        "role": "couverture"
+      }
+    },
+    {
+      "pdf": "Treize_idees_pour_comprendre_les_reseaux_fr.pdf",
+      "pages": 52,
+      "bytes": 805478,
+      "sha256": "e0b05ed0533a82fd723260206611d4c30a02fce5419c82d391959e8e67776feb",
+      "source_sha256": "2822c074d013a12a4ecb8025e55e73c6fef8c7c3a3bda6647400933e4a4df2aa",
+      "relative_pdf_links": 52,
+      "embedded_files": 0,
+      "title": "Treize idées pour comprendre les réseaux",
+      "public": "Découverte des réseaux",
+      "preview": {
+        "path": "couvertures/Treize_idees_pour_comprendre_les_reseaux_fr_couverture_fr.png",
+        "sha256": "b4d40b381b66625b63c1c123011b241202c3bda490b928225f9f3346450b192b",
+        "bytes": 41998,
+        "width": 745,
+        "height": 1053,
+        "pdf_page": 1,
+        "role": "couverture"
+      }
+    },
+    {
+      "pdf": "Reseaux_Concevoir_experimenter_et_verifier_fr.pdf",
+      "pages": 474,
+      "bytes": 3152937,
+      "sha256": "872d81e5ea115b87fe9f54427dc5928b6bd28fad5819d612f8c6e596fe65a43f",
+      "source_sha256": "7c91e0f81807464f512d41998b6b7494dea689e633bd576bbd67160849e8367e",
+      "relative_pdf_links": 37,
+      "embedded_files": 0,
+      "title": "Réseaux — Concevoir, expérimenter et vérifier",
+      "public": "Ingénierie des réseaux et des systèmes",
+      "preview": {
+        "path": "couvertures/Reseaux_Concevoir_experimenter_et_verifier_fr_couverture_fr.png",
+        "sha256": "c7da9c85ea15228e4db163b52ad723483272fa222c7dfb6b6af1c687d9c794ed",
+        "bytes": 41318,
+        "width": 745,
+        "height": 1053,
+        "pdf_page": 1,
+        "role": "couverture"
+      }
+    },
+    {
+      "pdf": "IA_pour_les_reseaux_De_la_question_a_la_solution_fr.pdf",
+      "pages": 223,
+      "bytes": 3412070,
+      "sha256": "0e6a9416fb6c11380a7766551110b4d5bf441ea11ca1142b26dedbd18014cfdc",
+      "source_sha256": "e0810b81439a248afce977484cc8e211bc67c4c2e528444d09a43e10afe9e731",
+      "relative_pdf_links": 26,
+      "embedded_files": 0,
+      "title": "IA pour les réseaux — De la question à la solution",
+      "public": "Pratique de l’intelligence artificielle",
+      "preview": {
+        "path": "couvertures/IA_pour_les_reseaux_De_la_question_a_la_solution_fr_couverture_fr.png",
+        "sha256": "0b4351441fbb13f117675fbb6bc58ccbb61339f261c665792ca8d7f166163955",
+        "bytes": 44428,
+        "width": 745,
+        "height": 1053,
+        "pdf_page": 1,
+        "role": "couverture"
+      }
+    },
+    {
+      "pdf": "Mathematiques_ENSI_1986_option_TA_Sujets_et_corriges_fr.pdf",
+      "pages": 31,
+      "bytes": 1652025,
+      "sha256": "9a048704434a40ccf0ec8e388a3cc484f56cde7fed4f52799bcf78963e1a0a8d",
+      "source_sha256": "68e96302e157161106f0e84cf56fde2c5d0f0f8d903fb62ac323b2c64b3f8ba4",
+      "relative_pdf_links": 1,
+      "embedded_files": 0,
+      "title": "Mathématiques ENSI 1986, option TA — Sujets et corrigés",
+      "public": "Complément mathématique facultatif",
+      "preview": {
+        "path": "couvertures/Mathematiques_ENSI_1986_option_TA_Sujets_et_corriges_fr_couverture_fr.png",
+        "sha256": "2a29d3d9b7ef47f5a5d9c830f57dc5acb88b943390eb75497ec635944cd66460",
+        "bytes": 46506,
+        "width": 745,
+        "height": 1053,
+        "pdf_page": 1,
+        "role": "couverture"
+      }
+    },
+    {
+      "pdf": "Lire_les_mathematiques_de_l_IA_Notations_et_premiers_articles_fr.pdf",
+      "pages": 67,
+      "bytes": 1708021,
+      "sha256": "987719e3957a517f82a45836a7caf1f638fcf3f152ceeea247792cff4a814958",
+      "source_sha256": "744a8f71ce0c292fca20a4d48a3a37a6b7fd0c57a3face2e2ea44de2a340ae1c",
+      "relative_pdf_links": 17,
+      "embedded_files": 0,
+      "title": "Lire les mathématiques de l’IA",
+      "public": "Reprendre les mathématiques et lire des articles",
+      "preview": {
+        "path": "couvertures/Lire_les_mathematiques_de_l_IA_Notations_et_premiers_articles_fr_apercu_premiere_page_fr.png",
+        "sha256": "83a071cf610bc050170fae9c2830e8fadaff049f61ffcf001c9d6c5d1763257e",
+        "bytes": 102727,
+        "width": 745,
+        "height": 1053,
+        "pdf_page": 1,
+        "role": "premiere_page"
+      }
+    }
+  ],
+  "work_cover": {
+    "repository_path": "cover.svg",
+    "format": "image/svg+xml",
+    "sha256": "f3cf69a6d5f26ecc1f5098360f1bcea26383772895d84aca260b29dae774720f",
+    "bytes": 10748,
+    "title": "Les Grandes Idées des Réseaux"
+  }
+}

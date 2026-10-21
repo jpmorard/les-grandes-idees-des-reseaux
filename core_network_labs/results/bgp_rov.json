@@ -1,0 +1,46 @@
+{
+  "cache_unavailable": {
+    "declared_local_policy": "hold",
+    "validation_state": "Unavailable"
+  },
+  "evidence_scope": "deterministic_synthetic_teaching_model_not_real_protocol_execution",
+  "experiment": "origin_validation_vs_configured_policy",
+  "producer": "python3 -m core_network_labs.run_labs",
+  "routes": [
+    {
+      "case": "authorized",
+      "classification_only": "accept",
+      "origin_as": 64500,
+      "prefix": "203.0.113.0/24",
+      "reject_invalid_policy": "accept",
+      "validation_state": "Valid"
+    },
+    {
+      "case": "wrong_origin",
+      "classification_only": "accept",
+      "origin_as": 64501,
+      "prefix": "203.0.113.0/24",
+      "reject_invalid_policy": "reject",
+      "validation_state": "Invalid"
+    },
+    {
+      "case": "too_specific",
+      "classification_only": "accept",
+      "origin_as": 64500,
+      "prefix": "203.0.113.0/25",
+      "reject_invalid_policy": "reject",
+      "validation_state": "Invalid"
+    },
+    {
+      "case": "uncovered",
+      "classification_only": "accept",
+      "origin_as": 64500,
+      "prefix": "198.51.100.0/24",
+      "reject_invalid_policy": "accept",
+      "validation_state": "NotFound"
+    }
+  ],
+  "scenario_sha256": "d87c3aa1375164503e187bfa7f0150eae336f5c8c18db51f460b3e22febbb968",
+  "schema": "network-book.core-labs.result.v1",
+  "time_resolution": "integer microseconds for queue; integer milliseconds for FIB events"
+}

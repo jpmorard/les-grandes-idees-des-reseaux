@@ -1,0 +1,142 @@
+{
+  "algorithm": "sha256",
+  "files": [
+    {
+      "bytes": 12678,
+      "path": "README.md",
+      "sha256": "687169ad96d4fcf51159eb09f18091ae31069c8d3c547b4dbedab0ff0e385472"
+    },
+    {
+      "bytes": 125,
+      "path": "__init__.py",
+      "sha256": "55691659860781166dc545ea27b1b04f87f1936c4685237cb797eb1db10a8f8c"
+    },
+    {
+      "bytes": 13231,
+      "path": "contracts.py",
+      "sha256": "193f179048461a0ead4a7b00321154d21ec71c53f4e389ad3eac4214cd734ac0"
+    },
+    {
+      "bytes": 1197,
+      "path": "datasets/calibration_trace.json",
+      "sha256": "0d9e26ef8484698253547f0d9648582983fc3650a19102233da7b00956a10e41"
+    },
+    {
+      "bytes": 501,
+      "path": "datasets/emulation_request.json",
+      "sha256": "f86a9225dd37f794db9fb2768f79aeada9bce8051e308e6661b8beaf79156427"
+    },
+    {
+      "bytes": 1410,
+      "path": "datasets/routing_replay.json",
+      "sha256": "d0e28bdcb80f84e43e22e95f3ffb197fcc7961636de81f34134f307d0fa38de6"
+    },
+    {
+      "bytes": 706,
+      "path": "datasets/scenario.json",
+      "sha256": "c384b4a87071fc32fcceeffe40c26fbe2221f68ba5f1d844d0497c5cc66cd182"
+    },
+    {
+      "bytes": 12431,
+      "path": "notebook_contracts.py",
+      "sha256": "4b3558969d62f3258cc3859afa0049561cd6f49430fc17150d28dd9b87b5d2e2"
+    },
+    {
+      "bytes": 26339,
+      "path": "notebooks/mini_fanet_reroutage.ipynb",
+      "sha256": "080fabe4272568d1a1ab5ea2cb105e598302dddb1b98fda3497c8728eb5cac2f"
+    },
+    {
+      "bytes": 27892,
+      "path": "notebooks/tp_capture_replay.ipynb",
+      "sha256": "1c2b6ff915eadaef8257d21d91427b3ef706277e50c2ec7245b9b1ac38b8a1c8"
+    },
+    {
+      "bytes": 21688,
+      "path": "notebooks/tp_detective_reseau.ipynb",
+      "sha256": "c0c13c7ecff81b1bc2092d171464098ebed4366f20b749c082c8671cc59d6fe1"
+    },
+    {
+      "bytes": 33582,
+      "path": "notebooks/tp_dhcp_bail.ipynb",
+      "sha256": "74ffa3d36a62c3f2e9c78c88c48095533435f452c867622092b19de503a59551"
+    },
+    {
+      "bytes": 18579,
+      "path": "notebooks/tp_discovery_reseau.ipynb",
+      "sha256": "fd2bb575640112211517cb2a77cf4cdc66ca243be45cb580eb8b86ead6e6dba6"
+    },
+    {
+      "bytes": 19284,
+      "path": "notebooks/tp_dns_resolution.ipynb",
+      "sha256": "962da8b1af2ac327229cbd29742cd8836ae9580aca971f50516ee1063723cc19"
+    },
+    {
+      "bytes": 31884,
+      "path": "notebooks/tp_modulation_symboles.ipynb",
+      "sha256": "966534034bd6409b27c3a562750655a5ae9a6bcd597301d36c07207f2c018c0a"
+    },
+    {
+      "bytes": 27819,
+      "path": "notebooks/tp_sous_reseau_passerelle.ipynb",
+      "sha256": "939e8c578c47598b63dc47e6a5a35ca85c23687dbacbf8ef8c0a569ae140abd8"
+    },
+    {
+      "bytes": 26724,
+      "path": "notebooks/tp_voix_flowsynth.ipynb",
+      "sha256": "828f40108348262d42006e870b08928b920813e7e2503bc1a11cd7d8be1e91cc"
+    },
+    {
+      "bytes": 10901,
+      "path": "results/benchmark_results.json",
+      "sha256": "53644a36af1a39a6437ed19790a9255b751a64552d1da90dea833ee45e7dddf0"
+    },
+    {
+      "bytes": 1032,
+      "path": "results/emulation_plan.json",
+      "sha256": "e20855af4dcb6444e8e1396224f986bc412be4d3b278c097e3a2f3cd203540be"
+    },
+    {
+      "bytes": 6324,
+      "path": "run_labs.py",
+      "sha256": "49516e15a7170560e1a5cfda6c78a24c00144bd0fbad11fe379185a4ef5d7c87"
+    },
+    {
+      "bytes": 854,
+      "path": "schemas/datasets.schema.json",
+      "sha256": "400f93a108fe8e0181771039fb0ae816d6344713b967213b76449ad73efcca9a"
+    },
+    {
+      "bytes": 1189,
+      "path": "schemas/emulation_plan.schema.json",
+      "sha256": "3ce0c09d6f5cb9bd992d35d10988fdf43fa4f6c8a6386292e9577b6811f6b105"
+    },
+    {
+      "bytes": 1055,
+      "path": "schemas/results.schema.json",
+      "sha256": "3d09df5ce59f7f11ae677fde01ae7e65cc6dcd4fd6a1d244c50f7c929befe4ea"
+    },
+    {
+      "bytes": 14318,
+      "path": "simulator.py",
+      "sha256": "2c42a4b611561ed78a10d6a15e14bff80903d0d1af57ed73306727dc369271fc"
+    },
+    {
+      "bytes": 66,
+      "path": "tests/__init__.py",
+      "sha256": "8b0052397d2639ca566747cfee4041fa184d8c1d9179e74a30e50b1e1261f20a"
+    },
+    {
+      "bytes": 5115,
+      "path": "tests/test_labs.py",
+      "sha256": "9179adc13222e086de4450071af194eb0b68d4614dbd11c2db568e8bedd4edd3"
+    },
+    {
+      "bytes": 6839,
+      "path": "verify.py",
+      "sha256": "4759b0560d93a11c7634312c52f8f98f88d3792c54c7b2b65475378d05751a7b"
+    }
+  ],
+  "manifest_version": "1.0",
+  "scope": "all files below network_simulation_labs except manifest.json and runtime caches"
+}

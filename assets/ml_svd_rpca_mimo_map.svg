@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1120" viewBox="0 0 1600 1120" role="img" aria-labelledby="title desc">
+  <title id="title">Carte de lecture SVD, RPCA et MIMO</title>
+  <desc id="desc">Une table de KPI est standardisée puis décomposée par SVD. Trois branches montrent la réduction de dimension, la séparation faible rang plus anomalies et la diagonalisation d’un canal MIMO complexe, avec les normes utilisées dans le notebook.</desc>
+
+  <defs>
+    <linearGradient id="header-gradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0b5bd3"/>
+      <stop offset="1" stop-color="#673de6"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="13" flood-color="#10233f" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrow" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L18,9 L0,18 Z" fill="#65758b"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L18,9 L0,18 Z" fill="#0b5bd3"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="1120" fill="#f5f8fc"/>
+  <rect x="0" y="0" width="1600" height="12" fill="url(#header-gradient)"/>
+
+  <g font-family="Inter, Avenir Next, Avenir, Helvetica, Arial, sans-serif">
+    <text x="70" y="76" font-size="48" font-weight="750" fill="#11233f">Une SVD, trois lectures du réseau</text>
+    <text x="70" y="118" font-size="24" fill="#51647d">La même décomposition relie compression des KPI, anomalies parcimonieuses et modes spatiaux MIMO.</text>
+
+    <g filter="url(#shadow)">
+      <rect x="70" y="165" width="320" height="145" rx="24" fill="#ffffff"/>
+      <rect x="485" y="165" width="320" height="145" rx="24" fill="#ffffff"/>
+      <rect x="900" y="165" width="630" height="145" rx="24" fill="#e9f2ff"/>
+    </g>
+
+    <circle cx="108" cy="203" r="22" fill="#0b5bd3"/>
+    <text x="108" y="211" text-anchor="middle" font-size="21" font-weight="800" fill="#ffffff">1</text>
+    <text x="145" y="211" font-size="27" font-weight="750" fill="#11233f">Mesurer</text>
+    <text x="100" y="252" font-size="21" fill="#51647d">
+      <tspan x="100" dy="0">K : observations × KPI</tspan>
+      <tspan x="100" dy="28">unités et amplitudes différentes</tspan>
+    </text>
+
+    <circle cx="523" cy="203" r="22" fill="#0b5bd3"/>
+    <text x="523" y="211" text-anchor="middle" font-size="21" font-weight="800" fill="#ffffff">2</text>
+    <text x="560" y="211" font-size="27" font-weight="750" fill="#11233f">Standardiser</text>
+    <text x="515" y="252" font-size="19" fill="#51647d">
+      <tspan x="515" dy="0">X = (K − moyenne) / écart-type</tspan>
+      <tspan x="515" dy="28">chaque KPI devient comparable</tspan>
+    </text>
+
+    <circle cx="938" cy="203" r="22" fill="#673de6"/>
+    <text x="938" y="211" text-anchor="middle" font-size="21" font-weight="800" fill="#ffffff">3</text>
+    <text x="975" y="211" font-size="27" font-weight="750" fill="#11233f">Décomposer</text>
+    <text x="930" y="254" font-size="28" font-weight="750" fill="#17385f">X = U Σ Vᵀ</text>
+    <text x="1135" y="252" font-size="20" fill="#51647d">
+      <tspan x="1135" dy="0">V : directions des KPI</tspan>
+      <tspan x="1135" dy="27">UΣ : observations projetées</tspan>
+    </text>
+
+    <path d="M405 237 H470" fill="none" stroke="#65758b" stroke-width="5" marker-end="url(#arrow)"/>
+    <path d="M820 237 H885" fill="none" stroke="#65758b" stroke-width="5" marker-end="url(#arrow)"/>
+
+    <path d="M1215 320 V365 H300 V402" fill="none" stroke="#0b5bd3" stroke-width="4" marker-end="url(#arrow-blue)"/>
+    <path d="M1215 365 H800 V402" fill="none" stroke="#673de6" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M1215 365 H1300 V402" fill="none" stroke="#08735b" stroke-width="4" marker-end="url(#arrow)"/>
+
+    <g filter="url(#shadow)">
+      <rect x="70" y="420" width="460" height="440" rx="28" fill="#ffffff"/>
+      <rect x="570" y="420" width="460" height="440" rx="28" fill="#ffffff"/>
+      <rect x="1070" y="420" width="460" height="440" rx="28" fill="#ffffff"/>
+    </g>
+    <rect x="70" y="420" width="460" height="12" rx="6" fill="#0b5bd3"/>
+    <rect x="570" y="420" width="460" height="12" rx="6" fill="#673de6"/>
+    <rect x="1070" y="420" width="460" height="12" rx="6" fill="#08735b"/>
+
+    <text x="105" y="480" font-size="30" font-weight="750" fill="#11233f">ACP / SVD tronquée</text>
+    <text x="105" y="525" font-size="24" font-weight="700" fill="#0b5bd3">Xᵣ = Uᵣ Σᵣ Vᵣᵀ</text>
+    <text x="105" y="570" font-size="21" fill="#51647d">
+      <tspan x="105" dy="0">garder les r modes dominants</tspan>
+      <tspan x="105" dy="30">variance du mode i : σᵢ²/(n−1)</tspan>
+      <tspan x="105" dy="30">projeter les observations sur UΣ</tspan>
+      <tspan x="105" dy="30">mesurer l’erreur de reconstruction</tspan>
+    </text>
+    <rect x="105" y="710" width="330" height="72" rx="14" fill="#e9f2ff"/>
+    <text x="128" y="739" font-size="18" font-weight="700" fill="#17385f">
+      <tspan x="128" dy="0">contrôle : ‖X − Xᵣ‖F / ‖X‖F</tspan>
+      <tspan x="128" dy="25">petit ≠ événements rares préservés</tspan>
+    </text>
+    <text x="105" y="828" font-size="18" font-weight="700" fill="#0b5bd3">SORTIE : scores, charges, compression</text>
+
+    <text x="605" y="480" font-size="30" font-weight="750" fill="#11233f">RPCA</text>
+    <text x="605" y="525" font-size="24" font-weight="700" fill="#673de6">X = L + S + E</text>
+    <text x="605" y="570" font-size="21" fill="#51647d">
+      <tspan x="605" dy="0">L : comportement nominal corrélé</tspan>
+      <tspan x="605" dy="30">S : anomalies rares et localisées</tspan>
+      <tspan x="605" dy="30">E : bruit ou résidu numérique</tspan>
+      <tspan x="605" dy="30">seuiller coefficients et singularités</tspan>
+    </text>
+    <rect x="605" y="710" width="390" height="72" rx="14" fill="#f1edff"/>
+    <text x="628" y="739" font-size="18" font-weight="700" fill="#17385f">
+      <tspan x="628" dy="0">‖L‖* → faible rang · ‖S‖1 → rareté</tspan>
+      <tspan x="628" dy="25">score à l’instant t : ‖S(t,:)‖₂</tspan>
+    </text>
+    <text x="605" y="828" font-size="18" font-weight="700" fill="#673de6">SORTIE : CLASSEMENT DES ANOMALIES</text>
+
+    <text x="1105" y="480" font-size="30" font-weight="750" fill="#11233f">Canal MIMO complexe</text>
+    <text x="1105" y="525" font-size="24" font-weight="700" fill="#08735b">H = U Σ Vᴴ</text>
+    <text x="1105" y="570" font-size="21" fill="#51647d">
+      <tspan x="1105" dy="0">V : directions de précodage</tspan>
+      <tspan x="1105" dy="30">U : combinaison à la réception</tspan>
+      <tspan x="1105" dy="30">σᵢ² : gain du mode spatial i</tspan>
+      <tspan x="1105" dy="30">vérifier UᴴU = I et VᴴV = I</tspan>
+    </text>
+    <rect x="1105" y="710" width="390" height="72" rx="14" fill="#e7f7f1"/>
+    <text x="1128" y="739" font-size="18" font-weight="700" fill="#17385f">
+      <tspan x="1128" dy="0">C = Σ log2(1 + ρ σᵢ² / nTx)</tspan>
+      <tspan x="1128" dy="25">bruit blanc et puissance égale</tspan>
+    </text>
+    <text x="1105" y="828" font-size="18" font-weight="700" fill="#08735b">SORTIE : MODES ET CAPACITÉ SYNTHÉTIQUE</text>
+
+    <rect x="70" y="915" width="1460" height="155" rx="26" fill="#11233f"/>
+    <text x="105" y="958" font-size="27" font-weight="750" fill="#ffffff">Quatre normes, quatre rôles numériques</text>
+
+    <rect x="105" y="980" width="320" height="64" rx="14" fill="#e9f2ff"/>
+    <text x="126" y="1007" font-size="18" font-weight="750" fill="#0b5bd3">Frobenius ‖·‖F</text>
+    <text x="126" y="1031" font-size="16" fill="#17385f">reconstruction et convergence</text>
+
+    <rect x="455" y="980" width="320" height="64" rx="14" fill="#f1edff"/>
+    <text x="476" y="1007" font-size="18" font-weight="750" fill="#673de6">Spectrale ‖·‖2</text>
+    <text x="476" y="1031" font-size="16" fill="#17385f">amplitude dominante σ₁</text>
+
+    <rect x="805" y="980" width="320" height="64" rx="14" fill="#fff1e8"/>
+    <text x="826" y="1007" font-size="18" font-weight="750" fill="#b84c00">Nucléaire ‖·‖*</text>
+    <text x="826" y="1031" font-size="16" fill="#17385f">favorise une structure de faible rang</text>
+
+    <rect x="1155" y="980" width="340" height="64" rx="14" fill="#e7f7f1"/>
+    <text x="1176" y="1007" font-size="18" font-weight="750" fill="#08735b">Parcimonie ‖·‖1</text>
+    <text x="1176" y="1031" font-size="16" fill="#17385f">favorise des coefficients nuls</text>
+
+    <text x="800" y="1102" text-anchor="middle" font-size="18" fill="#65758b">Choisir la branche selon la question : expliquer, détecter ou transmettre.</text>
+  </g>
+</svg>

@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "constrained_dqn_results.schema.json",
+  "title": "Network book L24 constrained-DQN retained evidence",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "experiment_id",
+    "question",
+    "evidence_scope",
+    "training_seeds",
+    "evaluation_seeds",
+    "training_drop_penalties",
+    "reporting_drop_penalty",
+    "objective",
+    "acceptance_contract",
+    "baselines",
+    "candidates",
+    "selection",
+    "success_criteria"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "experiment_id": {"const": "network-book-l24-constrained-dqn-v1"},
+    "training_seeds": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "uniqueItems": true,
+      "items": {"type": "integer"}
+    },
+    "evaluation_seeds": {
+      "type": "array",
+      "minItems": 40,
+      "maxItems": 40,
+      "uniqueItems": true,
+      "items": {"type": "integer"}
+    },
+    "training_drop_penalties": {
+      "type": "array",
+      "minItems": 2,
+      "uniqueItems": true,
+      "items": {"type": "number", "minimum": 0}
+    },
+    "reporting_drop_penalty": {"const": 4.0},
+    "candidates": {"type": "array", "minItems": 2},
+    "success_criteria": {
+      "type": "object",
+      "additionalProperties": {"type": "boolean"}
+    }
+  },
+  "additionalProperties": true
+}

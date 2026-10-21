@@ -1,0 +1,29 @@
+{
+  "schema": "network-book.core-labs.scenarios.v1",
+  "queue": {
+    "rate_bps": 1000000,
+    "duration_us": 1000000,
+    "bulk_interval_us": 10000,
+    "bulk_size_bytes": 1500,
+    "voice_interval_us": 20000,
+    "voice_size_bytes": 200,
+    "small_waiting_slots": 2,
+    "large_waiting_slots": 20
+  },
+  "convergence": {
+    "edges": [["A", "B", 1], ["B", "C", 1], ["A", "C", 3]],
+    "failed_link": ["B", "C"],
+    "unordered_updates_ms": {"A": 30, "B": 5},
+    "ordered_updates_ms": {"A": 5, "B": 30},
+    "probes_ms": [-1, 0, 5, 29, 30, 50]
+  },
+  "rov": {
+    "vrps": [{"prefix": "203.0.113.0/24", "max_length": 24, "origin_as": 64500}],
+    "routes": [
+      {"case": "authorized", "prefix": "203.0.113.0/24", "origin_as": 64500},
+      {"case": "wrong_origin", "prefix": "203.0.113.0/24", "origin_as": 64501},
+      {"case": "too_specific", "prefix": "203.0.113.0/25", "origin_as": 64500},
+      {"case": "uncovered", "prefix": "198.51.100.0/24", "origin_as": 64500}
+    ]
+  }
+}

@@ -1,0 +1,404 @@
+{
+  "calibration": {
+    "fitted_service_rate_pps": 120.2,
+    "holdout_interval_coverage": 0.5,
+    "holdout_mae_ms": 3.856749,
+    "holdout_mape": 0.055132,
+    "holdout_predictions": [
+      {
+        "absolute_error_ms": 0.086475,
+        "arrival_rate_pps": 30.0,
+        "inside_train_residual_interval": true,
+        "observed_mean_delay_ms": 11.0,
+        "ood": false,
+        "predicted_mean_delay_ms": 11.086475
+      },
+      {
+        "absolute_error_ms": 0.420319,
+        "arrival_rate_pps": 70.0,
+        "inside_train_residual_interval": true,
+        "observed_mean_delay_ms": 19.5,
+        "ood": false,
+        "predicted_mean_delay_ms": 19.920319
+      },
+      {
+        "absolute_error_ms": 1.887417,
+        "arrival_rate_pps": 90.0,
+        "inside_train_residual_interval": false,
+        "observed_mean_delay_ms": 35.0,
+        "ood": false,
+        "predicted_mean_delay_ms": 33.112583
+      },
+      {
+        "absolute_error_ms": 13.032787,
+        "arrival_rate_pps": 108.0,
+        "inside_train_residual_interval": false,
+        "observed_mean_delay_ms": 95.0,
+        "ood": true,
+        "predicted_mean_delay_ms": 81.967213
+      }
+    ],
+    "holdout_sample_count": 4,
+    "model": "mm1_mean_response_time",
+    "ood_mae_ms": 13.032787,
+    "train_residual_interval_half_width_ms": 0.5,
+    "train_sample_count": 4
+  },
+  "emulation_plan": {
+    "artifact": "results/emulation_plan.json",
+    "execution_allowed": false,
+    "generator_executed_commands": false
+  },
+  "negative_findings": [
+    {
+      "evidence": "Across 5 fixed seeds, p95 response ranged from 191.523894 to 282.903793 ms.",
+      "id": "queue_tail_variance",
+      "implication": "A mean-only queue claim hides material tail and seed sensitivity."
+    },
+    {
+      "evidence": "The synthetic flow produced a mean reorder rate of 0.621843 after delay jitter, independently of the configured loss probability.",
+      "id": "impairments_interact",
+      "implication": "Loss, duplication, jitter, and ordering must be reported separately."
+    },
+    {
+      "evidence": "Event replay retained an invalid path for 45 ms before control-plane application.",
+      "id": "routing_blackhole_window",
+      "implication": "A converged shortest path does not prove transient reachability."
+    },
+    {
+      "evidence": "The train-residual interval covered only 0.500 of held-out observations; OOD MAE was 13.033 ms.",
+      "id": "calibration_coverage_failure",
+      "implication": "In-range calibration cannot justify high-load extrapolation."
+    },
+    {
+      "evidence": "The generated artifact contains inert argv arrays and execution_allowed=false.",
+      "id": "emulation_not_executed",
+      "implication": "The plan is teaching material, not privileged emulation evidence."
+    }
+  ],
+  "packet_impairments": {
+    "runs": [
+      {
+        "delivered_originals": 387,
+        "duplicate_packets": 8,
+        "lost_packets": 13,
+        "mean_delay_ms": 20.389,
+        "observed_duplicate_rate": 0.020672,
+        "observed_loss_rate": 0.0325,
+        "observed_reorder_rate": 0.633075,
+        "p95_delay_ms": 30.783705,
+        "reordered_originals": 245,
+        "seed": 7,
+        "sent_packets": 400
+      },
+      {
+        "delivered_originals": 387,
+        "duplicate_packets": 8,
+        "lost_packets": 13,
+        "mean_delay_ms": 20.254113,
+        "observed_duplicate_rate": 0.020672,
+        "observed_loss_rate": 0.0325,
+        "observed_reorder_rate": 0.635659,
+        "p95_delay_ms": 30.444079,
+        "reordered_originals": 246,
+        "seed": 19,
+        "sent_packets": 400
+      },
+      {
+        "delivered_originals": 383,
+        "duplicate_packets": 7,
+        "lost_packets": 17,
+        "mean_delay_ms": 20.201376,
+        "observed_duplicate_rate": 0.018277,
+        "observed_loss_rate": 0.0425,
+        "observed_reorder_rate": 0.62141,
+        "p95_delay_ms": 30.741493,
+        "reordered_originals": 238,
+        "seed": 43,
+        "sent_packets": 400
+      },
+      {
+        "delivered_originals": 387,
+        "duplicate_packets": 9,
+        "lost_packets": 13,
+        "mean_delay_ms": 19.853556,
+        "observed_duplicate_rate": 0.023256,
+        "observed_loss_rate": 0.0325,
+        "observed_reorder_rate": 0.609819,
+        "p95_delay_ms": 30.877791,
+        "reordered_originals": 236,
+        "seed": 101,
+        "sent_packets": 400
+      },
+      {
+        "delivered_originals": 389,
+        "duplicate_packets": 9,
+        "lost_packets": 11,
+        "mean_delay_ms": 19.807291,
+        "observed_duplicate_rate": 0.023136,
+        "observed_loss_rate": 0.0275,
+        "observed_reorder_rate": 0.609254,
+        "p95_delay_ms": 30.398611,
+        "reordered_originals": 237,
+        "seed": 211,
+        "sent_packets": 400
+      }
+    ],
+    "summary": {
+      "mean_delay_ms": {
+        "ci95_half_width": 0.225168,
+        "maximum": 20.389,
+        "mean": 20.101067,
+        "minimum": 19.807291,
+        "n": 5,
+        "sample_stddev": 0.256883
+      },
+      "observed_duplicate_rate": {
+        "ci95_half_width": 0.001811,
+        "maximum": 0.023256,
+        "mean": 0.021203,
+        "minimum": 0.018277,
+        "n": 5,
+        "sample_stddev": 0.002066
+      },
+      "observed_loss_rate": {
+        "ci95_half_width": 0.004801,
+        "maximum": 0.0425,
+        "mean": 0.0335,
+        "minimum": 0.0275,
+        "n": 5,
+        "sample_stddev": 0.005477
+      },
+      "observed_reorder_rate": {
+        "ci95_half_width": 0.010915,
+        "maximum": 0.635659,
+        "mean": 0.621843,
+        "minimum": 0.609254,
+        "n": 5,
+        "sample_stddev": 0.012453
+      },
+      "p95_delay_ms": {
+        "ci95_half_width": 0.18786,
+        "maximum": 30.877791,
+        "mean": 30.649136,
+        "minimum": 30.398611,
+        "n": 5,
+        "sample_stddev": 0.21432
+      }
+    }
+  },
+  "production_evidence": false,
+  "queue": {
+    "runs": [
+      {
+        "accepted_packets": 1661,
+        "completed_packets": 1661,
+        "drain_time_ms": 13.968311,
+        "drop_rate": 0.033178,
+        "dropped_packets": 57,
+        "generated_packets": 1718,
+        "mean_response_ms": 121.151712,
+        "p95_response_ms": 282.903793,
+        "seed": 7,
+        "server_utilization": 0.913879,
+        "throughput_pps": 82.992037
+      },
+      {
+        "accepted_packets": 1661,
+        "completed_packets": 1661,
+        "drain_time_ms": 37.251983,
+        "drop_rate": 0.005984,
+        "dropped_packets": 10,
+        "generated_packets": 1671,
+        "mean_response_ms": 81.623833,
+        "p95_response_ms": 220.381585,
+        "seed": 19,
+        "server_utilization": 0.905522,
+        "throughput_pps": 82.895599
+      },
+      {
+        "accepted_packets": 1689,
+        "completed_packets": 1689,
+        "drain_time_ms": 59.594763,
+        "drop_rate": 0.007638,
+        "dropped_packets": 13,
+        "generated_packets": 1702,
+        "mean_response_ms": 108.741139,
+        "p95_response_ms": 239.623944,
+        "seed": 43,
+        "server_utilization": 0.95642,
+        "throughput_pps": 84.199109
+      },
+      {
+        "accepted_packets": 1644,
+        "completed_packets": 1644,
+        "drain_time_ms": 70.663854,
+        "drop_rate": 0.006046,
+        "dropped_packets": 10,
+        "generated_packets": 1654,
+        "mean_response_ms": 86.089439,
+        "p95_response_ms": 247.93198,
+        "seed": 101,
+        "server_utilization": 0.90784,
+        "throughput_pps": 81.910594
+      },
+      {
+        "accepted_packets": 1635,
+        "completed_packets": 1635,
+        "drain_time_ms": 0.0,
+        "drop_rate": 0.001832,
+        "dropped_packets": 3,
+        "generated_packets": 1638,
+        "mean_response_ms": 80.138832,
+        "p95_response_ms": 191.523894,
+        "seed": 211,
+        "server_utilization": 0.905694,
+        "throughput_pps": 81.75
+      }
+    ],
+    "summary": {
+      "drain_time_ms": {
+        "ci95_half_width": 26.079127,
+        "maximum": 70.663854,
+        "mean": 36.295782,
+        "minimum": 0.0,
+        "n": 5,
+        "sample_stddev": 29.752399
+      },
+      "drop_rate": {
+        "ci95_half_width": 0.011061,
+        "maximum": 0.033178,
+        "mean": 0.010936,
+        "minimum": 0.001832,
+        "n": 5,
+        "sample_stddev": 0.012618
+      },
+      "mean_response_ms": {
+        "ci95_half_width": 16.105418,
+        "maximum": 121.151712,
+        "mean": 95.548991,
+        "minimum": 80.138832,
+        "n": 5,
+        "sample_stddev": 18.373883
+      },
+      "p95_response_ms": {
+        "ci95_half_width": 29.648558,
+        "maximum": 282.903793,
+        "mean": 236.473039,
+        "minimum": 191.523894,
+        "n": 5,
+        "sample_stddev": 33.824588
+      },
+      "server_utilization": {
+        "ci95_half_width": 0.019121,
+        "maximum": 0.95642,
+        "mean": 0.917871,
+        "minimum": 0.905522,
+        "n": 5,
+        "sample_stddev": 0.021814
+      },
+      "throughput_pps": {
+        "ci95_half_width": 0.863769,
+        "maximum": 84.199109,
+        "mean": 82.749468,
+        "minimum": 81.75,
+        "n": 5,
+        "sample_stddev": 0.985431
+      }
+    }
+  },
+  "routing_replay": {
+    "event_count": 4,
+    "events": [
+      {
+        "action": "link_down",
+        "applied_at_ms": 145,
+        "convergence_ms": 45,
+        "link": [
+          "B",
+          "D"
+        ],
+        "observed_at_ms": 100,
+        "selected_path": [
+          "A",
+          "C",
+          "D"
+        ],
+        "transient_blackhole_ms": 45
+      },
+      {
+        "action": "cost_change",
+        "applied_at_ms": 330,
+        "convergence_ms": 30,
+        "link": [
+          "A",
+          "C"
+        ],
+        "observed_at_ms": 300,
+        "selected_path": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "transient_blackhole_ms": 0
+      },
+      {
+        "action": "link_up",
+        "applied_at_ms": 555,
+        "convergence_ms": 55,
+        "link": [
+          "B",
+          "D"
+        ],
+        "observed_at_ms": 500,
+        "selected_path": [
+          "A",
+          "B",
+          "D"
+        ],
+        "transient_blackhole_ms": 0
+      },
+      {
+        "action": "cost_change",
+        "applied_at_ms": 725,
+        "convergence_ms": 25,
+        "link": [
+          "B",
+          "D"
+        ],
+        "observed_at_ms": 700,
+        "selected_path": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "transient_blackhole_ms": 0
+      }
+    ],
+    "final_path": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "initial_path": [
+      "A",
+      "B",
+      "D"
+    ],
+    "max_convergence_ms": 55,
+    "total_transient_blackhole_ms": 45
+  },
+  "schema_version": "1.0",
+  "seeds": [
+    7,
+    19,
+    43,
+    101,
+    211
+  ],
+  "suite": "offline-synthetic-network-simulation",
+  "synthetic": true
+}

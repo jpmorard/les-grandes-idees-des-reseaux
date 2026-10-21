@@ -1,0 +1,495 @@
+{
+  "baselines": {
+    "projected_queue_observation_only": {
+      "applied_constraint_violations": 0.0,
+      "blocked_proposal_rate": 0.0,
+      "episodes": 40.0,
+      "mean_blocked_proposals": 0.0,
+      "mean_delivered": 95.2,
+      "mean_dropped": 11.0,
+      "mean_return": -57.277,
+      "return_std": 7.323835812
+    },
+    "random_available": {
+      "applied_constraint_violations": 0.0,
+      "blocked_proposal_rate": 0.0,
+      "episodes": 40.0,
+      "mean_blocked_proposals": 0.0,
+      "mean_delivered": 94.25,
+      "mean_dropped": 12.825,
+      "mean_return": -60.2755,
+      "return_std": 8.926746874
+    }
+  },
+  "benchmark_id": "network-book-ml-rl-evidence-v1",
+  "controller_information_contract": "Every policy receives only the seven-element observation and a seeded RNG.",
+  "dqn_runs": [
+    {
+      "evaluation": {
+        "applied_constraint_violations": 0.0,
+        "blocked_proposal_rate": 0.0,
+        "episodes": 40.0,
+        "mean_blocked_proposals": 0.0,
+        "mean_delivered": 94.95,
+        "mean_dropped": 11.675,
+        "mean_return": -58.9445,
+        "return_std": 8.211335443
+      },
+      "paired_delta_vs_projected_queue": {
+        "mean_dropped": 0.675,
+        "mean_return": -1.6675
+      },
+      "paired_delta_vs_random": {
+        "mean_dropped": -1.15,
+        "mean_return": 1.331
+      },
+      "training": {
+        "config": {
+          "batch_size": 64,
+          "drop_penalty": 4.0,
+          "drop_termination_threshold": 20,
+          "episodes": 180,
+          "epsilon_decay_steps": 5000,
+          "epsilon_end": 0.05,
+          "epsilon_start": 1.0,
+          "gamma": 0.96,
+          "horizon": 48,
+          "learning_rate": 0.001,
+          "replay_capacity": 5000,
+          "seed": 7,
+          "target_sync_steps": 160,
+          "warmup_steps": 128
+        },
+        "final_epsilon": 0.05,
+        "last_20_episode_mean": -59.184,
+        "loss_count": 8513,
+        "steps": 8640
+      },
+      "training_seed": 7
+    },
+    {
+      "evaluation": {
+        "applied_constraint_violations": 0.0,
+        "blocked_proposal_rate": 0.0,
+        "episodes": 40.0,
+        "mean_blocked_proposals": 0.0,
+        "mean_delivered": 94.95,
+        "mean_dropped": 18.025,
+        "mean_return": -50.734,
+        "return_std": 5.710184235
+      },
+      "paired_delta_vs_projected_queue": {
+        "mean_dropped": 7.025,
+        "mean_return": 6.543
+      },
+      "paired_delta_vs_random": {
+        "mean_dropped": 5.2,
+        "mean_return": 9.5415
+      },
+      "training": {
+        "config": {
+          "batch_size": 64,
+          "drop_penalty": 4.0,
+          "drop_termination_threshold": 20,
+          "episodes": 180,
+          "epsilon_decay_steps": 5000,
+          "epsilon_end": 0.05,
+          "epsilon_start": 1.0,
+          "gamma": 0.96,
+          "horizon": 48,
+          "learning_rate": 0.001,
+          "replay_capacity": 5000,
+          "seed": 19,
+          "target_sync_steps": 160,
+          "warmup_steps": 128
+        },
+        "final_epsilon": 0.05,
+        "last_20_episode_mean": -55.505,
+        "loss_count": 8513,
+        "steps": 8640
+      },
+      "training_seed": 19
+    },
+    {
+      "evaluation": {
+        "applied_constraint_violations": 0.0,
+        "blocked_proposal_rate": 0.0,
+        "episodes": 40.0,
+        "mean_blocked_proposals": 0.0,
+        "mean_delivered": 94.95,
+        "mean_dropped": 18.025,
+        "mean_return": -50.293,
+        "return_std": 5.837443876
+      },
+      "paired_delta_vs_projected_queue": {
+        "mean_dropped": 7.025,
+        "mean_return": 6.984
+      },
+      "paired_delta_vs_random": {
+        "mean_dropped": 5.2,
+        "mean_return": 9.9825
+      },
+      "training": {
+        "config": {
+          "batch_size": 64,
+          "drop_penalty": 4.0,
+          "drop_termination_threshold": 20,
+          "episodes": 180,
+          "epsilon_decay_steps": 5000,
+          "epsilon_end": 0.05,
+          "epsilon_start": 1.0,
+          "gamma": 0.96,
+          "horizon": 48,
+          "learning_rate": 0.001,
+          "replay_capacity": 5000,
+          "seed": 31,
+          "target_sync_steps": 160,
+          "warmup_steps": 128
+        },
+        "final_epsilon": 0.05,
+        "last_20_episode_mean": -53.274,
+        "loss_count": 8512,
+        "steps": 8639
+      },
+      "training_seed": 31
+    },
+    {
+      "evaluation": {
+        "applied_constraint_violations": 0.0,
+        "blocked_proposal_rate": 0.0,
+        "episodes": 40.0,
+        "mean_blocked_proposals": 0.0,
+        "mean_delivered": 95.0,
+        "mean_dropped": 16.775,
+        "mean_return": -52.056,
+        "return_std": 5.311565118
+      },
+      "paired_delta_vs_projected_queue": {
+        "mean_dropped": 5.775,
+        "mean_return": 5.221
+      },
+      "paired_delta_vs_random": {
+        "mean_dropped": 3.95,
+        "mean_return": 8.2195
+      },
+      "training": {
+        "config": {
+          "batch_size": 64,
+          "drop_penalty": 4.0,
+          "drop_termination_threshold": 20,
+          "episodes": 180,
+          "epsilon_decay_steps": 5000,
+          "epsilon_end": 0.05,
+          "epsilon_start": 1.0,
+          "gamma": 0.96,
+          "horizon": 48,
+          "learning_rate": 0.001,
+          "replay_capacity": 5000,
+          "seed": 43,
+          "target_sync_steps": 160,
+          "warmup_steps": 128
+        },
+        "final_epsilon": 0.05,
+        "last_20_episode_mean": -57.216,
+        "loss_count": 8513,
+        "steps": 8640
+      },
+      "training_seed": 43
+    },
+    {
+      "evaluation": {
+        "applied_constraint_violations": 0.0,
+        "blocked_proposal_rate": 0.0,
+        "episodes": 40.0,
+        "mean_blocked_proposals": 0.0,
+        "mean_delivered": 95.1,
+        "mean_dropped": 17.875,
+        "mean_return": -49.2325,
+        "return_std": 6.674389392
+      },
+      "paired_delta_vs_projected_queue": {
+        "mean_dropped": 6.875,
+        "mean_return": 8.0445
+      },
+      "paired_delta_vs_random": {
+        "mean_dropped": 5.05,
+        "mean_return": 11.043
+      },
+      "training": {
+        "config": {
+          "batch_size": 64,
+          "drop_penalty": 4.0,
+          "drop_termination_threshold": 20,
+          "episodes": 180,
+          "epsilon_decay_steps": 5000,
+          "epsilon_end": 0.05,
+          "epsilon_start": 1.0,
+          "gamma": 0.96,
+          "horizon": 48,
+          "learning_rate": 0.001,
+          "replay_capacity": 5000,
+          "seed": 59,
+          "target_sync_steps": 160,
+          "warmup_steps": 128
+        },
+        "final_epsilon": 0.05,
+        "last_20_episode_mean": -52.116,
+        "loss_count": 8510,
+        "steps": 8637
+      },
+      "training_seed": 59
+    }
+  ],
+  "dqn_summary": {
+    "blocked_proposal_rate": {
+      "ci95_half_width": 0.0,
+      "mean": 0.0,
+      "per_training_seed": {
+        "19": 0.0,
+        "31": 0.0,
+        "43": 0.0,
+        "59": 0.0,
+        "7": 0.0
+      },
+      "sample_stddev": 0.0
+    },
+    "mean_delivered": {
+      "ci95_half_width": 0.080946589,
+      "mean": 94.99,
+      "per_training_seed": {
+        "19": 94.95,
+        "31": 94.95,
+        "43": 95.0,
+        "59": 95.1,
+        "7": 94.95
+      },
+      "sample_stddev": 0.065192024
+    },
+    "mean_dropped": {
+      "ci95_half_width": 3.394480923,
+      "mean": 16.475,
+      "per_training_seed": {
+        "19": 18.025,
+        "31": 18.025,
+        "43": 16.775,
+        "59": 17.875,
+        "7": 11.675
+      },
+      "sample_stddev": 2.733816014
+    },
+    "mean_return": {
+      "ci95_half_width": 4.812443524,
+      "mean": -52.252,
+      "per_training_seed": {
+        "19": -50.734,
+        "31": -50.293,
+        "43": -52.056,
+        "59": -49.2325,
+        "7": -58.9445
+      },
+      "sample_stddev": 3.875801772
+    }
+  },
+  "evaluation_seeds": [
+    1000,
+    1001,
+    1002,
+    1003,
+    1004,
+    1005,
+    1006,
+    1007,
+    1008,
+    1009,
+    1010,
+    1011,
+    1012,
+    1013,
+    1014,
+    1015,
+    1016,
+    1017,
+    1018,
+    1019,
+    1020,
+    1021,
+    1022,
+    1023,
+    1024,
+    1025,
+    1026,
+    1027,
+    1028,
+    1029,
+    1030,
+    1031,
+    1032,
+    1033,
+    1034,
+    1035,
+    1036,
+    1037,
+    1038,
+    1039
+  ],
+  "evidence_scope": {
+    "kind": "deterministic_synthetic",
+    "production_proof": false,
+    "statement": "Pedagogical evidence only; no RF, transport, field, mission, or production-performance claim."
+  },
+  "hard_constraint_probe": {
+    "criterion": "blocked proposals may be nonzero; applied violations must be zero",
+    "policy": "always_propose_relay_a",
+    "result": {
+      "applied_constraint_violations": 0.0,
+      "blocked_proposal_rate": 0.25,
+      "episodes": 40.0,
+      "mean_blocked_proposals": 12.0,
+      "mean_delivered": 83.45,
+      "mean_dropped": 30.025,
+      "mean_return": -108.353,
+      "return_std": 6.306128051
+    }
+  },
+  "negative_findings": [
+    "The DQN mean does not reduce dropped packets relative to the projected-queue reference."
+  ],
+  "paired_summary": {
+    "projected_queue": {
+      "mean_dropped": {
+        "ci95_half_width": 3.394480923,
+        "mean": 5.475,
+        "per_training_seed": {
+          "19": 7.025,
+          "31": 7.025,
+          "43": 5.775,
+          "59": 6.875,
+          "7": 0.675
+        },
+        "sample_stddev": 2.733816014
+      },
+      "mean_return": {
+        "ci95_half_width": 4.812443524,
+        "mean": 5.025,
+        "per_training_seed": {
+          "19": 6.543,
+          "31": 6.984,
+          "43": 5.221,
+          "59": 8.0445,
+          "7": -1.6675
+        },
+        "sample_stddev": 3.875801772
+      }
+    },
+    "random": {
+      "mean_dropped": {
+        "ci95_half_width": 3.394480923,
+        "mean": 3.65,
+        "per_training_seed": {
+          "19": 5.2,
+          "31": 5.2,
+          "43": 3.95,
+          "59": 5.05,
+          "7": -1.15
+        },
+        "sample_stddev": 2.733816014
+      },
+      "mean_return": {
+        "ci95_half_width": 4.812443524,
+        "mean": 8.0235,
+        "per_training_seed": {
+          "19": 9.5415,
+          "31": 9.9825,
+          "43": 8.2195,
+          "59": 11.043,
+          "7": 1.331
+        },
+        "sample_stddev": 3.875801772
+      }
+    }
+  },
+  "rare_classification": {
+    "evidence_scope": {
+      "kind": "deterministic_synthetic",
+      "production_proof": false
+    },
+    "experiment_id": "rare-network-incident-threshold-v1",
+    "final_test": {
+      "counts": {
+        "fn": 5,
+        "fp": 10,
+        "tn": 1174,
+        "tp": 11
+      },
+      "metrics": {
+        "accuracy": 0.9875,
+        "f1": 0.594594595,
+        "false_positive_rate": 0.008445946,
+        "precision": 0.523809524,
+        "recall": 0.6875
+      },
+      "threshold": 0.75
+    },
+    "model": {
+      "incident_mean": 2.236996285,
+      "normal_mean": -0.019055682,
+      "scale": 0.987936762
+    },
+    "naive_threshold_reference": {
+      "counts": {
+        "fn": 1,
+        "fp": 156,
+        "tn": 1028,
+        "tp": 15
+      },
+      "metrics": {
+        "accuracy": 0.869166667,
+        "f1": 0.160427807,
+        "false_positive_rate": 0.131756757,
+        "precision": 0.087719298,
+        "recall": 0.9375
+      },
+      "threshold": 0.5
+    },
+    "selection": {
+      "false_negative_cost": 12.0,
+      "false_positive_cost": 1.0,
+      "threshold": 0.75,
+      "validation_cost": 112.0,
+      "validation_recall": 0.652173913
+    },
+    "split_contract": {
+      "sha256": {
+        "test": "6e0fe875720b50f7e5594b03200a989efee0a315a7ee554311b385f8832ed896",
+        "training": "a2d5249fc6d9b1d969be2d0d526f804c4d95c05516f6a9c3bdef218397c4a2b5",
+        "validation": "fcefc34d52d6d82f4dfaedd396698f68f7392dd025c88f4cd14fe806d047213d"
+      },
+      "sizes": {
+        "test": 1200,
+        "training": 2000,
+        "validation": 1200
+      },
+      "test_open_count": 1,
+      "test_role": "single_final_evaluation",
+      "training_role": "fit_score_model",
+      "validation_role": "select_threshold"
+    }
+  },
+  "schema_version": "1.0.0",
+  "success_criteria": {
+    "classification_test_opened_once": true,
+    "filter_blocks_unsafe_proposals": true,
+    "multiple_training_seeds": true,
+    "paired_drop_ci_reported": true,
+    "paired_return_ci_reported": true,
+    "zero_applied_constraint_violations": true
+  },
+  "training_seeds": [
+    7,
+    19,
+    31,
+    43,
+    59
+  ],
+  "uncertainty_method": "two-sided Student-t 95% confidence interval across five independent training seeds (df=4); evaluation scenarios are paired"
+}

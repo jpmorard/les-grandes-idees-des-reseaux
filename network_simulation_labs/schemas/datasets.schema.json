@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:agilab:network-simulation-labs:datasets:1.0",
+  "title": "Synthetic network simulation lab datasets",
+  "description": "Envelope shared by all datasets. Detailed fail-closed constraints are enforced by contracts.py.",
+  "type": "object",
+  "required": ["schema_version", "synthetic", "provenance"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "synthetic": {"const": true},
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "generator", "license", "description"],
+      "properties": {
+        "kind": {"const": "synthetic"},
+        "generator": {"type": "string", "minLength": 1},
+        "license": {"const": "CC0-1.0"},
+        "description": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

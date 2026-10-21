@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "synthetic": true,
+  "provenance": {
+    "kind": "synthetic",
+    "generator": "hand-authored inert plan input",
+    "license": "CC0-1.0",
+    "description": "Safe-name example used only to render structured argv records; it is never executed."
+  },
+  "namespace": "simlab-book",
+  "interface": "lab0",
+  "peer_interface": "lab1",
+  "bandwidth_mbps": 10.0,
+  "delay_ms": 25.0,
+  "jitter_ms": 5.0,
+  "loss_rate": 0.01,
+  "duplicate_rate": 0.005,
+  "reorder_rate": 0.02
+}

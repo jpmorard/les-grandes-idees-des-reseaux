@@ -1,0 +1,176 @@
+{
+  "cases": {
+    "ordered": [
+      {
+        "fib": {
+          "A": "B",
+          "B": "C",
+          "C": null
+        },
+        "path": [
+          "A",
+          "B",
+          "C"
+        ],
+        "status": "delivered",
+        "time_ms": -1
+      },
+      {
+        "fib": {
+          "A": "B",
+          "B": "C",
+          "C": null
+        },
+        "path": [
+          "A",
+          "B",
+          "C"
+        ],
+        "status": "failed_link",
+        "time_ms": 0
+      },
+      {
+        "fib": {
+          "A": "C",
+          "B": "C",
+          "C": null
+        },
+        "path": [
+          "A",
+          "C"
+        ],
+        "status": "delivered",
+        "time_ms": 5
+      },
+      {
+        "fib": {
+          "A": "C",
+          "B": "C",
+          "C": null
+        },
+        "path": [
+          "A",
+          "C"
+        ],
+        "status": "delivered",
+        "time_ms": 29
+      },
+      {
+        "fib": {
+          "A": "C",
+          "B": "A",
+          "C": null
+        },
+        "path": [
+          "A",
+          "C"
+        ],
+        "status": "delivered",
+        "time_ms": 30
+      },
+      {
+        "fib": {
+          "A": "C",
+          "B": "A",
+          "C": null
+        },
+        "path": [
+          "A",
+          "C"
+        ],
+        "status": "delivered",
+        "time_ms": 50
+      }
+    ],
+    "unordered": [
+      {
+        "fib": {
+          "A": "B",
+          "B": "C",
+          "C": null
+        },
+        "path": [
+          "A",
+          "B",
+          "C"
+        ],
+        "status": "delivered",
+        "time_ms": -1
+      },
+      {
+        "fib": {
+          "A": "B",
+          "B": "C",
+          "C": null
+        },
+        "path": [
+          "A",
+          "B",
+          "C"
+        ],
+        "status": "failed_link",
+        "time_ms": 0
+      },
+      {
+        "fib": {
+          "A": "B",
+          "B": "A",
+          "C": null
+        },
+        "path": [
+          "A",
+          "B",
+          "A"
+        ],
+        "status": "forwarding_loop",
+        "time_ms": 5
+      },
+      {
+        "fib": {
+          "A": "B",
+          "B": "A",
+          "C": null
+        },
+        "path": [
+          "A",
+          "B",
+          "A"
+        ],
+        "status": "forwarding_loop",
+        "time_ms": 29
+      },
+      {
+        "fib": {
+          "A": "C",
+          "B": "A",
+          "C": null
+        },
+        "path": [
+          "A",
+          "C"
+        ],
+        "status": "delivered",
+        "time_ms": 30
+      },
+      {
+        "fib": {
+          "A": "C",
+          "B": "A",
+          "C": null
+        },
+        "path": [
+          "A",
+          "C"
+        ],
+        "status": "delivered",
+        "time_ms": 50
+      }
+    ]
+  },
+  "evidence_scope": "deterministic_synthetic_teaching_model_not_real_protocol_execution",
+  "experiment": "asynchronous_fib_installation",
+  "producer": "python3 -m core_network_labs.run_labs",
+  "scenario_sha256": "d87c3aa1375164503e187bfa7f0150eae336f5c8c18db51f460b3e22febbb968",
+  "schema": "network-book.core-labs.result.v1",
+  "time_resolution": "integer microseconds for queue; integer milliseconds for FIB events"
+}

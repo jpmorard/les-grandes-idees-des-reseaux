@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:agilab:network-simulation-labs:emulation-plan:1.0",
+  "title": "Fail-closed inert emulation plan",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "synthetic",
+    "production_ready",
+    "execution_allowed",
+    "generator_executed_commands",
+    "requires_separate_authorized_privileged_review",
+    "warning",
+    "actions"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "synthetic": {"const": true},
+    "production_ready": {"const": false},
+    "execution_allowed": {"const": false},
+    "generator_executed_commands": {"const": false},
+    "requires_separate_authorized_privileged_review": {"const": true},
+    "warning": {"type": "string", "minLength": 1},
+    "actions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "argv"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"},
+          "argv": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+        }
+      }
+    }
+  }
+}

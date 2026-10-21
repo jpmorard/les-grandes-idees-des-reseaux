@@ -1,0 +1,8 @@
+training_seed,policy,mean_return,return_std,mean_dropped,mean_delivered,blocked_proposal_rate,applied_constraint_violations
+,random_available,-60.2755,8.926746874,12.825,94.25,0.0,0.0
+,projected_queue_observation_only,-57.277,7.323835812,11.0,95.2,0.0,0.0
+7,dqn,-58.9445,8.211335443,11.675,94.95,0.0,0.0
+19,dqn,-50.734,5.710184235,18.025,94.95,0.0,0.0
+31,dqn,-50.293,5.837443876,18.025,94.95,0.0,0.0
+43,dqn,-52.056,5.311565118,16.775,95.0,0.0,0.0
+59,dqn,-49.2325,6.674389392,17.875,95.1,0.0,0.0
